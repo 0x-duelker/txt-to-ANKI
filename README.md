@@ -9,7 +9,7 @@ This project generates Anki decks with flashcards from a Markdown/CSV input file
 - **Dynamic Image Integration**: Fetches relevant images using Pixabay API for each note.
 - **Anki Deck Creation**: Automatically generates `.apkg` Anki decks.
 - **Logging**: Comprehensive logging for debugging and progress tracking.
-- **Dynamic Synonyms**: Enhances image search accuracy by querying with dynamically matched synonyms (to be implemented).
+- **Dynamic Synonyms**: Enhances image search accuracy by querying with dynamically matched synonyms (implemented).
 
 ### Modular Structure
 This project is modularized for better maintainability and scalability:
@@ -40,6 +40,7 @@ This project is modularized for better maintainability and scalability:
      - `clean_string()`: Removes special characters and normalizes spaces.
      - `normalize_query()`: Prepares query strings for API requests.
      - `save_config()`/`load_config()`: Saves and loads configurations.
+     - `expand_with_synonyms()`: Expands queries dynamically using synonyms.
 
 5. **`logging_utils.py`**
    - Centralized logging setup and management.
@@ -92,15 +93,13 @@ This project is modularized for better maintainability and scalability:
 ## Development Roadmap
 
 ### Next Steps
-1. **Dynamic Synonyms for Image Search**:
-   - Enhance query accuracy by integrating synonyms dynamically.
-2. **Pixabay Tag Filtering**:
+1. **Pixabay Tag Filtering**:
    - Use metadata tags to improve image relevance.
-3. **CLI Integration**:
+2. **CLI Integration**:
    - Add `argparse` or `click` for a command-line interface.
-4. **Testing Suite**:
+3. **Testing Suite**:
    - Implement unit tests for all modules in the `tests/` directory.
-5. **Advanced NLP Query Expansion**:
+4. **Advanced NLP Query Expansion**:
    - Leverage NLP libraries like `spaCy` or `NLTK` to enhance query construction.
 
 ## Contributing
