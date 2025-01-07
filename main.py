@@ -7,7 +7,7 @@ from tqdm import tqdm
 import tkinter as tk
 from tkinter import filedialog
 
-from file_utils import parse_input_file, validate_input_file
+from file_utils import ensure_directories_exist, get_default_input_files, parse_input_file, validate_input_file
 from pixabay_api import fetch_pixabay_image
 from anki_utils import create_deck, add_note_to_deck, export_deck
 
@@ -31,6 +31,9 @@ if __name__ == "__main__":
     try:
         logger.info("Starting Anki deck creation process.")
 
+        # Ensure necessary directories exist
+        ensure_directories_exist()
+
         # Prompt for Pixabay API Key if not provided
         PIXABAY_API_KEY = os.getenv("PIXABAY_API_KEY")
         if not PIXABAY_API_KEY:
@@ -39,13 +42,31 @@ if __name__ == "__main__":
                 logger.error("Pixabay API Key is required. Exiting.")
                 exit(1)
 
-        # File dialog for input file
-        root = tk.Tk()
-        root.withdraw()
-        input_file = filedialog.askopenfilename(
-            title="Select your Markdown/CSV input file",
-            filetypes=[("Text Files", "*.md *.markdown *.csv *.tsv *.txt"), ("All Files", "*.*")]
-        )
+        # Check for files in the input_files/ directory
+        input_files = get_default_input_files()
+        if input_files:
+            print("Available input files in 'input_files/':")
+            for idx, file in enumerate(input_files, start=1):
+                print(f"{idx}. {file}")
+            file_choice = input("Enter the number of the file to process (or press Enter to choose manually): ").strip()
+
+            if file_choice.isdigit() and 1 <= int(file_choice) <= len(input_files):
+                input_file = os.path.join("input_files", input_files[int(file_choice) - 1])
+                print(f"Selected file: {input_file}")
+            else:
+                input_file = filedialog.askopenfilename(
+                    title="Select your Markdown/CSV input file",
+                    initialdir=os.path.join(os.getcwd(), "input_files"),
+                    filetypes=[("Text Files", "*.md *.markdown *.csv *.tsv *.txt"), ("All Files", "*.*")]
+                )
+        else:
+            print("No files found in 'input_files/'. Please select a file manually.")
+            input_file = filedialog.askopenfilename(
+                title="Select your Markdown/CSV input file",
+                initialdir=os.path.join(os.getcwd(), "input_files"),
+                filetypes=[("Text Files", "*.md *.markdown *.csv *.tsv *.txt"), ("All Files", "*.*")]
+            )
+
         if not input_file:
             logger.error("No file selected. Exiting.")
             exit(1)

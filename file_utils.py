@@ -5,6 +5,24 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+def ensure_directories_exist():
+    """
+    Ensure necessary directories exist for the project.
+    """
+    directories = ["logs", "ANKI", "input_files"]
+    for directory in directories:
+        os.makedirs(directory, exist_ok=True)
+        logger.debug(f"Ensured directory exists: {directory}")
+
+def get_default_input_files():
+    """
+    List all input files in the 'input_files/' directory.
+    """
+    input_dir = os.path.join(os.getcwd(), "input_files")
+    files = [f for f in os.listdir(input_dir) if os.path.isfile(os.path.join(input_dir, f))]
+    logger.debug(f"Found input files: {files}")
+    return files
+
 def parse_input_file(input_file):
     """
     Parse the input file and return a list of rows.
