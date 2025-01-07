@@ -80,14 +80,18 @@ Save the Pixabay API key:
 
 python main.py --save-key YOUR_API_KEY
 
-Configure config.json:
+#### Handling Missing Images
+- The system dynamically relaxes strict filters if results are limited.
+- Logs provide detailed insights into fallback queries and their results.
 
+
+Configure config.json:
 {
     "use_synonyms": true,
     "rank_by_metadata": true,
-    "strict_filters": false,
+    "strict_filters": true,  // Note: This can be dynamically relaxed.
     "apply_nlp": true,
-    "tags": []
+    "tags": ["education", "learning"]
 }
 
 Run the application:
@@ -122,6 +126,9 @@ Optimize performance for large datasets and complex queries.
 
 Enhance NLP processing with contextual understanding.
 
+- Test how fallback queries perform by deliberately using strict filters or unlikely search terms.
+- Review logs to ensure appropriate fallback strategies are applied and that the original query is attempted.
+
 Changelog
 
 Version 1.3
@@ -131,6 +138,11 @@ Integrated NLP-based query refinement.
 Added tag-based filtering and stricter search controls.
 
 Improved metadata-based ranking.
+
+Introduced dynamic fallback mechanisms for handling limited results. 
+
+Validated synonyms for query expansion to reduce irrelevant results.
+
 
 Version 1.2
 
