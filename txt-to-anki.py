@@ -246,31 +246,40 @@ def main():
     # Process each row and create Anki notes
     for idx, row in enumerate(tqdm(rows, desc="Processing rows")):
         try:
-            logger.debug(f"Processing row {idx + 1}/{len(rows)}: {row}")
-
-            # Extract the front text
+            # Extract the German word for the front of the card
             front_text = row.get("WORD") or row.get("Front")
             if not front_text:
                 logger.warning(f"Skipping row with missing 'WORD' or 'Front': {row}")
+                skipped_rows.append(row)
                 continue
+
             front_text = front_text.strip()
 
-            # Clean up the query to strip special characters before sending to Pixabay
-            query = re.sub(r"[^\w\s]", "", front_text).strip()
+            # Use the "MEANING" field as the query and clean it
+            raw_query = row.get("MEANING", "").strip()
+            if not raw_query:
+                logger.warning(f"No 'MEANING' found for Pixabay query. Skipping image search for: {front_text}")
+                skipped_rows.append(row)
+                raw_query = ""
 
-            # Fetch image from Pixabay
-            image_url, image_credit = fetch_pixabay_image(front_text)
+            # Strip special characters from the query
+            query = re.sub(r"[^\w\s]", "", raw_query).strip()  # Keep only alphanumeric characters and spaces
+            if not query:
+                logger.warning(f"Cleaned query is empty. Skipping image search for: {front_text}")
+                skipped_rows.append(row)
+                continue
+
+            # Fetch image from Pixabay using the cleaned query
+            image_url, image_credit = fetch_pixabay_image(query)
             logger.debug(f"Fetched image URL: {image_url}")
 
-            # Build back text
+            # Prepare back text
             back_parts = []
             for k, v in row.items():
                 if k.lower() not in ["word", "front"] and v:
                     back_parts.append(f"<b>{k}:</b> {v.strip()}")
-
             if image_credit:
                 back_parts.append(f"<b>Image Credit:</b> {image_credit}")
-
             if not back_parts:
                 logger.warning(f"Skipping row with no valid back text: {row}")
                 continue
@@ -286,7 +295,8 @@ def main():
             logger.debug(f"Note added - Front: {front_text}, Back: {back_text}, Image URL: {image_url}")
 
         except Exception as e:
-            logger.error(f"Error creating note for row {idx + 1}: {row} - {e}")
+            logger.error(f"Error processing row {idx + 1}: {e}")
+            skipped_rows.append(row)
 
 
     logger.info(f"Total notes added to deck: {len(my_deck.notes)}")
