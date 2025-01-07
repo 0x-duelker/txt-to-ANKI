@@ -7,6 +7,7 @@ from tqdm import tqdm
 import tkinter as tk
 from tkinter import filedialog
 from utils import ensure_directories_exist, save_config, load_config
+from utils import load_synonym_dict, get_synonyms
 
 from file_utils import ensure_directories_exist, get_default_input_files, parse_input_file, validate_input_file
 from pixabay_api import fetch_pixabay_image
@@ -30,8 +31,11 @@ logger = logging.getLogger(__name__)
 # Ensure necessary directories exist
 ensure_directories_exist()
 
-# Load configuration
-config = load_config()
+# Define the path to the config file
+CONFIG_FILE_PATH = os.path.join(os.getcwd(), "config.json")
+
+# Load the configuration
+config = load_config(CONFIG_FILE_PATH)
 
 # Retrieve Pixabay API Key from config or prompt for it
 PIXABAY_API_KEY = config.get("PIXABAY_API_KEY")
@@ -44,6 +48,9 @@ if not PIXABAY_API_KEY:
     else:
         logger.error("Pixabay API Key is required. Exiting.")
         exit(1)
+
+# Load synonym dictionary
+synonym_dict = load_synonym_dict("synonyms.json")  # Replace with your synonym dictionary path
 
 # Main script
 if __name__ == "__main__":
@@ -129,8 +136,15 @@ if __name__ == "__main__":
                 raw_query = row.get("MEANING", "").strip()
                 query = re.sub(r"[^\w\s]", " ", raw_query).strip()
                 query = re.sub(r"\s+", " ", query)  # Normalize spaces
+                # Get synonyms dynamically
+                synonyms = get_synonyms(query)
+                expanded_queries = [query] + synonyms  # Include original query
 
-                image_url, image_credit = fetch_pixabay_image(query, PIXABAY_API_KEY)
+                # Use the expanded queries for image fetching
+                for expanded_query in expanded_queries:
+                    image_url, image_credit = fetch_pixabay_image(expanded_query, PIXABAY_API_KEY)
+                    if image_url:
+                        break  # Stop if an image is found
 
                 back_parts = []
                 for k, v in row.items():

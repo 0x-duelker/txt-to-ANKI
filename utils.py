@@ -1,31 +1,23 @@
+from datamuse import Datamuse
 import os
 import re
 import json
 
 CONFIG_FILE = "config.json"
+datamuse_api = Datamuse()
+SYNONYMS_FILE = "synonyms.json"
 
 def clean_string(input_string):
     """
     Removes special characters and normalizes spaces in a string.
-
-    Args:
-        input_string (str): String to clean.
-
-    Returns:
-        str: Cleaned string.
     """
-    cleaned = re.sub(r"[^\w\s]", " ", input_string).strip()
-    return re.sub(r"\s+", " ", cleaned)
+    import re
+    cleaned = re.sub(r"[^\w\s]", " ", input_string)  # Replace non-alphanumeric chars with spaces
+    return re.sub(r"\s+", " ", cleaned).strip()  # Normalize spaces and trim
 
 def normalize_query(query):
     """
-    Prepares a query string for API requests by cleaning and normalizing it.
-
-    Args:
-        query (str): Query string to normalize.
-
-    Returns:
-        str: Normalized query string.
+    Normalizes a query string for use in API requests.
     """
     return clean_string(query).lower()
 
@@ -37,24 +29,103 @@ def ensure_directories_exist():
     os.makedirs("ANKI", exist_ok=True)
     os.makedirs("input_files", exist_ok=True)
 
-def save_config(config):
+def save_config(config_file, data):
     """
-    Saves a configuration dictionary to a JSON file.
-
-    Args:
-        config (dict): Configuration data to save.
+    Saves configuration data to a JSON file.
     """
-    with open(CONFIG_FILE, "w") as config_file:
-        json.dump(config, config_file, indent=4)
+    import json
+    with open(config_file, 'w') as file:
+        json.dump(data, file, indent=4)
 
-def load_config():
+def load_config(config_file):
     """
     Loads configuration data from a JSON file.
+    """
+    import json
+    import os
+    if not os.path.exists(config_file):
+        return {}
+    with open(config_file, 'r') as file:
+        return json.load(file)
+
+def load_synonym_dict(file_path="synonyms.json"):
+    """
+    Load the synonym dictionary from a JSON file.
+    """
+    try:
+        with open(file_path, "r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        logger.warning(f"Synonym file {file_path} not found. Using an empty dictionary.")
+        return {}
+    except json.JSONDecodeError as e:
+        logger.error(f"Error parsing {file_path}: {e}")
+        return {}
+def fetch_synonyms_online(word, max_results=5):
+    """
+    Fetch synonyms for a given word using python-datamuse.
+    """
+    try:
+        results = datamuse_api.words(rel_syn=word, max=max_results)
+        return [entry['word'] for entry in results]
+    except Exception as e:
+        logger.warning(f"Error fetching synonyms for '{word}': {e}")
+        return []
+
+def update_synonyms_file(word, new_synonyms):
+    """
+    Update the synonyms.json file with new synonyms for a given word.
+    """
+    try:
+        if os.path.exists(SYNONYMS_FILE):
+            with open(SYNONYMS_FILE, "r") as file:
+                synonyms = json.load(file)
+        else:
+            synonyms = {}
+
+        if word not in synonyms:
+            synonyms[word] = new_synonyms
+        else:
+            synonyms[word] = list(set(synonyms[word] + new_synonyms))  # Avoid duplicates
+
+        with open(SYNONYMS_FILE, "w") as file:
+            json.dump(synonyms, file, indent=4)
+        logger.info(f"Updated synonyms.json with new synonyms for '{word}'.")
+    except Exception as e:
+        logger.error(f"Error updating synonyms file: {e}")
+
+def get_synonyms(word):
+    """
+    Get synonyms for a word, combining online lookups and local storage.
+    """
+    synonyms = load_synonym_dict()
+    if word in synonyms:
+        return synonyms[word]
+
+    online_synonyms = fetch_synonyms_online(word)
+    if online_synonyms:
+        update_synonyms_file(word, online_synonyms)
+        return online_synonyms
+    return []
+
+def expand_with_synonyms(query, synonym_dict):
+    """
+    Expands a query dynamically using synonyms from a provided dictionary.
+
+    Parameters:
+        query (str): The original query string.
+        synonym_dict (dict): Dictionary of synonyms where keys are words and values are lists of synonyms.
 
     Returns:
-        dict: Loaded configuration data, or an empty dictionary if the file does not exist.
+        list: A list of expanded queries including synonyms.
     """
-    if os.path.exists(CONFIG_FILE):
-        with open(CONFIG_FILE, "r") as config_file:
-            return json.load(config_file)
-    return {}
+    words = query.split()
+    expanded_queries = [query]  # Include the original query
+
+    for i, word in enumerate(words):
+        if word in synonym_dict:
+            for synonym in synonym_dict[word]:
+                new_query = words[:i] + [synonym] + words[i + 1:]
+                expanded_queries.append(" ".join(new_query))
+
+    return expanded_queries
