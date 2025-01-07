@@ -164,25 +164,20 @@ def expand_with_synonyms(query, synonym_dict):
 
     return expanded_queries
 
+
 def apply_nlp_refinement(query):
     """
-    Refine the input query using NLP techniques such as lemmatization and stop word removal.
-
+    Refines the query using NLP techniques such as lemmatization or stemming.
     Args:
-        query (str): The search query to be refined.
-
+        query (str): The search query.
     Returns:
-        str: The refined query.
+        str: Refined query.
     """
+    import nltk
+    from nltk.stem import WordNetLemmatizer
+
+    nltk.download('wordnet')
     lemmatizer = WordNetLemmatizer()
-    stop_words = set(stopwords.words('english'))
-
-    # Tokenize and process words
-    tokens = query.split()
-    refined_tokens = [
-        lemmatizer.lemmatize(word.lower())
-        for word in tokens if word.lower() not in stop_words
-    ]
-
-    # Reconstruct the query
-    return " ".join(refined_tokens)
+    refined_query = " ".join(lemmatizer.lemmatize(word) for word in query.split())
+    logger.debug(f"Refined query: {refined_query}")
+    return refined_query

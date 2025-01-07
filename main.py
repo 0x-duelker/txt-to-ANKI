@@ -9,7 +9,7 @@ from tkinter import filedialog
 from utils import ensure_directories_exist, save_config, load_config
 from utils import load_synonym_dict, get_synonyms
 from utils import save_api_key, load_api_key
-
+from utils import apply_nlp_refinement
 from file_utils import ensure_directories_exist, get_default_input_files, parse_input_file, validate_input_file
 from pixabay_api import fetch_pixabay_image
 from anki_utils import create_deck, add_note_to_deck, export_deck

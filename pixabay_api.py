@@ -6,6 +6,7 @@ import shelve
 import time
 import json
 import logging
+from utils import apply_nlp_refinement
 from hashlib import sha256
 from utils import expand_with_synonyms
 
@@ -76,6 +77,7 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
 
     if config["apply_nlp"]:
         queries_to_try = [apply_nlp_refinement(q) for q in queries_to_try]
+        logger.debug(f"Refining query using NLP techniques: {query}")
         logger.debug(f"NLP-refined queries: {queries_to_try}")
 
     cache_key_base = generate_cache_key(query, params)

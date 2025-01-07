@@ -1,117 +1,150 @@
-# Anki Deck Generator
+README
 
-This project generates Anki decks with flashcards from a Markdown/CSV input file, integrating images dynamically fetched from Pixabay.
+Project Overview
 
-## Features
+This project automates the creation of Anki flashcards enriched with images sourced from Pixabay. Key functionalities include:
 
-### Core Functionality
-- **Markdown/CSV Input Parsing**: Supports Markdown pipe tables or CSV-like inputs.
-- **Dynamic Image Integration**: Fetches relevant images using Pixabay API for each note.
-- **Anki Deck Creation**: Automatically generates `.apkg` Anki decks.
-- **Logging**: Comprehensive logging for debugging and progress tracking.
-- **Dynamic Synonyms**: Enhances image search accuracy by querying with dynamically matched synonyms (implemented).
+Dynamic Query Expansion: Incorporates synonyms for richer search results.
 
-### Modular Structure
-This project is modularized for better maintainability and scalability:
+API Configuration: Easily manage and update API keys.
 
-1. **`file_utils.py`**
-   - Handles file and directory operations.
-   - Functions:
-     - `ensure_directories_exist()`: Ensures required directories exist.
-     - `parse_input_file()`: Parses the input file into rows.
-     - `validate_input_file()`: Validates input file format.
+Advanced Query Features:
 
-2. **`pixabay_api.py`**
-   - Manages API interactions with Pixabay.
-   - Functions:
-     - `fetch_pixabay_image()`: Fetches images from Pixabay.
-     - `generate_cache_key()`: Generates unique cache keys for queries.
+NLP-based refinement.
 
-3. **`anki_utils.py`**
-   - Manages Anki deck creation and note management.
-   - Functions:
-     - `create_deck()`: Initializes a new Anki deck.
-     - `add_note_to_deck()`: Adds notes to the deck.
-     - `export_deck()`: Exports the deck to `.apkg` format.
+Metadata-based ranking of results.
 
-4. **`utils.py`**
-   - Utility functions for string cleaning and configuration management.
-   - Functions:
-     - `clean_string()`: Removes special characters and normalizes spaces.
-     - `normalize_query()`: Prepares query strings for API requests.
-     - `save_config()`/`load_config()`: Saves and loads configurations.
-     - `expand_with_synonyms()`: Expands queries dynamically using synonyms.
+Strict filtering options.
 
-5. **`logging_utils.py`**
-   - Centralized logging setup and management.
-   - Functions:
-     - `setup_logging()`: Configures logging for the project.
+Tag-based image searching.
 
-6. **`config.json`**
-   - Stores persistent configuration values such as the Pixabay API key.
+Efficient Caching: Avoid redundant API calls by implementing cache mechanisms.
 
-7. **`tests/`**
-   - Directory for unit tests (to be implemented).
+Logging and Debugging: Comprehensive logs ensure smooth monitoring and debugging.
 
-8. **Main Script (`main.py`):**
-   - Orchestrates the workflow.
-   - Handles user input and integrates functionalities from all modules.
+Key Features
 
-## Installation
+1. Dynamic Query Expansion
 
-1. **Clone the Repository**:
-   ```bash
-   git clone <repository_url>
-   cd <repository_directory>
-   ```
+Synonym expansion powered by datamuse.
 
-2. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+Local caching of synonyms to minimize redundant online lookups.
 
-3. **Set Up Configuration**:
-   - The script will prompt for the Pixabay API key on the first run and save it in `config.json`.
+Configurable via synonyms.json file.
 
-## Usage
+2. Pixabay Integration
 
-1. **Prepare Input File**:
-   - Place your Markdown/CSV file in the `input_files/` directory.
+Retrieves high-quality images based on the refined queries.
 
-2. **Run the Script**:
-   ```bash
-   python main.py
-   ```
+Advanced configuration options for filtering and sorting results.
 
-3. **Follow Prompts**:
-   - Select the input file.
-   - Provide a name for the Anki deck.
+3. NLP Query Refinement
 
-4. **Import Deck to Anki**:
-   - The generated `.apkg` file will be saved in the `ANKI/` directory.
+Lemmatization ensures more relevant searches.
 
-## Development Roadmap
+Configurable toggle to enable or disable NLP-based enhancements.
 
-### Next Steps
-1. **Pixabay Tag Filtering**:
-   - Use metadata tags to improve image relevance.
-2. **CLI Integration**:
-   - Add `argparse` or `click` for a command-line interface.
-3. **Testing Suite**:
-   - Implement unit tests for all modules in the `tests/` directory.
-4. **Advanced NLP Query Expansion**:
-   - Leverage NLP libraries like `spaCy` or `NLTK` to enhance query construction.
+4. Metadata Ranking
 
-## Contributing
+Results are sorted by metadata attributes like likes, downloads, and views to ensure the best image is selected.
 
-Feel free to contribute by submitting issues or pull requests. Make sure to follow the project's coding guidelines.
+5. Strict Filters and Tags
 
-## License
+Editor's choice filter for premium results.
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+Tag-based query support for precise searches.
 
-## Acknowledgments
+6. Robust Logging
 
-- **Pixabay**: For providing free image resources.
-- **Anki**: For their amazing spaced repetition software.
-- **Python Libraries**: tqdm, requests, genanki, and more.
+Detailed logs for:
+
+Query expansions.
+
+API requests and responses.
+
+Cache hits, misses, and expirations.
+
+Usage Instructions
+
+Prerequisites
+
+Install required Python libraries using:
+
+pip install -r requirements.txt
+
+Obtain a Pixabay API key from Pixabay.
+
+Setting Up
+
+Save the Pixabay API key:
+
+python main.py --save-key YOUR_API_KEY
+
+Configure config.json:
+
+{
+    "use_synonyms": true,
+    "rank_by_metadata": true,
+    "strict_filters": false,
+    "apply_nlp": true,
+    "tags": []
+}
+
+Run the application:
+
+python main.py
+
+Logging
+
+Logs are saved in the logs/ directory for debugging purposes.
+
+Testing
+
+To verify feature integration:
+
+Toggle feature settings in config.json.
+
+Observe logs to ensure all layers are working together harmoniously.
+
+Use sample queries to validate:
+
+Synonym expansion.
+
+Metadata ranking.
+
+Tag filtering.
+
+Future Improvements
+
+Diversify image sourcing with additional APIs.
+
+Optimize performance for large datasets and complex queries.
+
+Enhance NLP processing with contextual understanding.
+
+Changelog
+
+Version 1.3
+
+Integrated NLP-based query refinement.
+
+Added tag-based filtering and stricter search controls.
+
+Improved metadata-based ranking.
+
+Version 1.2
+
+Implemented dynamic synonym expansion using datamuse.
+
+Introduced caching for synonyms and API responses.
+
+Version 1.1
+
+Added Pixabay integration for fetching images.
+
+Basic query normalization and logging setup.
+
+Version 1.0
+
+Initial release with Anki deck generation and basic functionality.
+
