@@ -2,26 +2,37 @@ from datamuse import Datamuse
 import os
 import re
 import json
+import logging
+
+# Configure logger for the utils module
+logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
 CONFIG_FILE = "config.json"
 datamuse_api = Datamuse()
 SYNONYMS_FILE = "synonyms.json"
 
-def save_api_key(api_key):
+def save_api_key(api_key, config_file=CONFIG_FILE):
     """Save the API key to a config file."""
-    config = load_config() if os.path.exists(CONFIG_FILE) else {}
+    config = load_config(config_file) if os.path.exists(config_file) else {}
     config["pixabay_api_key"] = api_key
-    with open(CONFIG_FILE, "w") as f:
+    with open(config_file, "w") as f:
         json.dump(config, f)
     logger.debug("Pixabay API Key saved successfully.")
 
-def load_api_key():
+def load_api_key(config_file=CONFIG_FILE):
     """Load the API key from the config file."""
-    if os.path.exists(CONFIG_FILE):
-        with open(CONFIG_FILE, "r") as f:
-            config = json.load(f)
-        return config.get("pixabay_api_key")
+    if os.path.exists(config_file):
+        config = load_config(config_file)
+        return config.get("pixabay_api_key", None)
     return None
+
+def load_config(config_file=CONFIG_FILE):
+    """Load the configuration from the config file."""
+    if os.path.exists(config_file):
+        with open(config_file, "r") as f:
+            return json.load(f)
+    return {}
 
 def clean_string(input_string):
     """
