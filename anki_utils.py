@@ -7,20 +7,42 @@ import random
 
 logger = logging.getLogger(__name__)
 
+# Define a global model to use across all notes
+GLOBAL_MODEL = genanki.Model(
+    model_id=1234567890,  # Use a fixed model ID to ensure consistency
+    name="MySimpleModel",
+    fields=[
+        {"name": "Front"},
+        {"name": "Back"},
+        {"name": "ImageURL"},
+    ],
+    templates=[
+        {
+            "name": "Card 1",
+            "qfmt": "{{Front}}<br><br>{{#ImageURL}}<img src='{{ImageURL}}'><br>{{/ImageURL}}",
+            "afmt": "{{Front}}<hr id='answer'>{{Back}}",
+        },
+    ],
+)
+
 # Function to create an Anki deck
 def create_deck(deck_name):
     """
-    Creates a new Anki deck with a unique ID and returns the deck object.
+    Creates an Anki deck with a given name.
 
     Args:
-        deck_name (str): Name of the Anki deck.
+        deck_name (str): Name of the deck.
 
     Returns:
         genanki.Deck: Anki deck object.
     """
-    deck_id = random.randint(1, 2**63 - 1)
-    logger.debug(f"Creating deck with ID {deck_id} and name '{deck_name}'.")
-    return genanki.Deck(deck_id, deck_name)
+    try:
+        deck_id = 123456789  # Use a fixed deck ID for consistency
+        logger.debug(f"Creating deck with ID: {deck_id} and name: {deck_name}")
+        return genanki.Deck(deck_id, deck_name)
+    except Exception as e:
+        logger.error(f"Error creating deck: {e}")
+        raise
 
 # Function to create a model for the Anki deck
 def create_model():
@@ -50,41 +72,41 @@ def create_model():
     )
 
 # Function to add a note to an Anki deck
-def add_note_to_deck(deck, model, front_text, back_text, image_url=""):
+def add_note_to_deck(deck, front_text, back_text, image_url):
     """
     Adds a note to the provided Anki deck.
 
     Args:
-        deck (genanki.Deck): The Anki deck to which the note will be added.
-        model (genanki.Model): The model for the note.
-        front_text (str): Front text of the note.
-        back_text (str): Back text of the note.
-        image_url (str, optional): URL of the image to include. Defaults to "".
+        deck (genanki.Deck): Anki deck to add the note to.
+        front_text (str): Front of the card.
+        back_text (str): Back of the card.
+        image_url (str): Optional image URL for the card.
     """
     try:
         note = genanki.Note(
-            model=model,
-            fields=[front_text, back_text, image_url],
+            model=GLOBAL_MODEL,
+            fields=[front_text, back_text, image_url or ""],
         )
         deck.add_note(note)
-        logger.debug(f"Note added - Front: {front_text}, Back: {back_text}, Image URL: {image_url}")
+        logger.debug(f"Note added successfully: Front='{front_text}', Back='{back_text}'")
     except Exception as e:
         logger.error(f"Error adding note to deck: {e}")
+        raise
 
 # Function to export the Anki deck to a file
-def export_deck(deck, output_filename):
+def export_deck(deck, output_path):
     """
-    Exports the provided Anki deck to a .apkg file.
+    Exports the Anki deck to a file.
 
     Args:
-        deck (genanki.Deck): The Anki deck to export.
-        output_filename (str): The path to save the exported .apkg file.
+        deck (genanki.Deck): Anki deck to export.
+        output_path (str): Path to save the exported file.
     """
     try:
-        if not os.path.exists(os.path.dirname(output_filename)):
-            os.makedirs(os.path.dirname(output_filename))
+        logger.debug(f"Deck contains {len(deck.notes)} notes before export.")
         package = genanki.Package(deck)
-        package.write_to_file(output_filename)
-        logger.info(f"Deck exported successfully to {output_filename}")
+        package.write_to_file(output_path)
+        logger.info(f"Deck exported successfully to {output_path}")
     except Exception as e:
-        logger.error(f"Error exporting Anki deck: {e}")
+        logger.error(f"Error exporting deck: {e}")
+        raise

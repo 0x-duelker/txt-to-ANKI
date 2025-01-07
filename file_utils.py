@@ -60,9 +60,39 @@ def parse_input_file(input_file):
 
 def validate_input_file(input_file):
     """
-    Validate if the input file exists and is readable.
+    Validate if the input file exists, is readable, and contains valid Markdown table formatting.
+
+    Args:
+        input_file (str): Path to the input file.
+
+    Returns:
+        bool: True if the file is valid, False otherwise.
     """
     if not os.path.exists(input_file):
         raise FileNotFoundError(f"Input file {input_file} does not exist.")
     if not os.access(input_file, os.R_OK):
         raise PermissionError(f"Input file {input_file} is not readable.")
+
+    # Check for valid Markdown table formatting
+    with open(input_file, "r", encoding="utf-8") as file:
+        lines = file.readlines()
+        if len(lines) < 2:
+            # A valid table needs at least a header and one row
+            return False
+
+        headers = lines[0].strip()
+        separator = lines[1].strip()
+
+        # Validate header and separator
+        if "|" not in headers or "---" not in separator:
+            return False
+
+        # Ensure rows have consistent pipe-separated values
+        header_columns = [col.strip() for col in headers.split("|") if col.strip()]
+        for line in lines[2:]:
+            row_columns = [col.strip() for col in line.split("|") if col.strip()]
+            if len(row_columns) != len(header_columns):
+                return False
+
+    return True
+

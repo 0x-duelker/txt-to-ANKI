@@ -1,126 +1,118 @@
-# txt-to-ANKI
- This script reads from a txt file and generates corresponding ANKI flashcards, while also fetching relevant images for the front card from Unsplash. Its mainly geared towards language learners.
+# Anki Deck Generator
 
-# Anki Deck Generator with Pixabay Integration
-
-## Overview
-This project automates the creation of Anki decks from structured text input files, leveraging Pixabay's API to fetch relevant images dynamically. It is particularly useful for language learners or anyone creating visually-enhanced Anki cards.
+This project generates Anki decks with flashcards from a Markdown/CSV input file, integrating images dynamically fetched from Pixabay.
 
 ## Features
-- **Dynamic Image Search**: Fetches images from Pixabay based on card keywords and meanings.
-- **Synonym-Based Query Expansion**: Enhances image search by dynamically generating synonyms for better matches.
-- **Tag Filtering**: Filters Pixabay results using metadata tags for improved relevance.
-- **High-Quality Prioritization**: Selects images with higher popularity scores from Pixabay.
-- **Advanced NLP Query Expansion**: Utilizes natural language processing for better keyword generation.
-- **Caching**: Reduces API calls by caching results locally for 24 hours.
-- **Error Handling**: Logs skipped rows and API issues for manual review.
-- **Customizable Output**: Generates Anki decks with formatted front and back content, including optional image URLs.
 
-## Requirements
-### Python Libraries
-- `tkinter`: For file selection dialogs.
-- `csv`: For reading input files.
-- `requests`: For API requests.
-- `genanki`: For Anki deck creation.
-- `os`: For file system operations.
-- `re`: For text processing.
-- `json`: For handling API responses.
-- `time`: For timestamp-based caching.
-- `uuid`: For generating unique IDs.
-- `shelve`: For local caching.
-- `hashlib`: For generating cache keys.
-- `tqdm`: For progress bars.
-- `random`: For generating random deck IDs.
-- `logging`: For logging processes.
-- `nltk`: For dynamic synonym generation via WordNet.
+### Core Functionality
+- **Markdown/CSV Input Parsing**: Supports Markdown pipe tables or CSV-like inputs.
+- **Dynamic Image Integration**: Fetches relevant images using Pixabay API for each note.
+- **Anki Deck Creation**: Automatically generates `.apkg` Anki decks.
+- **Logging**: Comprehensive logging for debugging and progress tracking.
+- **Dynamic Synonyms**: Enhances image search accuracy by querying with dynamically matched synonyms (to be implemented).
 
-### External Dependencies
-- [Pixabay API Key](https://pixabay.com/api/docs/): Required for fetching images.
+### Modular Structure
+This project is modularized for better maintainability and scalability:
+
+1. **`file_utils.py`**
+   - Handles file and directory operations.
+   - Functions:
+     - `ensure_directories_exist()`: Ensures required directories exist.
+     - `parse_input_file()`: Parses the input file into rows.
+     - `validate_input_file()`: Validates input file format.
+
+2. **`pixabay_api.py`**
+   - Manages API interactions with Pixabay.
+   - Functions:
+     - `fetch_pixabay_image()`: Fetches images from Pixabay.
+     - `generate_cache_key()`: Generates unique cache keys for queries.
+
+3. **`anki_utils.py`**
+   - Manages Anki deck creation and note management.
+   - Functions:
+     - `create_deck()`: Initializes a new Anki deck.
+     - `add_note_to_deck()`: Adds notes to the deck.
+     - `export_deck()`: Exports the deck to `.apkg` format.
+
+4. **`utils.py`**
+   - Utility functions for string cleaning and configuration management.
+   - Functions:
+     - `clean_string()`: Removes special characters and normalizes spaces.
+     - `normalize_query()`: Prepares query strings for API requests.
+     - `save_config()`/`load_config()`: Saves and loads configurations.
+
+5. **`logging_utils.py`**
+   - Centralized logging setup and management.
+   - Functions:
+     - `setup_logging()`: Configures logging for the project.
+
+6. **`config.json`**
+   - Stores persistent configuration values such as the Pixabay API key.
+
+7. **`tests/`**
+   - Directory for unit tests (to be implemented).
+
+8. **Main Script (`main.py`):**
+   - Orchestrates the workflow.
+   - Handles user input and integrates functionalities from all modules.
 
 ## Installation
-1. Clone the repository:
+
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/anki-pixabay-generator.git
-   cd anki-pixabay-generator
+   git clone <repository_url>
+   cd <repository_directory>
    ```
-2. Install dependencies:
+
+2. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
-3. Download NLTK resources:
-   ```python
-   import nltk
-   nltk.download('wordnet')
-   nltk.download('omw-1.4')
-   ```
-4. Add your Pixabay API key:
-   Update the `PIXABAY_API_KEY` variable in the code.
+
+3. **Set Up Configuration**:
+   - The script will prompt for the Pixabay API key on the first run and save it in `config.json`.
 
 ## Usage
-1. Run the script:
+
+1. **Prepare Input File**:
+   - Place your Markdown/CSV file in the `input_files/` directory.
+
+2. **Run the Script**:
    ```bash
-   python txt-to-anki.py
+   python main.py
    ```
-2. Select your input file (Markdown or CSV format) using the file dialog.
-3. Enter a name for your Anki deck.
-4. The script processes the input file, searches for images, and generates the Anki deck.
-5. The output `.apkg` file is saved in the `ANKI` directory.
 
-### Input File Format
-The input file must be a Markdown or CSV table with the following structure:
+3. **Follow Prompts**:
+   - Select the input file.
+   - Provide a name for the Anki deck.
 
-| WORD         | CONJUGATIONS                | MEANING                | EXAMPLE SENTENCE (GERMAN)           |
-|--------------|-----------------------------|------------------------|-------------------------------------|
-| **werden**   | wird, wurde, **ist geworden** | to become              | *Sie ist leider krank geworden.*   |
+4. **Import Deck to Anki**:
+   - The generated `.apkg` file will be saved in the `ANKI/` directory.
 
-### Output
-The output deck will include:
-- **Front**: The word or phrase.
-- **Back**: Details such as conjugations, meaning, example sentence, and optional image credit.
-- **Image**: Dynamically fetched from Pixabay (if available).
+## Development Roadmap
 
-## Advanced Features
-### Synonym-Based Query Expansion
-Automatically fetches synonyms using WordNet to enhance search results when images are not initially found.
-
-### Tag Filtering
-Filters results based on metadata tags from Pixabay to improve relevance.
-
-### Popularity-Based Selection
-Prioritizes images with higher popularity scores for better visual quality.
-
-### NLP Query Expansion (Planned)
-Future versions will integrate NLP-based query refinement for enhanced keyword generation.
-
-## Logs
-All operations are logged to the `logs` directory, including skipped rows, API errors, and deck generation summaries.
-
-## Roadmap
-- [x] Add dynamic synonym generation
-- [x] Implement tag-based filtering
-- [ ] Integrate advanced NLP for query expansion
-- [ ] Support additional input formats (e.g., Excel)
+### Next Steps
+1. **Dynamic Synonyms for Image Search**:
+   - Enhance query accuracy by integrating synonyms dynamically.
+2. **Pixabay Tag Filtering**:
+   - Use metadata tags to improve image relevance.
+3. **CLI Integration**:
+   - Add `argparse` or `click` for a command-line interface.
+4. **Testing Suite**:
+   - Implement unit tests for all modules in the `tests/` directory.
+5. **Advanced NLP Query Expansion**:
+   - Leverage NLP libraries like `spaCy` or `NLTK` to enhance query construction.
 
 ## Contributing
-1. Fork the repository.
-2. Create a feature branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add feature description"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Submit a pull request.
+
+Feel free to contribute by submitting issues or pull requests. Make sure to follow the project's coding guidelines.
 
 ## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Acknowledgments
-- [Pixabay API](https://pixabay.com/api/docs/)
-- [NLTK](https://www.nltk.org/)
-- [Genanki Library](https://github.com/kerrickstaley/genanki)
+
+- **Pixabay**: For providing free image resources.
+- **Anki**: For their amazing spaced repetition software.
+- **Python Libraries**: tqdm, requests, genanki, and more.

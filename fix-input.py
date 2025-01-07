@@ -27,7 +27,7 @@ def fix_table_file(input_file, output_file):
 # Example Usage
 if __name__ == "__main__":
     input_filename = "WichtigsteVerben.md"  # Replace with your actual file name
-    output_filename = "WichtigsteVerben-fixed.md"
+    output_filename = "input_files/WichtigsteVerben-fixed.md"
     try:
         fix_table_file(input_filename, output_filename)
         print(f"File fixed and saved as '{output_filename}'.")
