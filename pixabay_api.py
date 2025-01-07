@@ -22,7 +22,7 @@ def generate_cache_key(query, params):
     return sha256(serialized.encode()).hexdigest()
 
 # Function to fetch an image from Pixabay
-def fetch_pixabay_image(query, api_key, synonym_dict=None):
+def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
     """
     Fetches an image URL and credit from Pixabay, using query expansion with synonyms if provided.
 
@@ -30,6 +30,7 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None):
         query (str): The search term for the image.
         api_key (str): Pixabay API key.
         synonym_dict (dict, optional): Dictionary of synonyms for query expansion.
+        config (dict, optional): Configuration for feature toggles and settings.
 
     Returns:
         tuple: Image URL and image credit string if found, otherwise (None, None).
@@ -38,18 +39,35 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None):
         logger.error("Pixabay API Key is missing.")
         return None, None
 
+    # Default configuration
+    config = config or {
+        "use_synonyms": True,
+        "rank_by_metadata": True,
+        "strict_filters": False,
+        "apply_nlp": False,
+    }
+
     url = "https://pixabay.com/api/"
     params = {
         "key": api_key,
         "image_type": "photo",
         "orientation": "horizontal",
         "safesearch": "true",
-        "per_page": 3,
-        "order": "popular",  # Added sorting by popularity
+        "per_page": 10,  # Increased to get more results for ranking
+        "order": "popular",  # Prioritize popular images
     }
 
-    # Expand query with synonyms if a synonym dictionary is provided
-    queries_to_try = expand_with_synonyms(query, synonym_dict) if synonym_dict else [query]
+    if config["strict_filters"]:
+        params.update({"editors_choice": "true"})  # Example of stricter filter
+
+    # Expand query with synonyms if enabled
+    queries_to_try = (expand_with_synonyms(query, synonym_dict)
+                      if synonym_dict and config["use_synonyms"]
+                      else [query])
+
+    if config["apply_nlp"]:
+        queries_to_try = [apply_nlp_refinement(q) for q in queries_to_try]
+
     cache_key_base = generate_cache_key(query, params)
 
     with shelve.open(CACHE_FILE) as cache:
@@ -87,8 +105,17 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None):
                     data = response.json()
 
                     if data.get("hits"):
-                        # Rank by popularity if multiple results
-                        image_info = max(data["hits"], key=lambda x: x.get("likes", 0))
+                        # Rank images by likes, downloads, and views if enabled
+                        ranked_images = (
+                            sorted(
+                                data["hits"],
+                                key=lambda x: (x.get("likes", 0), x.get("downloads", 0), x.get("views", 0)),
+                                reverse=True
+                            ) if config["rank_by_metadata"] else data["hits"]
+                        )
+
+                        # Select the top-ranked image
+                        image_info = ranked_images[0]
                         image_url = image_info.get("webformatURL")
                         image_credit = f"Image by {image_info.get('user')} from Pixabay"
 
@@ -110,3 +137,4 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None):
         except Exception as e:
             logger.error(f"Unexpected error during Pixabay fetch: {e}")
             return None, None
+
