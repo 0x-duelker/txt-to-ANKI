@@ -11,14 +11,34 @@ import uuid
 import shelve
 from hashlib import sha256
 from tqdm import tqdm
+import random
 import logging
+from datetime import datetime
+
+# Ensure logs directory exists
+log_dir = os.path.join(os.getcwd(), "logs")
+os.makedirs(log_dir, exist_ok=True)
+
+# Generate a timestamped log file
+log_filename = os.path.join(log_dir, f"anki_processing_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log")
 
 # Configure logging
-logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger(__name__)
+logging.basicConfig(
+    level=logging.DEBUG,  # Log everything to the file
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(log_filename),  # Log to file
+    ]
+)
 
+# Configure a separate logger for console output (only for progress bar)
+console_logger = logging.getLogger('console')
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.WARNING)  # Suppress verbose logs, only warnings/errors will show
+console_logger.addHandler(console_handler)
 
-
+logger = logging.getLogger(__name__)  # Main logger for file logs
+logger.info("Logging initialized. Logs will be saved to: %s", log_filename)
 PIXABAY_API_KEY = "48075518-5c8e3f88d3639f87f2db325c6"
 CACHE_FILE = os.path.join(os.getcwd(), "pixabay_cache.db")
 CACHE_EXPIRATION = 24 * 60 * 60  # 24 hours in seconds
@@ -42,7 +62,7 @@ def fetch_pixabay_image(query):
         "image_type": "photo",
         "orientation": "horizontal",
         "safesearch": "true",
-        "per_page": 1,
+        "per_page": 3,
     }
 
     cache_key = generate_cache_key(query, params)
@@ -147,6 +167,7 @@ def parse_input_file(input_file):
 
 
 def main():
+    skipped_rows = []  # Initialize skipped rows tracker
     root = tk.Tk()
     root.withdraw()
 
@@ -213,54 +234,79 @@ def main():
     # Parse the input file
     try:
         rows = parse_input_file(input_file)
+        if not rows:
+            logger.error("No valid rows found in the input file. Ensure the file has the correct format.")
+            tqdm.write("No valid rows found in the input file. Exiting.")
+            return
+        logger.info(f"Total rows parsed: {len(rows)}")
     except Exception as e:
         logger.error(f"Error parsing input file: {e}")
         return
 
+    # Process each row and create Anki notes
     for idx, row in enumerate(tqdm(rows, desc="Processing rows")):
         try:
+            logger.debug(f"Processing row {idx + 1}/{len(rows)}: {row}")
+
             # Extract the front text
-            logger.debug(f"Processing row {idx + 1}/{len(rows)}: {row}")  # Add progress tracking
-
-            front_text = row.get("WORD") or row.get("Front") or None
+            front_text = row.get("WORD") or row.get("Front")
             if not front_text:
-                tqdm.write(f"Skipping row with no valid 'WORD' or 'Front': {row}")
+                logger.warning(f"Skipping row with missing 'WORD' or 'Front': {row}")
                 continue
-
             front_text = front_text.strip()
 
-            # Fetch image from Pixabay if needed
-            image_url, image_credit = fetch_pixabay_image(front_text)
-            logger.debug(f"Fetched image URL: {image_url}")  # Debug fetched image
+            # Clean up the query to strip special characters before sending to Pixabay
+            query = re.sub(r"[^\w\s]", "", front_text).strip()
 
-            # Initialize the back text parts
+            # Fetch image from Pixabay
+            image_url, image_credit = fetch_pixabay_image(front_text)
+            logger.debug(f"Fetched image URL: {image_url}")
+
+            # Build back text
             back_parts = []
             for k, v in row.items():
-                if k.lower() == "word" or k.lower() == "front":
-                    continue
-                if v:  # Skip empty values
+                if k.lower() not in ["word", "front"] and v:
                     back_parts.append(f"<b>{k}:</b> {v.strip()}")
 
             if image_credit:
                 back_parts.append(f"<b>Image Credit:</b> {image_credit}")
 
-            # Ensure there's something in the back text
             if not back_parts:
-                tqdm.write(f"Skipping row with no valid back text: {row}")
+                logger.warning(f"Skipping row with no valid back text: {row}")
                 continue
 
             back_text = "<br>".join(back_parts)
 
-            # Create the Anki note
+            # Create and add the Anki note
             note = genanki.Note(
                 model=my_model,
                 fields=[front_text, back_text, image_url or ""],
             )
             my_deck.add_note(note)
-            logger.debug(f"Note added - Front: {front_text}, Back: {back_text}, Image URL: {image_url}")  # Debug
+            logger.debug(f"Note added - Front: {front_text}, Back: {back_text}, Image URL: {image_url}")
 
         except Exception as e:
-            logger.error(f"Error creating note for row {idx + 1}: {row} - {e}")  # Improved error context
+            logger.error(f"Error creating note for row {idx + 1}: {row} - {e}")
+
+
+    logger.info(f"Total notes added to deck: {len(my_deck.notes)}")
+    # Finalize and export the deck
+    if not my_deck.notes:
+        logger.error("No notes were added to the deck. Exiting without exporting.")
+        tqdm.write("No notes added. Exiting.")
+        return
+
+    logger.info(f"Processing complete: {len(rows)} rows processed, {len(my_deck.notes)} notes added, {len(skipped_rows)} rows skipped.")
+    logger.info(f"Total notes added to deck: {len(my_deck.notes)}")
+
+    try:
+        my_package = genanki.Package(my_deck)
+        my_package.write_to_file(output_filename)
+        logger.info(f"Deck exported successfully to {output_filename}")
+        tqdm.write(f"Anki deck created successfully! Saved to {output_filename}")
+    except Exception as e:
+        logger.error(f"Error exporting Anki deck: {e}")
+        tqdm.write("Error exporting Anki deck. Check logs for details.")
 
 if __name__ == "__main__":
     main()

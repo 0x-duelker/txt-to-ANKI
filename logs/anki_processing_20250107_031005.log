@@ -1,0 +1,1141 @@
+2025-01-07 03:10:05,099 - INFO - Logging initialized. Logs will be saved to: /Users/minervae/Library/Mobile Documents/com~apple~CloudDocs/___WORK/__DEUTSCH/_GDocs-Content/__ANKI-cards/txt-to-ANKI/logs/anki_processing_20250107_031005.log
+2025-01-07 03:10:05,110 - DEBUG - Cache hit for 'yellow flower'.
+2025-01-07 03:10:59,594 - DEBUG - Total notes in deck - 0
+2025-01-07 03:10:59,622 - DEBUG - Processing line - | WORD | CONJUGATIONS | MEANING | EXAMPLE SENTENCE (GERMAN) |
+2025-01-07 03:10:59,622 - DEBUG -  Found headers - ['WORD', 'CONJUGATIONS', 'MEANING', 'EXAMPLE SENTENCE (GERMAN)']
+2025-01-07 03:10:59,622 - DEBUG - Processing line - | ----- | ----- | ----- | ----- |
+2025-01-07 03:10:59,622 - DEBUG -  Skipping separator line.
+2025-01-07 03:10:59,622 - DEBUG - Processing line - | **backen** | backt (bäckt), backte (buk), **hat gebacken** | to bake | *Ich backe jedes Wochenende frisches Brot.* |
+2025-01-07 03:10:59,623 - DEBUG - Parsed row - {'WORD': '**backen**', 'CONJUGATIONS': 'backt (bäckt), backte (buk), **hat gebacken**', 'MEANING': 'to bake', 'EXAMPLE SENTENCE (GERMAN)': '*Ich backe jedes Wochenende frisches Brot.*'}
+2025-01-07 03:10:59,623 - DEBUG - Processing line - | **beginnen** | beginnt, begann, **hat begonnen** | to begin/start | *Der Kurs beginnt nächste Woche um 9 Uhr.* |
+2025-01-07 03:10:59,623 - DEBUG - Parsed row - {'WORD': '**beginnen**', 'CONJUGATIONS': 'beginnt, begann, **hat begonnen**', 'MEANING': 'to begin/start', 'EXAMPLE SENTENCE (GERMAN)': '*Der Kurs beginnt nächste Woche um 9 Uhr.*'}
+2025-01-07 03:10:59,623 - DEBUG - Processing line - | **beißen** | beißt, biss, **hat gebissen** | to bite | *Der Hund hat zum Glück nicht gebissen.* |
+2025-01-07 03:10:59,623 - DEBUG - Parsed row - {'WORD': '**beißen**', 'CONJUGATIONS': 'beißt, biss, **hat gebissen**', 'MEANING': 'to bite', 'EXAMPLE SENTENCE (GERMAN)': '*Der Hund hat zum Glück nicht gebissen.*'}
+2025-01-07 03:10:59,623 - DEBUG - Processing line - | **betrügen** | betrügt, betrog, **hat betrogen** | to deceive/cheat | *Er hat seine Geschäftspartner nie betrogen.* |
+2025-01-07 03:10:59,623 - DEBUG - Parsed row - {'WORD': '**betrügen**', 'CONJUGATIONS': 'betrügt, betrog, **hat betrogen**', 'MEANING': 'to deceive/cheat', 'EXAMPLE SENTENCE (GERMAN)': '*Er hat seine Geschäftspartner nie betrogen.*'}
+2025-01-07 03:10:59,623 - DEBUG - Processing line - | **biegen** | biegt, bog, **hat gebogen** | to bend | *Sie bog den Draht in eine runde Form.* |
+2025-01-07 03:10:59,623 - DEBUG - Parsed row - {'WORD': '**biegen**', 'CONJUGATIONS': 'biegt, bog, **hat gebogen**', 'MEANING': 'to bend', 'EXAMPLE SENTENCE (GERMAN)': '*Sie bog den Draht in eine runde Form.*'}
+2025-01-07 03:10:59,623 - DEBUG - Processing line - | **bieten** | bietet, bot, **hat geboten** | to offer | *Das Unternehmen bietet gute Arbeitsbedingungen.* |
+2025-01-07 03:10:59,623 - DEBUG - Parsed row - {'WORD': '**bieten**', 'CONJUGATIONS': 'bietet, bot, **hat geboten**', 'MEANING': 'to offer', 'EXAMPLE SENTENCE (GERMAN)': '*Das Unternehmen bietet gute Arbeitsbedingungen.*'}
+2025-01-07 03:10:59,624 - DEBUG - Processing line - | **binden** | bindet, band, **hat gebunden** | to tie/bind | *Er band das Paket mit einem festen Seil zusammen.* |
+2025-01-07 03:10:59,624 - DEBUG - Parsed row - {'WORD': '**binden**', 'CONJUGATIONS': 'bindet, band, **hat gebunden**', 'MEANING': 'to tie/bind', 'EXAMPLE SENTENCE (GERMAN)': '*Er band das Paket mit einem festen Seil zusammen.*'}
+2025-01-07 03:10:59,624 - DEBUG - Processing line - | **bitten** | bittet, bat, **hat gebeten** | to ask (for) | *Ich bat ihn um Hilfe bei der Präsentation.* |
+2025-01-07 03:10:59,624 - DEBUG - Parsed row - {'WORD': '**bitten**', 'CONJUGATIONS': 'bittet, bat, **hat gebeten**', 'MEANING': 'to ask (for)', 'EXAMPLE SENTENCE (GERMAN)': '*Ich bat ihn um Hilfe bei der Präsentation.*'}
+2025-01-07 03:10:59,624 - DEBUG - Processing line - | **blasen** | bläst, blies, **hat geblasen** | to blow | *Der Wind blies sehr stark gestern.* |
+2025-01-07 03:10:59,624 - DEBUG - Parsed row - {'WORD': '**blasen**', 'CONJUGATIONS': 'bläst, blies, **hat geblasen**', 'MEANING': 'to blow', 'EXAMPLE SENTENCE (GERMAN)': '*Der Wind blies sehr stark gestern.*'}
+2025-01-07 03:10:59,624 - DEBUG - Processing line - | **bleiben** | bleibt, blieb, **ist geblieben** | to stay/remain | *Sie blieb bis spät im Büro, um alles fertig zu machen.* |
+2025-01-07 03:10:59,624 - DEBUG - Parsed row - {'WORD': '**bleiben**', 'CONJUGATIONS': 'bleibt, blieb, **ist geblieben**', 'MEANING': 'to stay/remain', 'EXAMPLE SENTENCE (GERMAN)': '*Sie blieb bis spät im Büro, um alles fertig zu machen.*'}
+2025-01-07 03:10:59,624 - DEBUG - Processing line - | **braten** | brät, briet, **hat gebraten** | to fry/roast | *Er brät das Fleisch in der Pfanne an.* |
+2025-01-07 03:10:59,624 - DEBUG - Parsed row - {'WORD': '**braten**', 'CONJUGATIONS': 'brät, briet, **hat gebraten**', 'MEANING': 'to fry/roast', 'EXAMPLE SENTENCE (GERMAN)': '*Er brät das Fleisch in der Pfanne an.*'}
+2025-01-07 03:10:59,624 - DEBUG - Processing line - | **brechen** | bricht, brach, **hat gebrochen** | to break | *Sie hat sich den Arm gebrochen.* |
+2025-01-07 03:10:59,624 - DEBUG - Parsed row - {'WORD': '**brechen**', 'CONJUGATIONS': 'bricht, brach, **hat gebrochen**', 'MEANING': 'to break', 'EXAMPLE SENTENCE (GERMAN)': '*Sie hat sich den Arm gebrochen.*'}
+2025-01-07 03:10:59,624 - DEBUG - Processing line - | **brennen** | brennt, brannte, **hat gebrannt** | to burn | *Das Licht brannte die ganze Nacht.* |
+2025-01-07 03:10:59,624 - DEBUG - Parsed row - {'WORD': '**brennen**', 'CONJUGATIONS': 'brennt, brannte, **hat gebrannt**', 'MEANING': 'to burn', 'EXAMPLE SENTENCE (GERMAN)': '*Das Licht brannte die ganze Nacht.*'}
+2025-01-07 03:10:59,624 - DEBUG - Processing line - | **bringen** | bringt, brachte, **hat gebracht** | to bring | *Sie brachte die Unterlagen ins Sekretariat.* |
+2025-01-07 03:10:59,624 - DEBUG - Parsed row - {'WORD': '**bringen**', 'CONJUGATIONS': 'bringt, brachte, **hat gebracht**', 'MEANING': 'to bring', 'EXAMPLE SENTENCE (GERMAN)': '*Sie brachte die Unterlagen ins Sekretariat.*'}
+2025-01-07 03:10:59,624 - DEBUG - Processing line - | **denken** | denkt, dachte, **hat gedacht** | to think | *Ich dachte, das Meeting wäre morgen.* |
+2025-01-07 03:10:59,624 - DEBUG - Parsed row - {'WORD': '**denken**', 'CONJUGATIONS': 'denkt, dachte, **hat gedacht**', 'MEANING': 'to think', 'EXAMPLE SENTENCE (GERMAN)': '*Ich dachte, das Meeting wäre morgen.*'}
+2025-01-07 03:10:59,624 - DEBUG - Processing line - | **dringen** | dringt, drang, **ist/hat gedrungen** | to penetrate / insist | *Wasser drang in den Keller ein.* / *Er hat auf eine Antwort gedrungen.* |
+2025-01-07 03:10:59,625 - DEBUG - Parsed row - {'WORD': '**dringen**', 'CONJUGATIONS': 'dringt, drang, **ist/hat gedrungen**', 'MEANING': 'to penetrate / insist', 'EXAMPLE SENTENCE (GERMAN)': '*Wasser drang in den Keller ein.* / *Er hat auf eine Antwort gedrungen.*'}
+2025-01-07 03:10:59,625 - DEBUG - Processing line - | **dürfen** | darf, durfte, **hat gedurft** / **dürfen** (Modalverb) | to be allowed to | *Ich darf heute früher gehen.* |
+2025-01-07 03:10:59,625 - DEBUG - Parsed row - {'WORD': '**dürfen**', 'CONJUGATIONS': 'darf, durfte, **hat gedurft** / **dürfen** (Modalverb)', 'MEANING': 'to be allowed to', 'EXAMPLE SENTENCE (GERMAN)': '*Ich darf heute früher gehen.*'}
+2025-01-07 03:10:59,625 - DEBUG - Processing line - | **empfehlen** | empfiehlt, empfahl, **hat empfohlen** | to recommend | *Der Chef empfahl ihm einen Fortbildungskurs.* |
+2025-01-07 03:10:59,625 - DEBUG - Parsed row - {'WORD': '**empfehlen**', 'CONJUGATIONS': 'empfiehlt, empfahl, **hat empfohlen**', 'MEANING': 'to recommend', 'EXAMPLE SENTENCE (GERMAN)': '*Der Chef empfahl ihm einen Fortbildungskurs.*'}
+2025-01-07 03:10:59,625 - DEBUG - Processing line - | **erschrecken** | erschrickt, erschrak, **ist erschrocken** | to be startled | *Ich erschrak, als plötzlich das Licht ausfiel.* |
+2025-01-07 03:10:59,625 - DEBUG - Parsed row - {'WORD': '**erschrecken**', 'CONJUGATIONS': 'erschrickt, erschrak, **ist erschrocken**', 'MEANING': 'to be startled', 'EXAMPLE SENTENCE (GERMAN)': '*Ich erschrak, als plötzlich das Licht ausfiel.*'}
+2025-01-07 03:10:59,625 - DEBUG - Processing line - | **erwägen** | erwägt, erwog, **hat erwogen** | to consider | *Wir erwägen einen Wechsel des Lieferanten.* |
+2025-01-07 03:10:59,625 - DEBUG - Parsed row - {'WORD': '**erwägen**', 'CONJUGATIONS': 'erwägt, erwog, **hat erwogen**', 'MEANING': 'to consider', 'EXAMPLE SENTENCE (GERMAN)': '*Wir erwägen einen Wechsel des Lieferanten.*'}
+2025-01-07 03:10:59,625 - DEBUG - Processing line - | **essen** | isst, aß, **hat gegessen** | to eat | *Wir haben im neuen Restaurant gegessen.* |
+2025-01-07 03:10:59,625 - DEBUG - Parsed row - {'WORD': '**essen**', 'CONJUGATIONS': 'isst, aß, **hat gegessen**', 'MEANING': 'to eat', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben im neuen Restaurant gegessen.*'}
+2025-01-07 03:10:59,625 - DEBUG - Processing line - | **fahren** | fährt, fuhr, **ist/hat gefahren** | to drive/travel | *Sie ist gestern mit dem Auto nach Berlin gefahren.* / *Er hat den Bus gefahren.* |
+2025-01-07 03:10:59,625 - DEBUG - Parsed row - {'WORD': '**fahren**', 'CONJUGATIONS': 'fährt, fuhr, **ist/hat gefahren**', 'MEANING': 'to drive/travel', 'EXAMPLE SENTENCE (GERMAN)': '*Sie ist gestern mit dem Auto nach Berlin gefahren.* / *Er hat den Bus gefahren.*'}
+2025-01-07 03:10:59,625 - DEBUG - Processing line - | **fallen** | fällt, fiel, **ist gefallen** | to fall | *Das Glas fiel vom Tisch und zerbrach.* |
+2025-01-07 03:10:59,625 - DEBUG - Parsed row - {'WORD': '**fallen**', 'CONJUGATIONS': 'fällt, fiel, **ist gefallen**', 'MEANING': 'to fall', 'EXAMPLE SENTENCE (GERMAN)': '*Das Glas fiel vom Tisch und zerbrach.*'}
+2025-01-07 03:10:59,625 - DEBUG - Processing line - | **fangen** | fängt, fing, **hat gefangen** | to catch | *Sie fing den Ball mit einer Hand.* |
+2025-01-07 03:10:59,625 - DEBUG - Parsed row - {'WORD': '**fangen**', 'CONJUGATIONS': 'fängt, fing, **hat gefangen**', 'MEANING': 'to catch', 'EXAMPLE SENTENCE (GERMAN)': '*Sie fing den Ball mit einer Hand.*'}
+2025-01-07 03:10:59,625 - DEBUG - Processing line - | **finden** | findet, fand, **hat gefunden** | to find | *Wir haben endlich eine passende Lösung gefunden.* |
+2025-01-07 03:10:59,626 - DEBUG - Parsed row - {'WORD': '**finden**', 'CONJUGATIONS': 'findet, fand, **hat gefunden**', 'MEANING': 'to find', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben endlich eine passende Lösung gefunden.*'}
+2025-01-07 03:10:59,626 - DEBUG - Processing line - | **fliegen** | fliegt, flog, **ist/hat geflogen** | to fly | *Sie ist nach Paris geflogen.* / *Der Pilot hat das Flugzeug sicher geflogen.* |
+2025-01-07 03:10:59,626 - DEBUG - Parsed row - {'WORD': '**fliegen**', 'CONJUGATIONS': 'fliegt, flog, **ist/hat geflogen**', 'MEANING': 'to fly', 'EXAMPLE SENTENCE (GERMAN)': '*Sie ist nach Paris geflogen.* / *Der Pilot hat das Flugzeug sicher geflogen.*'}
+2025-01-07 03:10:59,626 - DEBUG - Processing line - | **fliehen** | flieht, floh, **ist geflohen** | to flee/escape | *Die Dorfbewohner flohen vor dem Hochwasser.* |
+2025-01-07 03:10:59,626 - DEBUG - Parsed row - {'WORD': '**fliehen**', 'CONJUGATIONS': 'flieht, floh, **ist geflohen**', 'MEANING': 'to flee/escape', 'EXAMPLE SENTENCE (GERMAN)': '*Die Dorfbewohner flohen vor dem Hochwasser.*'}
+2025-01-07 03:10:59,626 - DEBUG - Processing line - | **fließen** | fließt, floss, **ist geflossen** | to flow | *Der Fluss floss schneller nach dem Regen.* |
+2025-01-07 03:10:59,626 - DEBUG - Parsed row - {'WORD': '**fließen**', 'CONJUGATIONS': 'fließt, floss, **ist geflossen**', 'MEANING': 'to flow', 'EXAMPLE SENTENCE (GERMAN)': '*Der Fluss floss schneller nach dem Regen.*'}
+2025-01-07 03:10:59,626 - DEBUG - Processing line - | **fressen** | frisst, fraß, **hat gefressen** | to eat (for animals) | *Die Katzen haben das Futter schnell gefressen.* |
+2025-01-07 03:10:59,626 - DEBUG - Parsed row - {'WORD': '**fressen**', 'CONJUGATIONS': 'frisst, fraß, **hat gefressen**', 'MEANING': 'to eat (for animals)', 'EXAMPLE SENTENCE (GERMAN)': '*Die Katzen haben das Futter schnell gefressen.*'}
+2025-01-07 03:10:59,626 - DEBUG - Processing line - | **frieren** | friert, fror, **hat gefroren** | to freeze/to be cold | *Mir war so kalt, dass ich fast gefroren habe.* |
+2025-01-07 03:10:59,626 - DEBUG - Parsed row - {'WORD': '**frieren**', 'CONJUGATIONS': 'friert, fror, **hat gefroren**', 'MEANING': 'to freeze/to be cold', 'EXAMPLE SENTENCE (GERMAN)': '*Mir war so kalt, dass ich fast gefroren habe.*'}
+2025-01-07 03:10:59,626 - DEBUG - Processing line - | **geben** | gibt, gab, **hat gegeben** | to give | *Kannst du mir bitte das Buch geben?* |
+2025-01-07 03:10:59,626 - DEBUG - Parsed row - {'WORD': '**geben**', 'CONJUGATIONS': 'gibt, gab, **hat gegeben**', 'MEANING': 'to give', 'EXAMPLE SENTENCE (GERMAN)': '*Kannst du mir bitte das Buch geben?*'}
+2025-01-07 03:10:59,626 - DEBUG - Processing line - | **gedeihen** | gedeiht, gedieh, **ist gediehen** | to thrive/prosper | *Die Pflanzen gedeihen prächtig im Gewächshaus.* |
+2025-01-07 03:10:59,626 - DEBUG - Parsed row - {'WORD': '**gedeihen**', 'CONJUGATIONS': 'gedeiht, gedieh, **ist gediehen**', 'MEANING': 'to thrive/prosper', 'EXAMPLE SENTENCE (GERMAN)': '*Die Pflanzen gedeihen prächtig im Gewächshaus.*'}
+2025-01-07 03:10:59,626 - DEBUG - Processing line - | **gehen** | geht, ging, **ist gegangen** | to go/walk | *Wir sind zu Fuß nach Hause gegangen.* |
+2025-01-07 03:10:59,626 - DEBUG - Parsed row - {'WORD': '**gehen**', 'CONJUGATIONS': 'geht, ging, **ist gegangen**', 'MEANING': 'to go/walk', 'EXAMPLE SENTENCE (GERMAN)': '*Wir sind zu Fuß nach Hause gegangen.*'}
+2025-01-07 03:10:59,626 - DEBUG - Processing line - | **gelingen** | gelingt, gelang, **ist gelungen** | to succeed/manage | *Das Experiment ist uns endlich gelungen.* |
+2025-01-07 03:10:59,626 - DEBUG - Parsed row - {'WORD': '**gelingen**', 'CONJUGATIONS': 'gelingt, gelang, **ist gelungen**', 'MEANING': 'to succeed/manage', 'EXAMPLE SENTENCE (GERMAN)': '*Das Experiment ist uns endlich gelungen.*'}
+2025-01-07 03:10:59,627 - DEBUG - Processing line - | **gelten** | gilt, galt, **hat gegolten** | to be valid | *Die Fahrkarte gilt nur bis morgen.* |
+2025-01-07 03:10:59,627 - DEBUG - Parsed row - {'WORD': '**gelten**', 'CONJUGATIONS': 'gilt, galt, **hat gegolten**', 'MEANING': 'to be valid', 'EXAMPLE SENTENCE (GERMAN)': '*Die Fahrkarte gilt nur bis morgen.*'}
+2025-01-07 03:10:59,627 - DEBUG - Processing line - | **genießen** | genießt, genoss, **hat genossen** | to enjoy | *Ich habe den freien Tag sehr genossen.* |
+2025-01-07 03:10:59,627 - DEBUG - Parsed row - {'WORD': '**genießen**', 'CONJUGATIONS': 'genießt, genoss, **hat genossen**', 'MEANING': 'to enjoy', 'EXAMPLE SENTENCE (GERMAN)': '*Ich habe den freien Tag sehr genossen.*'}
+2025-01-07 03:10:59,627 - DEBUG - Processing line - | **geschehen** | geschieht, geschah, **ist geschehen** | to happen | *Zum Glück ist kein Unfall geschehen.* |
+2025-01-07 03:10:59,627 - DEBUG - Parsed row - {'WORD': '**geschehen**', 'CONJUGATIONS': 'geschieht, geschah, **ist geschehen**', 'MEANING': 'to happen', 'EXAMPLE SENTENCE (GERMAN)': '*Zum Glück ist kein Unfall geschehen.*'}
+2025-01-07 03:10:59,627 - DEBUG - Processing line - | **gewinnen** | gewinnt, gewann, **hat gewonnen** | to win | *Unsere Mannschaft hat das Spiel gewonnen.* |
+2025-01-07 03:10:59,627 - DEBUG - Parsed row - {'WORD': '**gewinnen**', 'CONJUGATIONS': 'gewinnt, gewann, **hat gewonnen**', 'MEANING': 'to win', 'EXAMPLE SENTENCE (GERMAN)': '*Unsere Mannschaft hat das Spiel gewonnen.*'}
+2025-01-07 03:10:59,627 - DEBUG - Processing line - | **gießen** | gießt, goss, **hat gegossen** | to pour/water | *Vergiss nicht, die Blumen zu gießen.* |
+2025-01-07 03:10:59,627 - DEBUG - Parsed row - {'WORD': '**gießen**', 'CONJUGATIONS': 'gießt, goss, **hat gegossen**', 'MEANING': 'to pour/water', 'EXAMPLE SENTENCE (GERMAN)': '*Vergiss nicht, die Blumen zu gießen.*'}
+2025-01-07 03:10:59,627 - DEBUG - Processing line - | **gleichen** | gleicht, glich, **hat geglichen** | to resemble | *Das Modell gleicht dem alten sehr.* |
+2025-01-07 03:10:59,628 - DEBUG - Parsed row - {'WORD': '**gleichen**', 'CONJUGATIONS': 'gleicht, glich, **hat geglichen**', 'MEANING': 'to resemble', 'EXAMPLE SENTENCE (GERMAN)': '*Das Modell gleicht dem alten sehr.*'}
+2025-01-07 03:10:59,628 - DEBUG - Processing line - | **gleiten** | gleitet, glitt, **ist geglitten** | to glide | *Der Vogel gleitet über den See.* |
+2025-01-07 03:10:59,628 - DEBUG - Parsed row - {'WORD': '**gleiten**', 'CONJUGATIONS': 'gleitet, glitt, **ist geglitten**', 'MEANING': 'to glide', 'EXAMPLE SENTENCE (GERMAN)': '*Der Vogel gleitet über den See.*'}
+2025-01-07 03:10:59,628 - DEBUG - Processing line - | **graben** | gräbt, grub, **hat gegraben** | to dig | *Sie grub ein tiefes Loch im Garten.* |
+2025-01-07 03:10:59,628 - DEBUG - Parsed row - {'WORD': '**graben**', 'CONJUGATIONS': 'gräbt, grub, **hat gegraben**', 'MEANING': 'to dig', 'EXAMPLE SENTENCE (GERMAN)': '*Sie grub ein tiefes Loch im Garten.*'}
+2025-01-07 03:10:59,628 - DEBUG - Processing line - | **greifen** | greift, griff, **hat gegriffen** | to grab/seize | *Er griff schnell nach dem Telefon.* |
+2025-01-07 03:10:59,628 - DEBUG - Parsed row - {'WORD': '**greifen**', 'CONJUGATIONS': 'greift, griff, **hat gegriffen**', 'MEANING': 'to grab/seize', 'EXAMPLE SENTENCE (GERMAN)': '*Er griff schnell nach dem Telefon.*'}
+2025-01-07 03:10:59,628 - DEBUG - Processing line - | **haben** | hat, hatte, **hat gehabt** | to have | *Wir haben heute ein wichtiges Meeting.* |
+2025-01-07 03:10:59,628 - DEBUG - Parsed row - {'WORD': '**haben**', 'CONJUGATIONS': 'hat, hatte, **hat gehabt**', 'MEANING': 'to have', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben heute ein wichtiges Meeting.*'}
+2025-01-07 03:10:59,628 - DEBUG - Processing line - | **halten** | hält, hielt, **hat gehalten** | to hold/stop | *Kannst du bitte kurz meine Tasche halten?* |
+2025-01-07 03:10:59,628 - DEBUG - Parsed row - {'WORD': '**halten**', 'CONJUGATIONS': 'hält, hielt, **hat gehalten**', 'MEANING': 'to hold/stop', 'EXAMPLE SENTENCE (GERMAN)': '*Kannst du bitte kurz meine Tasche halten?*'}
+2025-01-07 03:10:59,628 - DEBUG - Processing line - | **hängen** | hängt, hing, **hat gehangen** | to hang (intrans.) | *Das Bild hing an der Wand.* |
+2025-01-07 03:10:59,628 - DEBUG - Parsed row - {'WORD': '**hängen**', 'CONJUGATIONS': 'hängt, hing, **hat gehangen**', 'MEANING': 'to hang (intrans.)', 'EXAMPLE SENTENCE (GERMAN)': '*Das Bild hing an der Wand.*'}
+2025-01-07 03:10:59,628 - DEBUG - Processing line - | **hauen** | haut, haute (hieb), **hat gehauen** | to hit | *Er haute mit der Faust auf den Tisch.* |
+2025-01-07 03:10:59,629 - DEBUG - Parsed row - {'WORD': '**hauen**', 'CONJUGATIONS': 'haut, haute (hieb), **hat gehauen**', 'MEANING': 'to hit', 'EXAMPLE SENTENCE (GERMAN)': '*Er haute mit der Faust auf den Tisch.*'}
+2025-01-07 03:10:59,629 - DEBUG - Processing line - | **heben** | hebt, hob, **hat gehoben** | to lift | *Sie hob die schwere Kiste ohne Probleme.* |
+2025-01-07 03:10:59,629 - DEBUG - Parsed row - {'WORD': '**heben**', 'CONJUGATIONS': 'hebt, hob, **hat gehoben**', 'MEANING': 'to lift', 'EXAMPLE SENTENCE (GERMAN)': '*Sie hob die schwere Kiste ohne Probleme.*'}
+2025-01-07 03:10:59,629 - DEBUG - Processing line - | **heißen** | heißt, hieß, **hat geheißen** | to be called | *Ich heiße Anna und freue mich auf die Zusammenarbeit.* |
+2025-01-07 03:10:59,629 - DEBUG - Parsed row - {'WORD': '**heißen**', 'CONJUGATIONS': 'heißt, hieß, **hat geheißen**', 'MEANING': 'to be called', 'EXAMPLE SENTENCE (GERMAN)': '*Ich heiße Anna und freue mich auf die Zusammenarbeit.*'}
+2025-01-07 03:10:59,629 - DEBUG - Processing line - | **helfen** | hilft, half, **hat geholfen** | to help | *Vielen Dank, dass Sie mir bei der Recherche geholfen haben.* |
+2025-01-07 03:10:59,629 - DEBUG - Parsed row - {'WORD': '**helfen**', 'CONJUGATIONS': 'hilft, half, **hat geholfen**', 'MEANING': 'to help', 'EXAMPLE SENTENCE (GERMAN)': '*Vielen Dank, dass Sie mir bei der Recherche geholfen haben.*'}
+2025-01-07 03:10:59,629 - DEBUG - Processing line - | **kennen** | kennt, kannte, **hat gekannt** | to know (someone) | *Ich kenne ihn schon seit unserer Schulzeit.* |
+2025-01-07 03:10:59,629 - DEBUG - Parsed row - {'WORD': '**kennen**', 'CONJUGATIONS': 'kennt, kannte, **hat gekannt**', 'MEANING': 'to know (someone)', 'EXAMPLE SENTENCE (GERMAN)': '*Ich kenne ihn schon seit unserer Schulzeit.*'}
+2025-01-07 03:10:59,629 - DEBUG - Processing line - | **klingen** | klingt, klang, **hat geklungen** | to sound | *Das Angebot klingt sehr interessant.* |
+2025-01-07 03:10:59,629 - DEBUG - Parsed row - {'WORD': '**klingen**', 'CONJUGATIONS': 'klingt, klang, **hat geklungen**', 'MEANING': 'to sound', 'EXAMPLE SENTENCE (GERMAN)': '*Das Angebot klingt sehr interessant.*'}
+2025-01-07 03:10:59,629 - DEBUG - Processing line - | **kommen** | kommt, kam, **ist gekommen** | to come | *Sie ist gestern aus dem Urlaub zurückgekommen.* |
+2025-01-07 03:10:59,629 - DEBUG - Parsed row - {'WORD': '**kommen**', 'CONJUGATIONS': 'kommt, kam, **ist gekommen**', 'MEANING': 'to come', 'EXAMPLE SENTENCE (GERMAN)': '*Sie ist gestern aus dem Urlaub zurückgekommen.*'}
+2025-01-07 03:10:59,629 - DEBUG - Processing line - | **können** | kann, konnte, **hat gekonnt** / **können** (Modalverb) | to be able to | *Ich kann leider heute nicht länger bleiben.* |
+2025-01-07 03:10:59,629 - DEBUG - Parsed row - {'WORD': '**können**', 'CONJUGATIONS': 'kann, konnte, **hat gekonnt** / **können** (Modalverb)', 'MEANING': 'to be able to', 'EXAMPLE SENTENCE (GERMAN)': '*Ich kann leider heute nicht länger bleiben.*'}
+2025-01-07 03:10:59,630 - DEBUG - Processing line - | **laden** | lädt, lud, **hat geladen** | to load/invite | *Wir haben die Ware auf den LKW geladen.* |
+2025-01-07 03:10:59,630 - DEBUG - Parsed row - {'WORD': '**laden**', 'CONJUGATIONS': 'lädt, lud, **hat geladen**', 'MEANING': 'to load/invite', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben die Ware auf den LKW geladen.*'}
+2025-01-07 03:10:59,630 - DEBUG - Processing line - | **lassen** | lässt, ließ, **hat gelassen** | to let/leave | *Lass uns bitte die alten Dateien löschen.* |
+2025-01-07 03:10:59,630 - DEBUG - Parsed row - {'WORD': '**lassen**', 'CONJUGATIONS': 'lässt, ließ, **hat gelassen**', 'MEANING': 'to let/leave', 'EXAMPLE SENTENCE (GERMAN)': '*Lass uns bitte die alten Dateien löschen.*'}
+2025-01-07 03:10:59,630 - DEBUG - Processing line - | **laufen** | läuft, lief, **ist gelaufen** | to run/walk | *Der Motor lief nach der Reparatur wieder einwandfrei.* |
+2025-01-07 03:10:59,630 - DEBUG - Parsed row - {'WORD': '**laufen**', 'CONJUGATIONS': 'läuft, lief, **ist gelaufen**', 'MEANING': 'to run/walk', 'EXAMPLE SENTENCE (GERMAN)': '*Der Motor lief nach der Reparatur wieder einwandfrei.*'}
+2025-01-07 03:10:59,630 - DEBUG - Processing line - | **leiden** | leidet, litt, **hat gelitten** | to suffer | *Sie leidet oft unter Rückenschmerzen.* |
+2025-01-07 03:10:59,630 - DEBUG - Parsed row - {'WORD': '**leiden**', 'CONJUGATIONS': 'leidet, litt, **hat gelitten**', 'MEANING': 'to suffer', 'EXAMPLE SENTENCE (GERMAN)': '*Sie leidet oft unter Rückenschmerzen.*'}
+2025-01-07 03:10:59,630 - DEBUG - Processing line - | **leihen** | leiht, lieh, **hat geliehen** | to lend/borrow | *Er lieh mir sein Fahrrad für das Wochenende.* |
+2025-01-07 03:10:59,630 - DEBUG - Parsed row - {'WORD': '**leihen**', 'CONJUGATIONS': 'leiht, lieh, **hat geliehen**', 'MEANING': 'to lend/borrow', 'EXAMPLE SENTENCE (GERMAN)': '*Er lieh mir sein Fahrrad für das Wochenende.*'}
+2025-01-07 03:10:59,630 - DEBUG - Processing line - | **lesen** | liest, las, **hat gelesen** | to read | *Ich habe den Bericht bis zum Schluss gelesen.* |
+2025-01-07 03:10:59,630 - DEBUG - Parsed row - {'WORD': '**lesen**', 'CONJUGATIONS': 'liest, las, **hat gelesen**', 'MEANING': 'to read', 'EXAMPLE SENTENCE (GERMAN)': '*Ich habe den Bericht bis zum Schluss gelesen.*'}
+2025-01-07 03:10:59,630 - DEBUG - Processing line - | **liegen** | liegt, lag, **hat gelegen** | to lie | *Das Buch lag den ganzen Tag auf meinem Schreibtisch.* |
+2025-01-07 03:10:59,630 - DEBUG - Parsed row - {'WORD': '**liegen**', 'CONJUGATIONS': 'liegt, lag, **hat gelegen**', 'MEANING': 'to lie', 'EXAMPLE SENTENCE (GERMAN)': '*Das Buch lag den ganzen Tag auf meinem Schreibtisch.*'}
+2025-01-07 03:10:59,630 - DEBUG - Processing line - | **lügen** | lügt, log, **hat gelogen** | to lie | *Sie log, als sie sagte, sie hätte schon bezahlt.* |
+2025-01-07 03:10:59,630 - DEBUG - Parsed row - {'WORD': '**lügen**', 'CONJUGATIONS': 'lügt, log, **hat gelogen**', 'MEANING': 'to lie', 'EXAMPLE SENTENCE (GERMAN)': '*Sie log, als sie sagte, sie hätte schon bezahlt.*'}
+2025-01-07 03:10:59,630 - DEBUG - Processing line - | **mahlen** | mahlt, mahlte, **hat gemahlen** | to grind | *In dieser Mühle wird seit Jahren Getreide gemahlen.* |
+2025-01-07 03:10:59,630 - DEBUG - Parsed row - {'WORD': '**mahlen**', 'CONJUGATIONS': 'mahlt, mahlte, **hat gemahlen**', 'MEANING': 'to grind', 'EXAMPLE SENTENCE (GERMAN)': '*In dieser Mühle wird seit Jahren Getreide gemahlen.*'}
+2025-01-07 03:10:59,631 - DEBUG - Processing line - | **meiden** | meidet, mied, **hat gemieden** | to avoid | *Er meidet Konflikte, wo immer es geht.* |
+2025-01-07 03:10:59,631 - DEBUG - Parsed row - {'WORD': '**meiden**', 'CONJUGATIONS': 'meidet, mied, **hat gemieden**', 'MEANING': 'to avoid', 'EXAMPLE SENTENCE (GERMAN)': '*Er meidet Konflikte, wo immer es geht.*'}
+2025-01-07 03:10:59,631 - DEBUG - Processing line - | **messen** | misst, maß, **hat gemessen** | to measure | *Wir haben die Temperatur im Raum gemessen.* |
+2025-01-07 03:10:59,631 - DEBUG - Parsed row - {'WORD': '**messen**', 'CONJUGATIONS': 'misst, maß, **hat gemessen**', 'MEANING': 'to measure', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben die Temperatur im Raum gemessen.*'}
+2025-01-07 03:10:59,631 - DEBUG - Processing line - | **mögen** | mag, mochte, **hat gemocht** | to like | *Ich mochte schon immer dieses Restaurant.* |
+2025-01-07 03:10:59,631 - DEBUG - Parsed row - {'WORD': '**mögen**', 'CONJUGATIONS': 'mag, mochte, **hat gemocht**', 'MEANING': 'to like', 'EXAMPLE SENTENCE (GERMAN)': '*Ich mochte schon immer dieses Restaurant.*'}
+2025-01-07 03:10:59,631 - DEBUG - Processing line - | **müssen** | muss, musste, **hat gemusst** / **müssen** (Modalverb) | must/to have to | *Wir müssen uns beeilen, sonst verpassen wir den Zug.* |
+2025-01-07 03:10:59,631 - DEBUG - Parsed row - {'WORD': '**müssen**', 'CONJUGATIONS': 'muss, musste, **hat gemusst** / **müssen** (Modalverb)', 'MEANING': 'must/to have to', 'EXAMPLE SENTENCE (GERMAN)': '*Wir müssen uns beeilen, sonst verpassen wir den Zug.*'}
+2025-01-07 03:10:59,631 - DEBUG - Processing line - | **nehmen** | nimmt, nahm, **hat genommen** | to take | *Ich nehme nur ein Stück Kuchen, danke.* |
+2025-01-07 03:10:59,631 - DEBUG - Parsed row - {'WORD': '**nehmen**', 'CONJUGATIONS': 'nimmt, nahm, **hat genommen**', 'MEANING': 'to take', 'EXAMPLE SENTENCE (GERMAN)': '*Ich nehme nur ein Stück Kuchen, danke.*'}
+2025-01-07 03:10:59,631 - DEBUG - Processing line - | **nennen** | nennt, nannte, **hat genannt** | to name/call | *Wir nennen unser neues Produkt „SmartX“.* |
+2025-01-07 03:10:59,632 - DEBUG - Parsed row - {'WORD': '**nennen**', 'CONJUGATIONS': 'nennt, nannte, **hat genannt**', 'MEANING': 'to name/call', 'EXAMPLE SENTENCE (GERMAN)': '*Wir nennen unser neues Produkt „SmartX“.*'}
+2025-01-07 03:10:59,632 - DEBUG - Processing line - | **pfeifen** | pfeift, pfiff, **hat gepfiffen** | to whistle | *Der Schiedsrichter pfiff das Spiel ab.* |
+2025-01-07 03:10:59,632 - DEBUG - Parsed row - {'WORD': '**pfeifen**', 'CONJUGATIONS': 'pfeift, pfiff, **hat gepfiffen**', 'MEANING': 'to whistle', 'EXAMPLE SENTENCE (GERMAN)': '*Der Schiedsrichter pfiff das Spiel ab.*'}
+2025-01-07 03:10:59,632 - DEBUG - Processing line - | **quellen** | quillt, quoll, **ist gequollen** | to swell up (liquid) | *Der Teig quillt langsam auf.* |
+2025-01-07 03:10:59,632 - DEBUG - Parsed row - {'WORD': '**quellen**', 'CONJUGATIONS': 'quillt, quoll, **ist gequollen**', 'MEANING': 'to swell up (liquid)', 'EXAMPLE SENTENCE (GERMAN)': '*Der Teig quillt langsam auf.*'}
+2025-01-07 03:10:59,632 - DEBUG - Processing line - | **raten** | rät, riet, **hat geraten** | to advise/guess | *Der Arzt riet mir zu mehr Bewegung.* |
+2025-01-07 03:10:59,632 - DEBUG - Parsed row - {'WORD': '**raten**', 'CONJUGATIONS': 'rät, riet, **hat geraten**', 'MEANING': 'to advise/guess', 'EXAMPLE SENTENCE (GERMAN)': '*Der Arzt riet mir zu mehr Bewegung.*'}
+2025-01-07 03:10:59,632 - DEBUG - Processing line - | **reiben** | reibt, rieb, **hat gerieben** | to rub | *Sie rieb sich die Augen, weil sie müde war.* |
+2025-01-07 03:10:59,632 - DEBUG - Parsed row - {'WORD': '**reiben**', 'CONJUGATIONS': 'reibt, rieb, **hat gerieben**', 'MEANING': 'to rub', 'EXAMPLE SENTENCE (GERMAN)': '*Sie rieb sich die Augen, weil sie müde war.*'}
+2025-01-07 03:10:59,632 - DEBUG - Processing line - | **reiten** | reitet, ritt, **ist/hat geritten** | to ride (horse) | *Sie ist im Urlaub am Strand geritten.* / *Er hat sein Pferd über das Feld geritten.* |
+2025-01-07 03:10:59,633 - DEBUG - Parsed row - {'WORD': '**reiten**', 'CONJUGATIONS': 'reitet, ritt, **ist/hat geritten**', 'MEANING': 'to ride (horse)', 'EXAMPLE SENTENCE (GERMAN)': '*Sie ist im Urlaub am Strand geritten.* / *Er hat sein Pferd über das Feld geritten.*'}
+2025-01-07 03:10:59,633 - DEBUG - Processing line - | **rennen** | rennt, rannte, **ist gerannt** | to run/race | *Er rannte so schnell er konnte zum Bus.* |
+2025-01-07 03:10:59,633 - DEBUG - Parsed row - {'WORD': '**rennen**', 'CONJUGATIONS': 'rennt, rannte, **ist gerannt**', 'MEANING': 'to run/race', 'EXAMPLE SENTENCE (GERMAN)': '*Er rannte so schnell er konnte zum Bus.*'}
+2025-01-07 03:10:59,633 - DEBUG - Processing line - | **riechen** | riecht, roch, **hat gerochen** | to smell | *Die Rosen rochen wunderbar.* |
+2025-01-07 03:10:59,633 - DEBUG - Parsed row - {'WORD': '**riechen**', 'CONJUGATIONS': 'riecht, roch, **hat gerochen**', 'MEANING': 'to smell', 'EXAMPLE SENTENCE (GERMAN)': '*Die Rosen rochen wunderbar.*'}
+2025-01-07 03:10:59,633 - DEBUG - Processing line - | **rufen** | ruft, rief, **hat gerufen** | to call | *Sie rief laut nach Hilfe.* |
+2025-01-07 03:10:59,633 - DEBUG - Parsed row - {'WORD': '**rufen**', 'CONJUGATIONS': 'ruft, rief, **hat gerufen**', 'MEANING': 'to call', 'EXAMPLE SENTENCE (GERMAN)': '*Sie rief laut nach Hilfe.*'}
+2025-01-07 03:10:59,633 - DEBUG - Processing line - | **saufen** | säuft, soff, **hat gesoffen** | to booze/drink (animals) | *Die Pferde saufen Wasser am Fluss.* |
+2025-01-07 03:10:59,633 - DEBUG - Parsed row - {'WORD': '**saufen**', 'CONJUGATIONS': 'säuft, soff, **hat gesoffen**', 'MEANING': 'to booze/drink (animals)', 'EXAMPLE SENTENCE (GERMAN)': '*Die Pferde saufen Wasser am Fluss.*'}
+2025-01-07 03:10:59,633 - DEBUG - Processing line - | **schaffen** | schafft, schuf, **hat geschaffen** | to create | *Michelangelo schuf herausragende Werke.* (Regelmäßig: *Er schaffte seine Arbeit nicht.*) |
+2025-01-07 03:10:59,633 - DEBUG - Parsed row - {'WORD': '**schaffen**', 'CONJUGATIONS': 'schafft, schuf, **hat geschaffen**', 'MEANING': 'to create', 'EXAMPLE SENTENCE (GERMAN)': '*Michelangelo schuf herausragende Werke.* (Regelmäßig: *Er schaffte seine Arbeit nicht.*)'}
+2025-01-07 03:10:59,633 - DEBUG - Processing line - | **scheiden** | scheidet, schied, **hat geschieden** | to separate/divorce | *Sie hat sich von ihrem Mann scheiden lassen.* |
+2025-01-07 03:10:59,633 - DEBUG - Parsed row - {'WORD': '**scheiden**', 'CONJUGATIONS': 'scheidet, schied, **hat geschieden**', 'MEANING': 'to separate/divorce', 'EXAMPLE SENTENCE (GERMAN)': '*Sie hat sich von ihrem Mann scheiden lassen.*'}
+2025-01-07 03:10:59,633 - DEBUG - Processing line - | **scheinen** | scheint, schien, **hat geschienen** | to shine/seem | *Die Sonne schien den ganzen Tag.* / *Es scheint, als ob alles klappt.* |
+2025-01-07 03:10:59,633 - DEBUG - Parsed row - {'WORD': '**scheinen**', 'CONJUGATIONS': 'scheint, schien, **hat geschienen**', 'MEANING': 'to shine/seem', 'EXAMPLE SENTENCE (GERMAN)': '*Die Sonne schien den ganzen Tag.* / *Es scheint, als ob alles klappt.*'}
+2025-01-07 03:10:59,633 - DEBUG - Processing line - | **schieben** | schiebt, schob, **hat geschoben** | to push | *Er schob den Karton in die Ecke.* |
+2025-01-07 03:10:59,633 - DEBUG - Parsed row - {'WORD': '**schieben**', 'CONJUGATIONS': 'schiebt, schob, **hat geschoben**', 'MEANING': 'to push', 'EXAMPLE SENTENCE (GERMAN)': '*Er schob den Karton in die Ecke.*'}
+2025-01-07 03:10:59,633 - DEBUG - Processing line - | **schießen** | schießt, schoss, **hat geschossen** | to shoot | *Er schoss den Ball ins Tor.* |
+2025-01-07 03:10:59,634 - DEBUG - Parsed row - {'WORD': '**schießen**', 'CONJUGATIONS': 'schießt, schoss, **hat geschossen**', 'MEANING': 'to shoot', 'EXAMPLE SENTENCE (GERMAN)': '*Er schoss den Ball ins Tor.*'}
+2025-01-07 03:10:59,634 - DEBUG - Processing line - | **schlafen** | schläft, schlief, **hat geschlafen** | to sleep | *Ich habe letzte Nacht tief und fest geschlafen.* |
+2025-01-07 03:10:59,634 - DEBUG - Parsed row - {'WORD': '**schlafen**', 'CONJUGATIONS': 'schläft, schlief, **hat geschlafen**', 'MEANING': 'to sleep', 'EXAMPLE SENTENCE (GERMAN)': '*Ich habe letzte Nacht tief und fest geschlafen.*'}
+2025-01-07 03:10:59,634 - DEBUG - Processing line - | **schlagen** | schlägt, schlug, **hat geschlagen** | to hit/beat | *Sie schlug mit der Faust auf den Tisch.* |
+2025-01-07 03:10:59,634 - DEBUG - Parsed row - {'WORD': '**schlagen**', 'CONJUGATIONS': 'schlägt, schlug, **hat geschlagen**', 'MEANING': 'to hit/beat', 'EXAMPLE SENTENCE (GERMAN)': '*Sie schlug mit der Faust auf den Tisch.*'}
+2025-01-07 03:10:59,634 - DEBUG - Processing line - | **schleichen** | schleicht, schlich, **ist geschlichen** | to creep/sneak | *Die Katze schlich lautlos durch den Garten.* |
+2025-01-07 03:10:59,634 - DEBUG - Parsed row - {'WORD': '**schleichen**', 'CONJUGATIONS': 'schleicht, schlich, **ist geschlichen**', 'MEANING': 'to creep/sneak', 'EXAMPLE SENTENCE (GERMAN)': '*Die Katze schlich lautlos durch den Garten.*'}
+2025-01-07 03:10:59,634 - DEBUG - Processing line - | **schleifen** | schleift, schliff, **hat geschliffen** | to grind/sharpen | *Der Handwerker schliff das Werkzeug neu.* |
+2025-01-07 03:10:59,634 - DEBUG - Parsed row - {'WORD': '**schleifen**', 'CONJUGATIONS': 'schleift, schliff, **hat geschliffen**', 'MEANING': 'to grind/sharpen', 'EXAMPLE SENTENCE (GERMAN)': '*Der Handwerker schliff das Werkzeug neu.*'}
+2025-01-07 03:10:59,634 - DEBUG - Processing line - | **schließen** | schließt, schloss, **hat geschlossen** | to close | *Sie schloss die Tür und ging nach Hause.* |
+2025-01-07 03:10:59,634 - DEBUG - Parsed row - {'WORD': '**schließen**', 'CONJUGATIONS': 'schließt, schloss, **hat geschlossen**', 'MEANING': 'to close', 'EXAMPLE SENTENCE (GERMAN)': '*Sie schloss die Tür und ging nach Hause.*'}
+2025-01-07 03:10:59,634 - DEBUG - Processing line - | **schmeißen** | schmeißt, schmiss, **hat geschmissen** | to throw (colloquial) | *Er schmiss die alten Unterlagen in den Papierkorb.* |
+2025-01-07 03:10:59,634 - DEBUG - Parsed row - {'WORD': '**schmeißen**', 'CONJUGATIONS': 'schmeißt, schmiss, **hat geschmissen**', 'MEANING': 'to throw (colloquial)', 'EXAMPLE SENTENCE (GERMAN)': '*Er schmiss die alten Unterlagen in den Papierkorb.*'}
+2025-01-07 03:10:59,634 - DEBUG - Processing line - | **schmelzen** | schmilzt, schmolz, **ist/hat geschmolzen** | to melt | *Die Butter ist in der Sonne geschmolzen.* |
+2025-01-07 03:10:59,634 - DEBUG - Parsed row - {'WORD': '**schmelzen**', 'CONJUGATIONS': 'schmilzt, schmolz, **ist/hat geschmolzen**', 'MEANING': 'to melt', 'EXAMPLE SENTENCE (GERMAN)': '*Die Butter ist in der Sonne geschmolzen.*'}
+2025-01-07 03:10:59,634 - DEBUG - Processing line - | **schneiden** | schneidet, schnitt, **hat geschnitten** | to cut | *Bitte schneide das Gemüse in kleine Stücke.* |
+2025-01-07 03:10:59,635 - DEBUG - Parsed row - {'WORD': '**schneiden**', 'CONJUGATIONS': 'schneidet, schnitt, **hat geschnitten**', 'MEANING': 'to cut', 'EXAMPLE SENTENCE (GERMAN)': '*Bitte schneide das Gemüse in kleine Stücke.*'}
+2025-01-07 03:10:59,635 - DEBUG - Processing line - | **schreiben** | schreibt, schrieb, **hat geschrieben** | to write | *Sie schrieb einen Bericht über das Projekt.* |
+2025-01-07 03:10:59,635 - DEBUG - Parsed row - {'WORD': '**schreiben**', 'CONJUGATIONS': 'schreibt, schrieb, **hat geschrieben**', 'MEANING': 'to write', 'EXAMPLE SENTENCE (GERMAN)': '*Sie schrieb einen Bericht über das Projekt.*'}
+2025-01-07 03:10:59,635 - DEBUG - Processing line - | **schreien** | schreit, schrie, **hat geschrien** | to scream/shout | *Das Kind schrie laut nach seiner Mutter.* |
+2025-01-07 03:10:59,635 - DEBUG - Parsed row - {'WORD': '**schreien**', 'CONJUGATIONS': 'schreit, schrie, **hat geschrien**', 'MEANING': 'to scream/shout', 'EXAMPLE SENTENCE (GERMAN)': '*Das Kind schrie laut nach seiner Mutter.*'}
+2025-01-07 03:10:59,635 - DEBUG - Processing line - | **schreiten** | schreitet, schritt, **ist geschritten** | to stride | *Er schritt würdevoll durch den Festsaal.* |
+2025-01-07 03:10:59,635 - DEBUG - Parsed row - {'WORD': '**schreiten**', 'CONJUGATIONS': 'schreitet, schritt, **ist geschritten**', 'MEANING': 'to stride', 'EXAMPLE SENTENCE (GERMAN)': '*Er schritt würdevoll durch den Festsaal.*'}
+2025-01-07 03:10:59,635 - DEBUG - Processing line - | **schweigen** | schweigt, schwieg, **hat geschwiegen** | to be silent | *Sie schwieg, weil sie nichts Falsches sagen wollte.* |
+2025-01-07 03:10:59,635 - DEBUG - Parsed row - {'WORD': '**schweigen**', 'CONJUGATIONS': 'schweigt, schwieg, **hat geschwiegen**', 'MEANING': 'to be silent', 'EXAMPLE SENTENCE (GERMAN)': '*Sie schwieg, weil sie nichts Falsches sagen wollte.*'}
+2025-01-07 03:10:59,635 - DEBUG - Processing line - | **schwellen** | schwillt, schwoll, **ist geschwollen** | to swell | *Ihr Knöchel ist nach dem Sturz stark geschwollen.* |
+2025-01-07 03:10:59,635 - DEBUG - Parsed row - {'WORD': '**schwellen**', 'CONJUGATIONS': 'schwillt, schwoll, **ist geschwollen**', 'MEANING': 'to swell', 'EXAMPLE SENTENCE (GERMAN)': '*Ihr Knöchel ist nach dem Sturz stark geschwollen.*'}
+2025-01-07 03:10:59,635 - DEBUG - Processing line - | **schwimmen** | schwimmt, schwamm, **ist/hat geschwommen** | to swim | *Sie ist im See geschwommen.* / *Er hat 20 Bahnen geschwommen.* |
+2025-01-07 03:10:59,635 - DEBUG - Parsed row - {'WORD': '**schwimmen**', 'CONJUGATIONS': 'schwimmt, schwamm, **ist/hat geschwommen**', 'MEANING': 'to swim', 'EXAMPLE SENTENCE (GERMAN)': '*Sie ist im See geschwommen.* / *Er hat 20 Bahnen geschwommen.*'}
+2025-01-07 03:10:59,636 - DEBUG - Processing line - | **schwinden** | schwindet, schwand, **ist geschwunden** | to dwindle/fade | *Die Hoffnung schwand mit jeder weiteren schlechten Nachricht.* |
+2025-01-07 03:10:59,636 - DEBUG - Parsed row - {'WORD': '**schwinden**', 'CONJUGATIONS': 'schwindet, schwand, **ist geschwunden**', 'MEANING': 'to dwindle/fade', 'EXAMPLE SENTENCE (GERMAN)': '*Die Hoffnung schwand mit jeder weiteren schlechten Nachricht.*'}
+2025-01-07 03:10:59,636 - DEBUG - Processing line - | **schwingen** | schwingt, schwang, **hat geschwungen** | to swing | *Er schwang den Hammer, um den Nagel einzuschlagen.* |
+2025-01-07 03:10:59,636 - DEBUG - Parsed row - {'WORD': '**schwingen**', 'CONJUGATIONS': 'schwingt, schwang, **hat geschwungen**', 'MEANING': 'to swing', 'EXAMPLE SENTENCE (GERMAN)': '*Er schwang den Hammer, um den Nagel einzuschlagen.*'}
+2025-01-07 03:10:59,636 - DEBUG - Processing line - | **schwören** | schwört, schwor, **hat geschworen** | to swear | *Er schwor, immer die Wahrheit zu sagen.* |
+2025-01-07 03:10:59,636 - DEBUG - Parsed row - {'WORD': '**schwören**', 'CONJUGATIONS': 'schwört, schwor, **hat geschworen**', 'MEANING': 'to swear', 'EXAMPLE SENTENCE (GERMAN)': '*Er schwor, immer die Wahrheit zu sagen.*'}
+2025-01-07 03:10:59,636 - DEBUG - Processing line - | **sehen** | sieht, sah, **hat gesehen** | to see | *Ich habe dich gestern im Büro gesehen.* |
+2025-01-07 03:10:59,636 - DEBUG - Parsed row - {'WORD': '**sehen**', 'CONJUGATIONS': 'sieht, sah, **hat gesehen**', 'MEANING': 'to see', 'EXAMPLE SENTENCE (GERMAN)': '*Ich habe dich gestern im Büro gesehen.*'}
+2025-01-07 03:10:59,636 - DEBUG - Processing line - | **sein** | ist, war, **ist gewesen** | to be | *Wir sind gestern in der Stadt gewesen.* |
+2025-01-07 03:10:59,636 - DEBUG - Parsed row - {'WORD': '**sein**', 'CONJUGATIONS': 'ist, war, **ist gewesen**', 'MEANING': 'to be', 'EXAMPLE SENTENCE (GERMAN)': '*Wir sind gestern in der Stadt gewesen.*'}
+2025-01-07 03:10:59,636 - DEBUG - Processing line - | **senden** | sendet, sendete (sandte), **hat gesendet/gesandt** | to send | *Sie sandte/schickte mir eine E-Mail mit den Unterlagen.* |
+2025-01-07 03:10:59,636 - DEBUG - Parsed row - {'WORD': '**senden**', 'CONJUGATIONS': 'sendet, sendete (sandte), **hat gesendet/gesandt**', 'MEANING': 'to send', 'EXAMPLE SENTENCE (GERMAN)': '*Sie sandte/schickte mir eine E-Mail mit den Unterlagen.*'}
+2025-01-07 03:10:59,636 - DEBUG - Processing line - | **singen** | singt, sang, **hat gesungen** | to sing | *Der Chor sang ein wunderschönes Lied.* |
+2025-01-07 03:10:59,636 - DEBUG - Parsed row - {'WORD': '**singen**', 'CONJUGATIONS': 'singt, sang, **hat gesungen**', 'MEANING': 'to sing', 'EXAMPLE SENTENCE (GERMAN)': '*Der Chor sang ein wunderschönes Lied.*'}
+2025-01-07 03:10:59,636 - DEBUG - Processing line - | **sinken** | sinkt, sank, **ist gesunken** | to sink | *Der Wasserpegel sank nach einigen Tagen wieder.* |
+2025-01-07 03:10:59,636 - DEBUG - Parsed row - {'WORD': '**sinken**', 'CONJUGATIONS': 'sinkt, sank, **ist gesunken**', 'MEANING': 'to sink', 'EXAMPLE SENTENCE (GERMAN)': '*Der Wasserpegel sank nach einigen Tagen wieder.*'}
+2025-01-07 03:10:59,636 - DEBUG - Processing line - | **sitzen** | sitzt, saß, **hat gesessen** | to sit | *Ich habe den ganzen Tag am Schreibtisch gesessen.* |
+2025-01-07 03:10:59,637 - DEBUG - Parsed row - {'WORD': '**sitzen**', 'CONJUGATIONS': 'sitzt, saß, **hat gesessen**', 'MEANING': 'to sit', 'EXAMPLE SENTENCE (GERMAN)': '*Ich habe den ganzen Tag am Schreibtisch gesessen.*'}
+2025-01-07 03:10:59,637 - DEBUG - Processing line - | **sollen** | soll, sollte, **hat gesollt** / **sollen** (Modalverb) | should | *Wir sollen die Präsentation bis Freitag fertig haben.* |
+2025-01-07 03:10:59,637 - DEBUG - Parsed row - {'WORD': '**sollen**', 'CONJUGATIONS': 'soll, sollte, **hat gesollt** / **sollen** (Modalverb)', 'MEANING': 'should', 'EXAMPLE SENTENCE (GERMAN)': '*Wir sollen die Präsentation bis Freitag fertig haben.*'}
+2025-01-07 03:10:59,637 - DEBUG - Processing line - | **spinnen** | spinnt, spann, **hat gesponnen** | to spin / talk nonsense | *Die Spinne spinnt ein Netz.* / *Er spinnt wohl, wenn er so etwas behauptet.* |
+2025-01-07 03:10:59,637 - DEBUG - Parsed row - {'WORD': '**spinnen**', 'CONJUGATIONS': 'spinnt, spann, **hat gesponnen**', 'MEANING': 'to spin / talk nonsense', 'EXAMPLE SENTENCE (GERMAN)': '*Die Spinne spinnt ein Netz.* / *Er spinnt wohl, wenn er so etwas behauptet.*'}
+2025-01-07 03:10:59,637 - DEBUG - Processing line - | **sprechen** | spricht, sprach, **hat gesprochen** | to speak | *Wir haben lange über das Problem gesprochen.* |
+2025-01-07 03:10:59,637 - DEBUG - Parsed row - {'WORD': '**sprechen**', 'CONJUGATIONS': 'spricht, sprach, **hat gesprochen**', 'MEANING': 'to speak', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben lange über das Problem gesprochen.*'}
+2025-01-07 03:10:59,637 - DEBUG - Processing line - | **springen** | springt, sprang, **ist gesprungen** | to jump | *Der Hund sprang über den Zaun.* |
+2025-01-07 03:10:59,637 - DEBUG - Parsed row - {'WORD': '**springen**', 'CONJUGATIONS': 'springt, sprang, **ist gesprungen**', 'MEANING': 'to jump', 'EXAMPLE SENTENCE (GERMAN)': '*Der Hund sprang über den Zaun.*'}
+2025-01-07 03:10:59,637 - DEBUG - Processing line - | **stechen** | sticht, stach, **hat gestochen** | to sting/prick | *Die Biene stach ihn in den Arm.* |
+2025-01-07 03:10:59,637 - DEBUG - Parsed row - {'WORD': '**stechen**', 'CONJUGATIONS': 'sticht, stach, **hat gestochen**', 'MEANING': 'to sting/prick', 'EXAMPLE SENTENCE (GERMAN)': '*Die Biene stach ihn in den Arm.*'}
+2025-01-07 03:10:59,637 - DEBUG - Processing line - | **stehen** | steht, stand, **hat gestanden** | to stand | *Der Schrank steht schon seit Jahren in der Ecke.* |
+2025-01-07 03:10:59,637 - DEBUG - Parsed row - {'WORD': '**stehen**', 'CONJUGATIONS': 'steht, stand, **hat gestanden**', 'MEANING': 'to stand', 'EXAMPLE SENTENCE (GERMAN)': '*Der Schrank steht schon seit Jahren in der Ecke.*'}
+2025-01-07 03:10:59,637 - DEBUG - Processing line - | **stehlen** | stiehlt, stahl, **hat gestohlen** | to steal | *Jemand hat mein Fahrrad gestohlen.* |
+2025-01-07 03:10:59,637 - DEBUG - Parsed row - {'WORD': '**stehlen**', 'CONJUGATIONS': 'stiehlt, stahl, **hat gestohlen**', 'MEANING': 'to steal', 'EXAMPLE SENTENCE (GERMAN)': '*Jemand hat mein Fahrrad gestohlen.*'}
+2025-01-07 03:10:59,637 - DEBUG - Processing line - | **steigen** | steigt, stieg, **ist gestiegen** | to climb/rise | *Die Preise sind stark gestiegen.* |
+2025-01-07 03:10:59,637 - DEBUG - Parsed row - {'WORD': '**steigen**', 'CONJUGATIONS': 'steigt, stieg, **ist gestiegen**', 'MEANING': 'to climb/rise', 'EXAMPLE SENTENCE (GERMAN)': '*Die Preise sind stark gestiegen.*'}
+2025-01-07 03:10:59,638 - DEBUG - Processing line - | **sterben** | stirbt, starb, **ist gestorben** | to die | *Leider ist seine Großmutter vergangene Woche gestorben.* |
+2025-01-07 03:10:59,638 - DEBUG - Parsed row - {'WORD': '**sterben**', 'CONJUGATIONS': 'stirbt, starb, **ist gestorben**', 'MEANING': 'to die', 'EXAMPLE SENTENCE (GERMAN)': '*Leider ist seine Großmutter vergangene Woche gestorben.*'}
+2025-01-07 03:10:59,638 - DEBUG - Processing line - | **stinken** | stinkt, stank, **hat gestunken** | to stink | *Der Müll stank fürchterlich.* |
+2025-01-07 03:10:59,638 - DEBUG - Parsed row - {'WORD': '**stinken**', 'CONJUGATIONS': 'stinkt, stank, **hat gestunken**', 'MEANING': 'to stink', 'EXAMPLE SENTENCE (GERMAN)': '*Der Müll stank fürchterlich.*'}
+2025-01-07 03:10:59,638 - DEBUG - Processing line - | **stoßen** | stößt, stieß, **hat/ist gestoßen** | to push/bump | *Sie ist mit dem Fuß gegen den Tisch gestoßen.* / *Er hat die Tür mit Kraft aufgestoßen.* |
+2025-01-07 03:10:59,638 - DEBUG - Parsed row - {'WORD': '**stoßen**', 'CONJUGATIONS': 'stößt, stieß, **hat/ist gestoßen**', 'MEANING': 'to push/bump', 'EXAMPLE SENTENCE (GERMAN)': '*Sie ist mit dem Fuß gegen den Tisch gestoßen.* / *Er hat die Tür mit Kraft aufgestoßen.*'}
+2025-01-07 03:10:59,638 - DEBUG - Processing line - | **streichen** | streicht, strich, **hat gestrichen** | to paint/strike out | *Wir haben das Wohnzimmer weiß gestrichen.* |
+2025-01-07 03:10:59,638 - DEBUG - Parsed row - {'WORD': '**streichen**', 'CONJUGATIONS': 'streicht, strich, **hat gestrichen**', 'MEANING': 'to paint/strike out', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben das Wohnzimmer weiß gestrichen.*'}
+2025-01-07 03:10:59,638 - DEBUG - Processing line - | **streiten** | streitet, stritt, **hat gestritten** | to argue/quarrel | *Die Geschwister stritten oft über Kleinigkeiten.* |
+2025-01-07 03:10:59,638 - DEBUG - Parsed row - {'WORD': '**streiten**', 'CONJUGATIONS': 'streitet, stritt, **hat gestritten**', 'MEANING': 'to argue/quarrel', 'EXAMPLE SENTENCE (GERMAN)': '*Die Geschwister stritten oft über Kleinigkeiten.*'}
+2025-01-07 03:10:59,638 - DEBUG - Processing line - | **tragen** | trägt, trug, **hat getragen** | to carry/wear | *Sie trägt gern bequeme Schuhe im Büro.* |
+2025-01-07 03:10:59,638 - DEBUG - Parsed row - {'WORD': '**tragen**', 'CONJUGATIONS': 'trägt, trug, **hat getragen**', 'MEANING': 'to carry/wear', 'EXAMPLE SENTENCE (GERMAN)': '*Sie trägt gern bequeme Schuhe im Büro.*'}
+2025-01-07 03:10:59,638 - DEBUG - Processing line - | **treffen** | trifft, traf, **hat getroffen** | to meet/strike | *Gestern traf ich mich mit alten Schulfreunden.* |
+2025-01-07 03:10:59,638 - DEBUG - Parsed row - {'WORD': '**treffen**', 'CONJUGATIONS': 'trifft, traf, **hat getroffen**', 'MEANING': 'to meet/strike', 'EXAMPLE SENTENCE (GERMAN)': '*Gestern traf ich mich mit alten Schulfreunden.*'}
+2025-01-07 03:10:59,638 - DEBUG - Processing line - | **treiben** | treibt, trieb, **hat/ist getrieben** | to drive/propel | *Der Wind hat das Boot ans Ufer getrieben.* / *Sie treibt gern Sport.* |
+2025-01-07 03:10:59,638 - DEBUG - Parsed row - {'WORD': '**treiben**', 'CONJUGATIONS': 'treibt, trieb, **hat/ist getrieben**', 'MEANING': 'to drive/propel', 'EXAMPLE SENTENCE (GERMAN)': '*Der Wind hat das Boot ans Ufer getrieben.* / *Sie treibt gern Sport.*'}
+2025-01-07 03:10:59,638 - DEBUG - Processing line - | **treten** | tritt, trat, **ist/hat getreten** | to step/kick | *Er trat versehentlich auf meinen Fuß.* / *Sie hat den Ball getreten.* |
+2025-01-07 03:10:59,638 - DEBUG - Parsed row - {'WORD': '**treten**', 'CONJUGATIONS': 'tritt, trat, **ist/hat getreten**', 'MEANING': 'to step/kick', 'EXAMPLE SENTENCE (GERMAN)': '*Er trat versehentlich auf meinen Fuß.* / *Sie hat den Ball getreten.*'}
+2025-01-07 03:10:59,639 - DEBUG - Processing line - | **trinken** | trinkt, trank, **hat getrunken** | to drink | *Wir haben zur Feier Sekt getrunken.* |
+2025-01-07 03:10:59,639 - DEBUG - Parsed row - {'WORD': '**trinken**', 'CONJUGATIONS': 'trinkt, trank, **hat getrunken**', 'MEANING': 'to drink', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben zur Feier Sekt getrunken.*'}
+2025-01-07 03:10:59,639 - DEBUG - Processing line - | **tun** | tut, tat, **hat getan** | to do | *Was kann ich für Sie tun?* |
+2025-01-07 03:10:59,639 - DEBUG - Parsed row - {'WORD': '**tun**', 'CONJUGATIONS': 'tut, tat, **hat getan**', 'MEANING': 'to do', 'EXAMPLE SENTENCE (GERMAN)': '*Was kann ich für Sie tun?*'}
+2025-01-07 03:10:59,639 - DEBUG - Processing line - | **vergessen** | vergisst, vergaß, **hat vergessen** | to forget | *Ich habe völlig vergessen, den Termin einzutragen.* |
+2025-01-07 03:10:59,639 - DEBUG - Parsed row - {'WORD': '**vergessen**', 'CONJUGATIONS': 'vergisst, vergaß, **hat vergessen**', 'MEANING': 'to forget', 'EXAMPLE SENTENCE (GERMAN)': '*Ich habe völlig vergessen, den Termin einzutragen.*'}
+2025-01-07 03:10:59,639 - DEBUG - Processing line - | **verlieren** | verliert, verlor, **hat verloren** | to lose | *Sie hat ihren Schlüssel verloren.* |
+2025-01-07 03:10:59,639 - DEBUG - Parsed row - {'WORD': '**verlieren**', 'CONJUGATIONS': 'verliert, verlor, **hat verloren**', 'MEANING': 'to lose', 'EXAMPLE SENTENCE (GERMAN)': '*Sie hat ihren Schlüssel verloren.*'}
+2025-01-07 03:10:59,639 - DEBUG - Processing line - | **verschleißen** | verschleißt, verschliss, **hat/ist verschlissen** | to wear out | *Die Reifen sind im Winter schnell verschlissen.* |
+2025-01-07 03:10:59,639 - DEBUG - Parsed row - {'WORD': '**verschleißen**', 'CONJUGATIONS': 'verschleißt, verschliss, **hat/ist verschlissen**', 'MEANING': 'to wear out', 'EXAMPLE SENTENCE (GERMAN)': '*Die Reifen sind im Winter schnell verschlissen.*'}
+2025-01-07 03:10:59,639 - DEBUG - Processing line - | **verzeihen** | verzeiht, verzieh, **hat verziehen** | to forgive | *Bitte verzeih mir den Fehler.* |
+2025-01-07 03:10:59,639 - DEBUG - Parsed row - {'WORD': '**verzeihen**', 'CONJUGATIONS': 'verzeiht, verzieh, **hat verziehen**', 'MEANING': 'to forgive', 'EXAMPLE SENTENCE (GERMAN)': '*Bitte verzeih mir den Fehler.*'}
+2025-01-07 03:10:59,639 - DEBUG - Processing line - | **wachsen** | wächst, wuchs, **ist gewachsen** | to grow | *Die Pflanzen sind im Frühling stark gewachsen.* |
+2025-01-07 03:10:59,639 - DEBUG - Parsed row - {'WORD': '**wachsen**', 'CONJUGATIONS': 'wächst, wuchs, **ist gewachsen**', 'MEANING': 'to grow', 'EXAMPLE SENTENCE (GERMAN)': '*Die Pflanzen sind im Frühling stark gewachsen.*'}
+2025-01-07 03:10:59,640 - DEBUG - Processing line - | **waschen** | wäscht, wusch, **hat gewaschen** | to wash | *Er hat sein Auto am Wochenende gewaschen.* |
+2025-01-07 03:10:59,640 - DEBUG - Parsed row - {'WORD': '**waschen**', 'CONJUGATIONS': 'wäscht, wusch, **hat gewaschen**', 'MEANING': 'to wash', 'EXAMPLE SENTENCE (GERMAN)': '*Er hat sein Auto am Wochenende gewaschen.*'}
+2025-01-07 03:10:59,640 - DEBUG - Processing line - | **weisen** | weist, wies, **hat gewiesen** | to point/show | *Der Wegweiser weist nach Norden.* |
+2025-01-07 03:10:59,640 - DEBUG - Parsed row - {'WORD': '**weisen**', 'CONJUGATIONS': 'weist, wies, **hat gewiesen**', 'MEANING': 'to point/show', 'EXAMPLE SENTENCE (GERMAN)': '*Der Wegweiser weist nach Norden.*'}
+2025-01-07 03:10:59,640 - DEBUG - Processing line - | **wenden** | wendet, wandte, **hat gewandt** (Regelm. Variante: *wendete*) | to turn (around) | *Er wandte das Auto auf der engen Straße.* |
+2025-01-07 03:10:59,640 - DEBUG - Parsed row - {'WORD': '**wenden**', 'CONJUGATIONS': 'wendet, wandte, **hat gewandt** (Regelm. Variante: *wendete*)', 'MEANING': 'to turn (around)', 'EXAMPLE SENTENCE (GERMAN)': '*Er wandte das Auto auf der engen Straße.*'}
+2025-01-07 03:10:59,640 - DEBUG - Processing line - | **werben** | wirbt, warb, **hat geworben** | to advertise/recruit | *Die Firma wirbt verstärkt um neue Fachkräfte.* |
+2025-01-07 03:10:59,640 - DEBUG - Parsed row - {'WORD': '**werben**', 'CONJUGATIONS': 'wirbt, warb, **hat geworben**', 'MEANING': 'to advertise/recruit', 'EXAMPLE SENTENCE (GERMAN)': '*Die Firma wirbt verstärkt um neue Fachkräfte.*'}
+2025-01-07 03:10:59,640 - DEBUG - Processing line - | **werden** | wird, wurde, **ist geworden** | to become | *Sie ist leider krank geworden.* |
+2025-01-07 03:10:59,640 - DEBUG - Parsed row - {'WORD': '**werden**', 'CONJUGATIONS': 'wird, wurde, **ist geworden**', 'MEANING': 'to become', 'EXAMPLE SENTENCE (GERMAN)': '*Sie ist leider krank geworden.*'}
+2025-01-07 03:10:59,640 - DEBUG - Processing line - | **werfen** | wirft, warf, **hat geworfen** | to throw | *Bitte wirf den Müll in die Tonne.* |
+2025-01-07 03:10:59,640 - DEBUG - Parsed row - {'WORD': '**werfen**', 'CONJUGATIONS': 'wirft, warf, **hat geworfen**', 'MEANING': 'to throw', 'EXAMPLE SENTENCE (GERMAN)': '*Bitte wirf den Müll in die Tonne.*'}
+2025-01-07 03:10:59,640 - DEBUG - Processing line - | **wiegen** | wiegt, wog, **hat gewogen** | to weigh | *Der Koffer wiegt fast 20 Kilo.* |
+2025-01-07 03:10:59,640 - DEBUG - Parsed row - {'WORD': '**wiegen**', 'CONJUGATIONS': 'wiegt, wog, **hat gewogen**', 'MEANING': 'to weigh', 'EXAMPLE SENTENCE (GERMAN)': '*Der Koffer wiegt fast 20 Kilo.*'}
+2025-01-07 03:10:59,640 - DEBUG - Processing line - | **wissen** | weiß, wusste, **hat gewusst** | to know | *Ich wusste nicht, dass du heute frei hast.* |
+2025-01-07 03:10:59,640 - DEBUG - Parsed row - {'WORD': '**wissen**', 'CONJUGATIONS': 'weiß, wusste, **hat gewusst**', 'MEANING': 'to know', 'EXAMPLE SENTENCE (GERMAN)': '*Ich wusste nicht, dass du heute frei hast.*'}
+2025-01-07 03:10:59,640 - DEBUG - Processing line - | **wollen** | will, wollte, **hat gewollt** (auch: **wollen**) | to want | *Ich wollte dir noch etwas Wichtiges sagen.* |
+2025-01-07 03:10:59,640 - DEBUG - Parsed row - {'WORD': '**wollen**', 'CONJUGATIONS': 'will, wollte, **hat gewollt** (auch: **wollen**)', 'MEANING': 'to want', 'EXAMPLE SENTENCE (GERMAN)': '*Ich wollte dir noch etwas Wichtiges sagen.*'}
+2025-01-07 03:10:59,641 - DEBUG - Processing line - | **ziehen** | zieht, zog, **ist/hat gezogen** | to pull/move | *Wir sind umgezogen.* / *Er hat den Schrank allein gezogen.* |
+2025-01-07 03:10:59,641 - DEBUG - Parsed row - {'WORD': '**ziehen**', 'CONJUGATIONS': 'zieht, zog, **ist/hat gezogen**', 'MEANING': 'to pull/move', 'EXAMPLE SENTENCE (GERMAN)': '*Wir sind umgezogen.* / *Er hat den Schrank allein gezogen.*'}
+2025-01-07 03:10:59,641 - DEBUG - Processing line - | **zwingen** | zwingt, zwang, **hat gezwungen** | to force | *Die Situation zwang uns zu schnellen Entscheidungen.* |
+2025-01-07 03:10:59,641 - DEBUG - Parsed row - {'WORD': '**zwingen**', 'CONJUGATIONS': 'zwingt, zwang, **hat gezwungen**', 'MEANING': 'to force', 'EXAMPLE SENTENCE (GERMAN)': '*Die Situation zwang uns zu schnellen Entscheidungen.*'}
+2025-01-07 03:10:59,641 - DEBUG - Total rows parsed - 141
+2025-01-07 03:10:59,641 - INFO - Total rows parsed: 141
+2025-01-07 03:10:59,648 - DEBUG - Processing row 1/141: {'WORD': '**backen**', 'CONJUGATIONS': 'backt (bäckt), backte (buk), **hat gebacken**', 'MEANING': 'to bake', 'EXAMPLE SENTENCE (GERMAN)': '*Ich backe jedes Wochenende frisches Brot.*'}
+2025-01-07 03:10:59,656 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:10:59,947 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Abacken%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:10:59,951 - WARNING - No images found for '**backen**'.
+2025-01-07 03:10:59,951 - DEBUG - Fetched image URL: None
+2025-01-07 03:10:59,952 - DEBUG - Note added - Front: **backen**, Back: <b>CONJUGATIONS:</b> backt (bäckt), backte (buk), **hat gebacken**<br><b>MEANING:</b> to bake<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich backe jedes Wochenende frisches Brot.*, Image URL: None
+2025-01-07 03:10:59,952 - DEBUG - Processing row 2/141: {'WORD': '**beginnen**', 'CONJUGATIONS': 'beginnt, begann, **hat begonnen**', 'MEANING': 'to begin/start', 'EXAMPLE SENTENCE (GERMAN)': '*Der Kurs beginnt nächste Woche um 9 Uhr.*'}
+2025-01-07 03:10:59,954 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:00,166 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Abeginnen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:00,168 - WARNING - No images found for '**beginnen**'.
+2025-01-07 03:11:00,169 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:00,169 - DEBUG - Note added - Front: **beginnen**, Back: <b>CONJUGATIONS:</b> beginnt, begann, **hat begonnen**<br><b>MEANING:</b> to begin/start<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Kurs beginnt nächste Woche um 9 Uhr.*, Image URL: None
+2025-01-07 03:11:00,169 - DEBUG - Processing row 3/141: {'WORD': '**beißen**', 'CONJUGATIONS': 'beißt, biss, **hat gebissen**', 'MEANING': 'to bite', 'EXAMPLE SENTENCE (GERMAN)': '*Der Hund hat zum Glück nicht gebissen.*'}
+2025-01-07 03:11:00,171 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:00,426 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Abei%C3%9Fen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:00,428 - WARNING - No images found for '**beißen**'.
+2025-01-07 03:11:00,429 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:00,429 - DEBUG - Note added - Front: **beißen**, Back: <b>CONJUGATIONS:</b> beißt, biss, **hat gebissen**<br><b>MEANING:</b> to bite<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Hund hat zum Glück nicht gebissen.*, Image URL: None
+2025-01-07 03:11:00,429 - DEBUG - Processing row 4/141: {'WORD': '**betrügen**', 'CONJUGATIONS': 'betrügt, betrog, **hat betrogen**', 'MEANING': 'to deceive/cheat', 'EXAMPLE SENTENCE (GERMAN)': '*Er hat seine Geschäftspartner nie betrogen.*'}
+2025-01-07 03:11:00,431 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:00,917 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Abetr%C3%BCgen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:00,919 - WARNING - No images found for '**betrügen**'.
+2025-01-07 03:11:00,920 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:00,920 - DEBUG - Note added - Front: **betrügen**, Back: <b>CONJUGATIONS:</b> betrügt, betrog, **hat betrogen**<br><b>MEANING:</b> to deceive/cheat<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er hat seine Geschäftspartner nie betrogen.*, Image URL: None
+2025-01-07 03:11:00,920 - DEBUG - Processing row 5/141: {'WORD': '**biegen**', 'CONJUGATIONS': 'biegt, bog, **hat gebogen**', 'MEANING': 'to bend', 'EXAMPLE SENTENCE (GERMAN)': '*Sie bog den Draht in eine runde Form.*'}
+2025-01-07 03:11:00,922 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:01,186 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Abiegen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:01,188 - WARNING - No images found for '**biegen**'.
+2025-01-07 03:11:01,189 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:01,189 - DEBUG - Note added - Front: **biegen**, Back: <b>CONJUGATIONS:</b> biegt, bog, **hat gebogen**<br><b>MEANING:</b> to bend<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie bog den Draht in eine runde Form.*, Image URL: None
+2025-01-07 03:11:01,189 - DEBUG - Processing row 6/141: {'WORD': '**bieten**', 'CONJUGATIONS': 'bietet, bot, **hat geboten**', 'MEANING': 'to offer', 'EXAMPLE SENTENCE (GERMAN)': '*Das Unternehmen bietet gute Arbeitsbedingungen.*'}
+2025-01-07 03:11:01,191 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:01,437 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Abieten%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:01,439 - WARNING - No images found for '**bieten**'.
+2025-01-07 03:11:01,440 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:01,440 - DEBUG - Note added - Front: **bieten**, Back: <b>CONJUGATIONS:</b> bietet, bot, **hat geboten**<br><b>MEANING:</b> to offer<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Das Unternehmen bietet gute Arbeitsbedingungen.*, Image URL: None
+2025-01-07 03:11:01,440 - DEBUG - Processing row 7/141: {'WORD': '**binden**', 'CONJUGATIONS': 'bindet, band, **hat gebunden**', 'MEANING': 'to tie/bind', 'EXAMPLE SENTENCE (GERMAN)': '*Er band das Paket mit einem festen Seil zusammen.*'}
+2025-01-07 03:11:01,443 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:01,663 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Abinden%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:01,665 - WARNING - No images found for '**binden**'.
+2025-01-07 03:11:01,666 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:01,666 - DEBUG - Note added - Front: **binden**, Back: <b>CONJUGATIONS:</b> bindet, band, **hat gebunden**<br><b>MEANING:</b> to tie/bind<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er band das Paket mit einem festen Seil zusammen.*, Image URL: None
+2025-01-07 03:11:01,666 - DEBUG - Processing row 8/141: {'WORD': '**bitten**', 'CONJUGATIONS': 'bittet, bat, **hat gebeten**', 'MEANING': 'to ask (for)', 'EXAMPLE SENTENCE (GERMAN)': '*Ich bat ihn um Hilfe bei der Präsentation.*'}
+2025-01-07 03:11:01,668 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:02,233 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Abitten%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:02,236 - WARNING - No images found for '**bitten**'.
+2025-01-07 03:11:02,236 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:02,237 - DEBUG - Note added - Front: **bitten**, Back: <b>CONJUGATIONS:</b> bittet, bat, **hat gebeten**<br><b>MEANING:</b> to ask (for)<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich bat ihn um Hilfe bei der Präsentation.*, Image URL: None
+2025-01-07 03:11:02,237 - DEBUG - Processing row 9/141: {'WORD': '**blasen**', 'CONJUGATIONS': 'bläst, blies, **hat geblasen**', 'MEANING': 'to blow', 'EXAMPLE SENTENCE (GERMAN)': '*Der Wind blies sehr stark gestern.*'}
+2025-01-07 03:11:02,239 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:02,512 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ablasen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:02,515 - WARNING - No images found for '**blasen**'.
+2025-01-07 03:11:02,515 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:02,515 - DEBUG - Note added - Front: **blasen**, Back: <b>CONJUGATIONS:</b> bläst, blies, **hat geblasen**<br><b>MEANING:</b> to blow<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Wind blies sehr stark gestern.*, Image URL: None
+2025-01-07 03:11:02,516 - DEBUG - Processing row 10/141: {'WORD': '**bleiben**', 'CONJUGATIONS': 'bleibt, blieb, **ist geblieben**', 'MEANING': 'to stay/remain', 'EXAMPLE SENTENCE (GERMAN)': '*Sie blieb bis spät im Büro, um alles fertig zu machen.*'}
+2025-01-07 03:11:02,518 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:02,762 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ableiben%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:02,765 - WARNING - No images found for '**bleiben**'.
+2025-01-07 03:11:02,765 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:02,765 - DEBUG - Note added - Front: **bleiben**, Back: <b>CONJUGATIONS:</b> bleibt, blieb, **ist geblieben**<br><b>MEANING:</b> to stay/remain<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie blieb bis spät im Büro, um alles fertig zu machen.*, Image URL: None
+2025-01-07 03:11:02,766 - DEBUG - Processing row 11/141: {'WORD': '**braten**', 'CONJUGATIONS': 'brät, briet, **hat gebraten**', 'MEANING': 'to fry/roast', 'EXAMPLE SENTENCE (GERMAN)': '*Er brät das Fleisch in der Pfanne an.*'}
+2025-01-07 03:11:02,768 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:03,031 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Abraten%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:03,035 - WARNING - No images found for '**braten**'.
+2025-01-07 03:11:03,036 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:03,036 - DEBUG - Note added - Front: **braten**, Back: <b>CONJUGATIONS:</b> brät, briet, **hat gebraten**<br><b>MEANING:</b> to fry/roast<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er brät das Fleisch in der Pfanne an.*, Image URL: None
+2025-01-07 03:11:03,036 - DEBUG - Processing row 12/141: {'WORD': '**brechen**', 'CONJUGATIONS': 'bricht, brach, **hat gebrochen**', 'MEANING': 'to break', 'EXAMPLE SENTENCE (GERMAN)': '*Sie hat sich den Arm gebrochen.*'}
+2025-01-07 03:11:03,038 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:03,287 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Abrechen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:03,289 - WARNING - No images found for '**brechen**'.
+2025-01-07 03:11:03,290 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:03,290 - DEBUG - Note added - Front: **brechen**, Back: <b>CONJUGATIONS:</b> bricht, brach, **hat gebrochen**<br><b>MEANING:</b> to break<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie hat sich den Arm gebrochen.*, Image URL: None
+2025-01-07 03:11:03,290 - DEBUG - Processing row 13/141: {'WORD': '**brennen**', 'CONJUGATIONS': 'brennt, brannte, **hat gebrannt**', 'MEANING': 'to burn', 'EXAMPLE SENTENCE (GERMAN)': '*Das Licht brannte die ganze Nacht.*'}
+2025-01-07 03:11:03,292 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:03,587 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Abrennen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:03,590 - WARNING - No images found for '**brennen**'.
+2025-01-07 03:11:03,590 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:03,590 - DEBUG - Note added - Front: **brennen**, Back: <b>CONJUGATIONS:</b> brennt, brannte, **hat gebrannt**<br><b>MEANING:</b> to burn<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Das Licht brannte die ganze Nacht.*, Image URL: None
+2025-01-07 03:11:03,590 - DEBUG - Processing row 14/141: {'WORD': '**bringen**', 'CONJUGATIONS': 'bringt, brachte, **hat gebracht**', 'MEANING': 'to bring', 'EXAMPLE SENTENCE (GERMAN)': '*Sie brachte die Unterlagen ins Sekretariat.*'}
+2025-01-07 03:11:03,592 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:03,812 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Abringen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:03,816 - WARNING - No images found for '**bringen**'.
+2025-01-07 03:11:03,816 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:03,816 - DEBUG - Note added - Front: **bringen**, Back: <b>CONJUGATIONS:</b> bringt, brachte, **hat gebracht**<br><b>MEANING:</b> to bring<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie brachte die Unterlagen ins Sekretariat.*, Image URL: None
+2025-01-07 03:11:03,817 - DEBUG - Processing row 15/141: {'WORD': '**denken**', 'CONJUGATIONS': 'denkt, dachte, **hat gedacht**', 'MEANING': 'to think', 'EXAMPLE SENTENCE (GERMAN)': '*Ich dachte, das Meeting wäre morgen.*'}
+2025-01-07 03:11:03,820 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:04,077 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Adenken%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:04,080 - WARNING - No images found for '**denken**'.
+2025-01-07 03:11:04,080 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:04,081 - DEBUG - Note added - Front: **denken**, Back: <b>CONJUGATIONS:</b> denkt, dachte, **hat gedacht**<br><b>MEANING:</b> to think<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich dachte, das Meeting wäre morgen.*, Image URL: None
+2025-01-07 03:11:04,081 - DEBUG - Processing row 16/141: {'WORD': '**dringen**', 'CONJUGATIONS': 'dringt, drang, **ist/hat gedrungen**', 'MEANING': 'to penetrate / insist', 'EXAMPLE SENTENCE (GERMAN)': '*Wasser drang in den Keller ein.* / *Er hat auf eine Antwort gedrungen.*'}
+2025-01-07 03:11:04,083 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:04,290 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Adringen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:04,293 - WARNING - No images found for '**dringen**'.
+2025-01-07 03:11:04,293 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:04,293 - DEBUG - Note added - Front: **dringen**, Back: <b>CONJUGATIONS:</b> dringt, drang, **ist/hat gedrungen**<br><b>MEANING:</b> to penetrate / insist<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wasser drang in den Keller ein.* / *Er hat auf eine Antwort gedrungen.*, Image URL: None
+2025-01-07 03:11:04,293 - DEBUG - Processing row 17/141: {'WORD': '**dürfen**', 'CONJUGATIONS': 'darf, durfte, **hat gedurft** / **dürfen** (Modalverb)', 'MEANING': 'to be allowed to', 'EXAMPLE SENTENCE (GERMAN)': '*Ich darf heute früher gehen.*'}
+2025-01-07 03:11:04,295 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:04,529 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ad%C3%BCrfen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:04,533 - WARNING - No images found for '**dürfen**'.
+2025-01-07 03:11:04,533 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:04,533 - DEBUG - Note added - Front: **dürfen**, Back: <b>CONJUGATIONS:</b> darf, durfte, **hat gedurft** / **dürfen** (Modalverb)<br><b>MEANING:</b> to be allowed to<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich darf heute früher gehen.*, Image URL: None
+2025-01-07 03:11:04,534 - DEBUG - Processing row 18/141: {'WORD': '**empfehlen**', 'CONJUGATIONS': 'empfiehlt, empfahl, **hat empfohlen**', 'MEANING': 'to recommend', 'EXAMPLE SENTENCE (GERMAN)': '*Der Chef empfahl ihm einen Fortbildungskurs.*'}
+2025-01-07 03:11:04,536 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:04,817 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aempfehlen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:04,820 - WARNING - No images found for '**empfehlen**'.
+2025-01-07 03:11:04,820 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:04,820 - DEBUG - Note added - Front: **empfehlen**, Back: <b>CONJUGATIONS:</b> empfiehlt, empfahl, **hat empfohlen**<br><b>MEANING:</b> to recommend<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Chef empfahl ihm einen Fortbildungskurs.*, Image URL: None
+2025-01-07 03:11:04,820 - DEBUG - Processing row 19/141: {'WORD': '**erschrecken**', 'CONJUGATIONS': 'erschrickt, erschrak, **ist erschrocken**', 'MEANING': 'to be startled', 'EXAMPLE SENTENCE (GERMAN)': '*Ich erschrak, als plötzlich das Licht ausfiel.*'}
+2025-01-07 03:11:04,823 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:05,064 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aerschrecken%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:05,066 - WARNING - No images found for '**erschrecken**'.
+2025-01-07 03:11:05,067 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:05,067 - DEBUG - Note added - Front: **erschrecken**, Back: <b>CONJUGATIONS:</b> erschrickt, erschrak, **ist erschrocken**<br><b>MEANING:</b> to be startled<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich erschrak, als plötzlich das Licht ausfiel.*, Image URL: None
+2025-01-07 03:11:05,067 - DEBUG - Processing row 20/141: {'WORD': '**erwägen**', 'CONJUGATIONS': 'erwägt, erwog, **hat erwogen**', 'MEANING': 'to consider', 'EXAMPLE SENTENCE (GERMAN)': '*Wir erwägen einen Wechsel des Lieferanten.*'}
+2025-01-07 03:11:05,069 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:05,333 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aerw%C3%A4gen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:05,335 - WARNING - No images found for '**erwägen**'.
+2025-01-07 03:11:05,336 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:05,336 - DEBUG - Note added - Front: **erwägen**, Back: <b>CONJUGATIONS:</b> erwägt, erwog, **hat erwogen**<br><b>MEANING:</b> to consider<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wir erwägen einen Wechsel des Lieferanten.*, Image URL: None
+2025-01-07 03:11:05,336 - DEBUG - Processing row 21/141: {'WORD': '**essen**', 'CONJUGATIONS': 'isst, aß, **hat gegessen**', 'MEANING': 'to eat', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben im neuen Restaurant gegessen.*'}
+2025-01-07 03:11:05,338 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:05,569 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aessen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:05,572 - WARNING - No images found for '**essen**'.
+2025-01-07 03:11:05,572 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:05,572 - DEBUG - Note added - Front: **essen**, Back: <b>CONJUGATIONS:</b> isst, aß, **hat gegessen**<br><b>MEANING:</b> to eat<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wir haben im neuen Restaurant gegessen.*, Image URL: None
+2025-01-07 03:11:05,573 - DEBUG - Processing row 22/141: {'WORD': '**fahren**', 'CONJUGATIONS': 'fährt, fuhr, **ist/hat gefahren**', 'MEANING': 'to drive/travel', 'EXAMPLE SENTENCE (GERMAN)': '*Sie ist gestern mit dem Auto nach Berlin gefahren.* / *Er hat den Bus gefahren.*'}
+2025-01-07 03:11:05,575 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:05,787 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Afahren%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:05,789 - WARNING - No images found for '**fahren**'.
+2025-01-07 03:11:05,790 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:05,790 - DEBUG - Note added - Front: **fahren**, Back: <b>CONJUGATIONS:</b> fährt, fuhr, **ist/hat gefahren**<br><b>MEANING:</b> to drive/travel<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie ist gestern mit dem Auto nach Berlin gefahren.* / *Er hat den Bus gefahren.*, Image URL: None
+2025-01-07 03:11:05,790 - DEBUG - Processing row 23/141: {'WORD': '**fallen**', 'CONJUGATIONS': 'fällt, fiel, **ist gefallen**', 'MEANING': 'to fall', 'EXAMPLE SENTENCE (GERMAN)': '*Das Glas fiel vom Tisch und zerbrach.*'}
+2025-01-07 03:11:05,792 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:06,022 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Afallen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:06,024 - WARNING - No images found for '**fallen**'.
+2025-01-07 03:11:06,025 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:06,025 - DEBUG - Note added - Front: **fallen**, Back: <b>CONJUGATIONS:</b> fällt, fiel, **ist gefallen**<br><b>MEANING:</b> to fall<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Das Glas fiel vom Tisch und zerbrach.*, Image URL: None
+2025-01-07 03:11:06,025 - DEBUG - Processing row 24/141: {'WORD': '**fangen**', 'CONJUGATIONS': 'fängt, fing, **hat gefangen**', 'MEANING': 'to catch', 'EXAMPLE SENTENCE (GERMAN)': '*Sie fing den Ball mit einer Hand.*'}
+2025-01-07 03:11:06,027 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:06,287 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Afangen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:06,289 - WARNING - No images found for '**fangen**'.
+2025-01-07 03:11:06,290 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:06,290 - DEBUG - Note added - Front: **fangen**, Back: <b>CONJUGATIONS:</b> fängt, fing, **hat gefangen**<br><b>MEANING:</b> to catch<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie fing den Ball mit einer Hand.*, Image URL: None
+2025-01-07 03:11:06,290 - DEBUG - Processing row 25/141: {'WORD': '**finden**', 'CONJUGATIONS': 'findet, fand, **hat gefunden**', 'MEANING': 'to find', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben endlich eine passende Lösung gefunden.*'}
+2025-01-07 03:11:06,293 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:06,497 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Afinden%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:06,500 - WARNING - No images found for '**finden**'.
+2025-01-07 03:11:06,500 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:06,500 - DEBUG - Note added - Front: **finden**, Back: <b>CONJUGATIONS:</b> findet, fand, **hat gefunden**<br><b>MEANING:</b> to find<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wir haben endlich eine passende Lösung gefunden.*, Image URL: None
+2025-01-07 03:11:06,500 - DEBUG - Processing row 26/141: {'WORD': '**fliegen**', 'CONJUGATIONS': 'fliegt, flog, **ist/hat geflogen**', 'MEANING': 'to fly', 'EXAMPLE SENTENCE (GERMAN)': '*Sie ist nach Paris geflogen.* / *Der Pilot hat das Flugzeug sicher geflogen.*'}
+2025-01-07 03:11:06,503 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:06,750 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Afliegen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:06,753 - WARNING - No images found for '**fliegen**'.
+2025-01-07 03:11:06,754 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:06,754 - DEBUG - Note added - Front: **fliegen**, Back: <b>CONJUGATIONS:</b> fliegt, flog, **ist/hat geflogen**<br><b>MEANING:</b> to fly<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie ist nach Paris geflogen.* / *Der Pilot hat das Flugzeug sicher geflogen.*, Image URL: None
+2025-01-07 03:11:06,754 - DEBUG - Processing row 27/141: {'WORD': '**fliehen**', 'CONJUGATIONS': 'flieht, floh, **ist geflohen**', 'MEANING': 'to flee/escape', 'EXAMPLE SENTENCE (GERMAN)': '*Die Dorfbewohner flohen vor dem Hochwasser.*'}
+2025-01-07 03:11:06,757 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:07,008 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Afliehen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:07,011 - WARNING - No images found for '**fliehen**'.
+2025-01-07 03:11:07,011 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:07,011 - DEBUG - Note added - Front: **fliehen**, Back: <b>CONJUGATIONS:</b> flieht, floh, **ist geflohen**<br><b>MEANING:</b> to flee/escape<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Dorfbewohner flohen vor dem Hochwasser.*, Image URL: None
+2025-01-07 03:11:07,011 - DEBUG - Processing row 28/141: {'WORD': '**fließen**', 'CONJUGATIONS': 'fließt, floss, **ist geflossen**', 'MEANING': 'to flow', 'EXAMPLE SENTENCE (GERMAN)': '*Der Fluss floss schneller nach dem Regen.*'}
+2025-01-07 03:11:07,013 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:07,248 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aflie%C3%9Fen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:07,251 - WARNING - No images found for '**fließen**'.
+2025-01-07 03:11:07,252 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:07,252 - DEBUG - Note added - Front: **fließen**, Back: <b>CONJUGATIONS:</b> fließt, floss, **ist geflossen**<br><b>MEANING:</b> to flow<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Fluss floss schneller nach dem Regen.*, Image URL: None
+2025-01-07 03:11:07,252 - DEBUG - Processing row 29/141: {'WORD': '**fressen**', 'CONJUGATIONS': 'frisst, fraß, **hat gefressen**', 'MEANING': 'to eat (for animals)', 'EXAMPLE SENTENCE (GERMAN)': '*Die Katzen haben das Futter schnell gefressen.*'}
+2025-01-07 03:11:07,254 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:07,492 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Afressen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:07,495 - WARNING - No images found for '**fressen**'.
+2025-01-07 03:11:07,495 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:07,495 - DEBUG - Note added - Front: **fressen**, Back: <b>CONJUGATIONS:</b> frisst, fraß, **hat gefressen**<br><b>MEANING:</b> to eat (for animals)<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Katzen haben das Futter schnell gefressen.*, Image URL: None
+2025-01-07 03:11:07,495 - DEBUG - Processing row 30/141: {'WORD': '**frieren**', 'CONJUGATIONS': 'friert, fror, **hat gefroren**', 'MEANING': 'to freeze/to be cold', 'EXAMPLE SENTENCE (GERMAN)': '*Mir war so kalt, dass ich fast gefroren habe.*'}
+2025-01-07 03:11:07,497 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:07,731 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Afrieren%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:07,733 - WARNING - No images found for '**frieren**'.
+2025-01-07 03:11:07,734 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:07,734 - DEBUG - Note added - Front: **frieren**, Back: <b>CONJUGATIONS:</b> friert, fror, **hat gefroren**<br><b>MEANING:</b> to freeze/to be cold<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Mir war so kalt, dass ich fast gefroren habe.*, Image URL: None
+2025-01-07 03:11:07,734 - DEBUG - Processing row 31/141: {'WORD': '**geben**', 'CONJUGATIONS': 'gibt, gab, **hat gegeben**', 'MEANING': 'to give', 'EXAMPLE SENTENCE (GERMAN)': '*Kannst du mir bitte das Buch geben?*'}
+2025-01-07 03:11:07,736 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:07,947 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ageben%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:07,949 - WARNING - No images found for '**geben**'.
+2025-01-07 03:11:07,949 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:07,949 - DEBUG - Note added - Front: **geben**, Back: <b>CONJUGATIONS:</b> gibt, gab, **hat gegeben**<br><b>MEANING:</b> to give<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Kannst du mir bitte das Buch geben?*, Image URL: None
+2025-01-07 03:11:07,950 - DEBUG - Processing row 32/141: {'WORD': '**gedeihen**', 'CONJUGATIONS': 'gedeiht, gedieh, **ist gediehen**', 'MEANING': 'to thrive/prosper', 'EXAMPLE SENTENCE (GERMAN)': '*Die Pflanzen gedeihen prächtig im Gewächshaus.*'}
+2025-01-07 03:11:07,952 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:08,186 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Agedeihen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:08,188 - WARNING - No images found for '**gedeihen**'.
+2025-01-07 03:11:08,188 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:08,189 - DEBUG - Note added - Front: **gedeihen**, Back: <b>CONJUGATIONS:</b> gedeiht, gedieh, **ist gediehen**<br><b>MEANING:</b> to thrive/prosper<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Pflanzen gedeihen prächtig im Gewächshaus.*, Image URL: None
+2025-01-07 03:11:08,189 - DEBUG - Processing row 33/141: {'WORD': '**gehen**', 'CONJUGATIONS': 'geht, ging, **ist gegangen**', 'MEANING': 'to go/walk', 'EXAMPLE SENTENCE (GERMAN)': '*Wir sind zu Fuß nach Hause gegangen.*'}
+2025-01-07 03:11:08,191 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:08,411 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Agehen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:08,414 - WARNING - No images found for '**gehen**'.
+2025-01-07 03:11:08,414 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:08,414 - DEBUG - Note added - Front: **gehen**, Back: <b>CONJUGATIONS:</b> geht, ging, **ist gegangen**<br><b>MEANING:</b> to go/walk<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wir sind zu Fuß nach Hause gegangen.*, Image URL: None
+2025-01-07 03:11:08,414 - DEBUG - Processing row 34/141: {'WORD': '**gelingen**', 'CONJUGATIONS': 'gelingt, gelang, **ist gelungen**', 'MEANING': 'to succeed/manage', 'EXAMPLE SENTENCE (GERMAN)': '*Das Experiment ist uns endlich gelungen.*'}
+2025-01-07 03:11:08,417 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:08,637 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Agelingen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:08,639 - WARNING - No images found for '**gelingen**'.
+2025-01-07 03:11:08,640 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:08,640 - DEBUG - Note added - Front: **gelingen**, Back: <b>CONJUGATIONS:</b> gelingt, gelang, **ist gelungen**<br><b>MEANING:</b> to succeed/manage<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Das Experiment ist uns endlich gelungen.*, Image URL: None
+2025-01-07 03:11:08,640 - DEBUG - Processing row 35/141: {'WORD': '**gelten**', 'CONJUGATIONS': 'gilt, galt, **hat gegolten**', 'MEANING': 'to be valid', 'EXAMPLE SENTENCE (GERMAN)': '*Die Fahrkarte gilt nur bis morgen.*'}
+2025-01-07 03:11:08,642 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:08,888 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Agelten%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:08,891 - WARNING - No images found for '**gelten**'.
+2025-01-07 03:11:08,892 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:08,892 - DEBUG - Note added - Front: **gelten**, Back: <b>CONJUGATIONS:</b> gilt, galt, **hat gegolten**<br><b>MEANING:</b> to be valid<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Fahrkarte gilt nur bis morgen.*, Image URL: None
+2025-01-07 03:11:08,892 - DEBUG - Processing row 36/141: {'WORD': '**genießen**', 'CONJUGATIONS': 'genießt, genoss, **hat genossen**', 'MEANING': 'to enjoy', 'EXAMPLE SENTENCE (GERMAN)': '*Ich habe den freien Tag sehr genossen.*'}
+2025-01-07 03:11:08,894 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:09,389 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Agenie%C3%9Fen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:09,392 - WARNING - No images found for '**genießen**'.
+2025-01-07 03:11:09,392 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:09,392 - DEBUG - Note added - Front: **genießen**, Back: <b>CONJUGATIONS:</b> genießt, genoss, **hat genossen**<br><b>MEANING:</b> to enjoy<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich habe den freien Tag sehr genossen.*, Image URL: None
+2025-01-07 03:11:09,392 - DEBUG - Processing row 37/141: {'WORD': '**geschehen**', 'CONJUGATIONS': 'geschieht, geschah, **ist geschehen**', 'MEANING': 'to happen', 'EXAMPLE SENTENCE (GERMAN)': '*Zum Glück ist kein Unfall geschehen.*'}
+2025-01-07 03:11:09,394 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:09,606 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ageschehen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:09,609 - WARNING - No images found for '**geschehen**'.
+2025-01-07 03:11:09,609 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:09,609 - DEBUG - Note added - Front: **geschehen**, Back: <b>CONJUGATIONS:</b> geschieht, geschah, **ist geschehen**<br><b>MEANING:</b> to happen<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Zum Glück ist kein Unfall geschehen.*, Image URL: None
+2025-01-07 03:11:09,610 - DEBUG - Processing row 38/141: {'WORD': '**gewinnen**', 'CONJUGATIONS': 'gewinnt, gewann, **hat gewonnen**', 'MEANING': 'to win', 'EXAMPLE SENTENCE (GERMAN)': '*Unsere Mannschaft hat das Spiel gewonnen.*'}
+2025-01-07 03:11:09,612 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:09,880 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Agewinnen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:09,883 - WARNING - No images found for '**gewinnen**'.
+2025-01-07 03:11:09,883 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:09,883 - DEBUG - Note added - Front: **gewinnen**, Back: <b>CONJUGATIONS:</b> gewinnt, gewann, **hat gewonnen**<br><b>MEANING:</b> to win<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Unsere Mannschaft hat das Spiel gewonnen.*, Image URL: None
+2025-01-07 03:11:09,884 - DEBUG - Processing row 39/141: {'WORD': '**gießen**', 'CONJUGATIONS': 'gießt, goss, **hat gegossen**', 'MEANING': 'to pour/water', 'EXAMPLE SENTENCE (GERMAN)': '*Vergiss nicht, die Blumen zu gießen.*'}
+2025-01-07 03:11:09,886 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:10,112 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Agie%C3%9Fen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:10,114 - WARNING - No images found for '**gießen**'.
+2025-01-07 03:11:10,115 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:10,115 - DEBUG - Note added - Front: **gießen**, Back: <b>CONJUGATIONS:</b> gießt, goss, **hat gegossen**<br><b>MEANING:</b> to pour/water<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Vergiss nicht, die Blumen zu gießen.*, Image URL: None
+2025-01-07 03:11:10,115 - DEBUG - Processing row 40/141: {'WORD': '**gleichen**', 'CONJUGATIONS': 'gleicht, glich, **hat geglichen**', 'MEANING': 'to resemble', 'EXAMPLE SENTENCE (GERMAN)': '*Das Modell gleicht dem alten sehr.*'}
+2025-01-07 03:11:10,117 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:10,351 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Agleichen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:10,354 - WARNING - No images found for '**gleichen**'.
+2025-01-07 03:11:10,354 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:10,354 - DEBUG - Note added - Front: **gleichen**, Back: <b>CONJUGATIONS:</b> gleicht, glich, **hat geglichen**<br><b>MEANING:</b> to resemble<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Das Modell gleicht dem alten sehr.*, Image URL: None
+2025-01-07 03:11:10,355 - DEBUG - Processing row 41/141: {'WORD': '**gleiten**', 'CONJUGATIONS': 'gleitet, glitt, **ist geglitten**', 'MEANING': 'to glide', 'EXAMPLE SENTENCE (GERMAN)': '*Der Vogel gleitet über den See.*'}
+2025-01-07 03:11:10,357 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:10,671 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Agleiten%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:10,674 - WARNING - No images found for '**gleiten**'.
+2025-01-07 03:11:10,674 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:10,674 - DEBUG - Note added - Front: **gleiten**, Back: <b>CONJUGATIONS:</b> gleitet, glitt, **ist geglitten**<br><b>MEANING:</b> to glide<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Vogel gleitet über den See.*, Image URL: None
+2025-01-07 03:11:10,675 - DEBUG - Processing row 42/141: {'WORD': '**graben**', 'CONJUGATIONS': 'gräbt, grub, **hat gegraben**', 'MEANING': 'to dig', 'EXAMPLE SENTENCE (GERMAN)': '*Sie grub ein tiefes Loch im Garten.*'}
+2025-01-07 03:11:10,677 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:10,934 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Agraben%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:10,937 - WARNING - No images found for '**graben**'.
+2025-01-07 03:11:10,938 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:10,938 - DEBUG - Note added - Front: **graben**, Back: <b>CONJUGATIONS:</b> gräbt, grub, **hat gegraben**<br><b>MEANING:</b> to dig<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie grub ein tiefes Loch im Garten.*, Image URL: None
+2025-01-07 03:11:10,938 - DEBUG - Processing row 43/141: {'WORD': '**greifen**', 'CONJUGATIONS': 'greift, griff, **hat gegriffen**', 'MEANING': 'to grab/seize', 'EXAMPLE SENTENCE (GERMAN)': '*Er griff schnell nach dem Telefon.*'}
+2025-01-07 03:11:10,940 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:11,222 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Agreifen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:11,225 - WARNING - No images found for '**greifen**'.
+2025-01-07 03:11:11,225 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:11,225 - DEBUG - Note added - Front: **greifen**, Back: <b>CONJUGATIONS:</b> greift, griff, **hat gegriffen**<br><b>MEANING:</b> to grab/seize<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er griff schnell nach dem Telefon.*, Image URL: None
+2025-01-07 03:11:11,225 - DEBUG - Processing row 44/141: {'WORD': '**haben**', 'CONJUGATIONS': 'hat, hatte, **hat gehabt**', 'MEANING': 'to have', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben heute ein wichtiges Meeting.*'}
+2025-01-07 03:11:11,228 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:11,468 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ahaben%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:11,470 - WARNING - No images found for '**haben**'.
+2025-01-07 03:11:11,471 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:11,471 - DEBUG - Note added - Front: **haben**, Back: <b>CONJUGATIONS:</b> hat, hatte, **hat gehabt**<br><b>MEANING:</b> to have<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wir haben heute ein wichtiges Meeting.*, Image URL: None
+2025-01-07 03:11:11,471 - DEBUG - Processing row 45/141: {'WORD': '**halten**', 'CONJUGATIONS': 'hält, hielt, **hat gehalten**', 'MEANING': 'to hold/stop', 'EXAMPLE SENTENCE (GERMAN)': '*Kannst du bitte kurz meine Tasche halten?*'}
+2025-01-07 03:11:11,473 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:11,713 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ahalten%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:11,717 - WARNING - No images found for '**halten**'.
+2025-01-07 03:11:11,718 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:11,718 - DEBUG - Note added - Front: **halten**, Back: <b>CONJUGATIONS:</b> hält, hielt, **hat gehalten**<br><b>MEANING:</b> to hold/stop<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Kannst du bitte kurz meine Tasche halten?*, Image URL: None
+2025-01-07 03:11:11,718 - DEBUG - Processing row 46/141: {'WORD': '**hängen**', 'CONJUGATIONS': 'hängt, hing, **hat gehangen**', 'MEANING': 'to hang (intrans.)', 'EXAMPLE SENTENCE (GERMAN)': '*Das Bild hing an der Wand.*'}
+2025-01-07 03:11:11,721 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:12,040 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ah%C3%A4ngen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:12,042 - WARNING - No images found for '**hängen**'.
+2025-01-07 03:11:12,043 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:12,043 - DEBUG - Note added - Front: **hängen**, Back: <b>CONJUGATIONS:</b> hängt, hing, **hat gehangen**<br><b>MEANING:</b> to hang (intrans.)<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Das Bild hing an der Wand.*, Image URL: None
+2025-01-07 03:11:12,043 - DEBUG - Processing row 47/141: {'WORD': '**hauen**', 'CONJUGATIONS': 'haut, haute (hieb), **hat gehauen**', 'MEANING': 'to hit', 'EXAMPLE SENTENCE (GERMAN)': '*Er haute mit der Faust auf den Tisch.*'}
+2025-01-07 03:11:12,045 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:12,242 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ahauen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:12,245 - WARNING - No images found for '**hauen**'.
+2025-01-07 03:11:12,245 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:12,245 - DEBUG - Note added - Front: **hauen**, Back: <b>CONJUGATIONS:</b> haut, haute (hieb), **hat gehauen**<br><b>MEANING:</b> to hit<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er haute mit der Faust auf den Tisch.*, Image URL: None
+2025-01-07 03:11:12,246 - DEBUG - Processing row 48/141: {'WORD': '**heben**', 'CONJUGATIONS': 'hebt, hob, **hat gehoben**', 'MEANING': 'to lift', 'EXAMPLE SENTENCE (GERMAN)': '*Sie hob die schwere Kiste ohne Probleme.*'}
+2025-01-07 03:11:12,248 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:12,612 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aheben%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:12,614 - WARNING - No images found for '**heben**'.
+2025-01-07 03:11:12,615 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:12,615 - DEBUG - Note added - Front: **heben**, Back: <b>CONJUGATIONS:</b> hebt, hob, **hat gehoben**<br><b>MEANING:</b> to lift<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie hob die schwere Kiste ohne Probleme.*, Image URL: None
+2025-01-07 03:11:12,615 - DEBUG - Processing row 49/141: {'WORD': '**heißen**', 'CONJUGATIONS': 'heißt, hieß, **hat geheißen**', 'MEANING': 'to be called', 'EXAMPLE SENTENCE (GERMAN)': '*Ich heiße Anna und freue mich auf die Zusammenarbeit.*'}
+2025-01-07 03:11:12,617 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:12,817 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ahei%C3%9Fen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:12,819 - WARNING - No images found for '**heißen**'.
+2025-01-07 03:11:12,820 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:12,820 - DEBUG - Note added - Front: **heißen**, Back: <b>CONJUGATIONS:</b> heißt, hieß, **hat geheißen**<br><b>MEANING:</b> to be called<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich heiße Anna und freue mich auf die Zusammenarbeit.*, Image URL: None
+2025-01-07 03:11:12,820 - DEBUG - Processing row 50/141: {'WORD': '**helfen**', 'CONJUGATIONS': 'hilft, half, **hat geholfen**', 'MEANING': 'to help', 'EXAMPLE SENTENCE (GERMAN)': '*Vielen Dank, dass Sie mir bei der Recherche geholfen haben.*'}
+2025-01-07 03:11:12,823 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:13,040 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ahelfen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:13,042 - WARNING - No images found for '**helfen**'.
+2025-01-07 03:11:13,043 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:13,043 - DEBUG - Note added - Front: **helfen**, Back: <b>CONJUGATIONS:</b> hilft, half, **hat geholfen**<br><b>MEANING:</b> to help<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Vielen Dank, dass Sie mir bei der Recherche geholfen haben.*, Image URL: None
+2025-01-07 03:11:13,043 - DEBUG - Processing row 51/141: {'WORD': '**kennen**', 'CONJUGATIONS': 'kennt, kannte, **hat gekannt**', 'MEANING': 'to know (someone)', 'EXAMPLE SENTENCE (GERMAN)': '*Ich kenne ihn schon seit unserer Schulzeit.*'}
+2025-01-07 03:11:13,045 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:13,309 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Akennen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:13,312 - WARNING - No images found for '**kennen**'.
+2025-01-07 03:11:13,312 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:13,312 - DEBUG - Note added - Front: **kennen**, Back: <b>CONJUGATIONS:</b> kennt, kannte, **hat gekannt**<br><b>MEANING:</b> to know (someone)<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich kenne ihn schon seit unserer Schulzeit.*, Image URL: None
+2025-01-07 03:11:13,312 - DEBUG - Processing row 52/141: {'WORD': '**klingen**', 'CONJUGATIONS': 'klingt, klang, **hat geklungen**', 'MEANING': 'to sound', 'EXAMPLE SENTENCE (GERMAN)': '*Das Angebot klingt sehr interessant.*'}
+2025-01-07 03:11:13,315 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:13,530 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aklingen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:13,532 - WARNING - No images found for '**klingen**'.
+2025-01-07 03:11:13,532 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:13,532 - DEBUG - Note added - Front: **klingen**, Back: <b>CONJUGATIONS:</b> klingt, klang, **hat geklungen**<br><b>MEANING:</b> to sound<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Das Angebot klingt sehr interessant.*, Image URL: None
+2025-01-07 03:11:13,533 - DEBUG - Processing row 53/141: {'WORD': '**kommen**', 'CONJUGATIONS': 'kommt, kam, **ist gekommen**', 'MEANING': 'to come', 'EXAMPLE SENTENCE (GERMAN)': '*Sie ist gestern aus dem Urlaub zurückgekommen.*'}
+2025-01-07 03:11:13,535 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:13,786 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Akommen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:13,788 - WARNING - No images found for '**kommen**'.
+2025-01-07 03:11:13,789 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:13,789 - DEBUG - Note added - Front: **kommen**, Back: <b>CONJUGATIONS:</b> kommt, kam, **ist gekommen**<br><b>MEANING:</b> to come<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie ist gestern aus dem Urlaub zurückgekommen.*, Image URL: None
+2025-01-07 03:11:13,790 - DEBUG - Processing row 54/141: {'WORD': '**können**', 'CONJUGATIONS': 'kann, konnte, **hat gekonnt** / **können** (Modalverb)', 'MEANING': 'to be able to', 'EXAMPLE SENTENCE (GERMAN)': '*Ich kann leider heute nicht länger bleiben.*'}
+2025-01-07 03:11:13,792 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:14,016 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ak%C3%B6nnen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:14,018 - WARNING - No images found for '**können**'.
+2025-01-07 03:11:14,019 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:14,019 - DEBUG - Note added - Front: **können**, Back: <b>CONJUGATIONS:</b> kann, konnte, **hat gekonnt** / **können** (Modalverb)<br><b>MEANING:</b> to be able to<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich kann leider heute nicht länger bleiben.*, Image URL: None
+2025-01-07 03:11:14,019 - DEBUG - Processing row 55/141: {'WORD': '**laden**', 'CONJUGATIONS': 'lädt, lud, **hat geladen**', 'MEANING': 'to load/invite', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben die Ware auf den LKW geladen.*'}
+2025-01-07 03:11:14,021 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:14,248 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aladen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:14,250 - WARNING - No images found for '**laden**'.
+2025-01-07 03:11:14,250 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:14,250 - DEBUG - Note added - Front: **laden**, Back: <b>CONJUGATIONS:</b> lädt, lud, **hat geladen**<br><b>MEANING:</b> to load/invite<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wir haben die Ware auf den LKW geladen.*, Image URL: None
+2025-01-07 03:11:14,250 - DEBUG - Processing row 56/141: {'WORD': '**lassen**', 'CONJUGATIONS': 'lässt, ließ, **hat gelassen**', 'MEANING': 'to let/leave', 'EXAMPLE SENTENCE (GERMAN)': '*Lass uns bitte die alten Dateien löschen.*'}
+2025-01-07 03:11:14,253 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:14,476 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Alassen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:14,478 - WARNING - No images found for '**lassen**'.
+2025-01-07 03:11:14,478 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:14,479 - DEBUG - Note added - Front: **lassen**, Back: <b>CONJUGATIONS:</b> lässt, ließ, **hat gelassen**<br><b>MEANING:</b> to let/leave<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Lass uns bitte die alten Dateien löschen.*, Image URL: None
+2025-01-07 03:11:14,479 - DEBUG - Processing row 57/141: {'WORD': '**laufen**', 'CONJUGATIONS': 'läuft, lief, **ist gelaufen**', 'MEANING': 'to run/walk', 'EXAMPLE SENTENCE (GERMAN)': '*Der Motor lief nach der Reparatur wieder einwandfrei.*'}
+2025-01-07 03:11:14,481 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:14,725 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Alaufen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:14,728 - WARNING - No images found for '**laufen**'.
+2025-01-07 03:11:14,728 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:14,728 - DEBUG - Note added - Front: **laufen**, Back: <b>CONJUGATIONS:</b> läuft, lief, **ist gelaufen**<br><b>MEANING:</b> to run/walk<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Motor lief nach der Reparatur wieder einwandfrei.*, Image URL: None
+2025-01-07 03:11:14,728 - DEBUG - Processing row 58/141: {'WORD': '**leiden**', 'CONJUGATIONS': 'leidet, litt, **hat gelitten**', 'MEANING': 'to suffer', 'EXAMPLE SENTENCE (GERMAN)': '*Sie leidet oft unter Rückenschmerzen.*'}
+2025-01-07 03:11:14,731 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:14,945 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aleiden%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:14,948 - WARNING - No images found for '**leiden**'.
+2025-01-07 03:11:14,948 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:14,948 - DEBUG - Note added - Front: **leiden**, Back: <b>CONJUGATIONS:</b> leidet, litt, **hat gelitten**<br><b>MEANING:</b> to suffer<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie leidet oft unter Rückenschmerzen.*, Image URL: None
+2025-01-07 03:11:14,948 - DEBUG - Processing row 59/141: {'WORD': '**leihen**', 'CONJUGATIONS': 'leiht, lieh, **hat geliehen**', 'MEANING': 'to lend/borrow', 'EXAMPLE SENTENCE (GERMAN)': '*Er lieh mir sein Fahrrad für das Wochenende.*'}
+2025-01-07 03:11:14,950 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:15,173 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aleihen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:15,176 - WARNING - No images found for '**leihen**'.
+2025-01-07 03:11:15,176 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:15,177 - DEBUG - Note added - Front: **leihen**, Back: <b>CONJUGATIONS:</b> leiht, lieh, **hat geliehen**<br><b>MEANING:</b> to lend/borrow<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er lieh mir sein Fahrrad für das Wochenende.*, Image URL: None
+2025-01-07 03:11:15,177 - DEBUG - Processing row 60/141: {'WORD': '**lesen**', 'CONJUGATIONS': 'liest, las, **hat gelesen**', 'MEANING': 'to read', 'EXAMPLE SENTENCE (GERMAN)': '*Ich habe den Bericht bis zum Schluss gelesen.*'}
+2025-01-07 03:11:15,179 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:15,372 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Alesen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:15,376 - WARNING - No images found for '**lesen**'.
+2025-01-07 03:11:15,376 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:15,376 - DEBUG - Note added - Front: **lesen**, Back: <b>CONJUGATIONS:</b> liest, las, **hat gelesen**<br><b>MEANING:</b> to read<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich habe den Bericht bis zum Schluss gelesen.*, Image URL: None
+2025-01-07 03:11:15,377 - DEBUG - Processing row 61/141: {'WORD': '**liegen**', 'CONJUGATIONS': 'liegt, lag, **hat gelegen**', 'MEANING': 'to lie', 'EXAMPLE SENTENCE (GERMAN)': '*Das Buch lag den ganzen Tag auf meinem Schreibtisch.*'}
+2025-01-07 03:11:15,379 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:15,622 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aliegen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:15,626 - WARNING - No images found for '**liegen**'.
+2025-01-07 03:11:15,626 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:15,626 - DEBUG - Note added - Front: **liegen**, Back: <b>CONJUGATIONS:</b> liegt, lag, **hat gelegen**<br><b>MEANING:</b> to lie<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Das Buch lag den ganzen Tag auf meinem Schreibtisch.*, Image URL: None
+2025-01-07 03:11:15,626 - DEBUG - Processing row 62/141: {'WORD': '**lügen**', 'CONJUGATIONS': 'lügt, log, **hat gelogen**', 'MEANING': 'to lie', 'EXAMPLE SENTENCE (GERMAN)': '*Sie log, als sie sagte, sie hätte schon bezahlt.*'}
+2025-01-07 03:11:15,629 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:16,083 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Al%C3%BCgen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:16,086 - WARNING - No images found for '**lügen**'.
+2025-01-07 03:11:16,087 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:16,087 - DEBUG - Note added - Front: **lügen**, Back: <b>CONJUGATIONS:</b> lügt, log, **hat gelogen**<br><b>MEANING:</b> to lie<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie log, als sie sagte, sie hätte schon bezahlt.*, Image URL: None
+2025-01-07 03:11:16,087 - DEBUG - Processing row 63/141: {'WORD': '**mahlen**', 'CONJUGATIONS': 'mahlt, mahlte, **hat gemahlen**', 'MEANING': 'to grind', 'EXAMPLE SENTENCE (GERMAN)': '*In dieser Mühle wird seit Jahren Getreide gemahlen.*'}
+2025-01-07 03:11:16,089 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:16,298 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Amahlen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:16,301 - WARNING - No images found for '**mahlen**'.
+2025-01-07 03:11:16,301 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:16,301 - DEBUG - Note added - Front: **mahlen**, Back: <b>CONJUGATIONS:</b> mahlt, mahlte, **hat gemahlen**<br><b>MEANING:</b> to grind<br><b>EXAMPLE SENTENCE (GERMAN):</b> *In dieser Mühle wird seit Jahren Getreide gemahlen.*, Image URL: None
+2025-01-07 03:11:16,301 - DEBUG - Processing row 64/141: {'WORD': '**meiden**', 'CONJUGATIONS': 'meidet, mied, **hat gemieden**', 'MEANING': 'to avoid', 'EXAMPLE SENTENCE (GERMAN)': '*Er meidet Konflikte, wo immer es geht.*'}
+2025-01-07 03:11:16,304 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:16,565 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ameiden%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:16,568 - WARNING - No images found for '**meiden**'.
+2025-01-07 03:11:16,568 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:16,568 - DEBUG - Note added - Front: **meiden**, Back: <b>CONJUGATIONS:</b> meidet, mied, **hat gemieden**<br><b>MEANING:</b> to avoid<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er meidet Konflikte, wo immer es geht.*, Image URL: None
+2025-01-07 03:11:16,568 - DEBUG - Processing row 65/141: {'WORD': '**messen**', 'CONJUGATIONS': 'misst, maß, **hat gemessen**', 'MEANING': 'to measure', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben die Temperatur im Raum gemessen.*'}
+2025-01-07 03:11:16,570 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:16,866 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Amessen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:16,869 - WARNING - No images found for '**messen**'.
+2025-01-07 03:11:16,869 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:16,869 - DEBUG - Note added - Front: **messen**, Back: <b>CONJUGATIONS:</b> misst, maß, **hat gemessen**<br><b>MEANING:</b> to measure<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wir haben die Temperatur im Raum gemessen.*, Image URL: None
+2025-01-07 03:11:16,869 - DEBUG - Processing row 66/141: {'WORD': '**mögen**', 'CONJUGATIONS': 'mag, mochte, **hat gemocht**', 'MEANING': 'to like', 'EXAMPLE SENTENCE (GERMAN)': '*Ich mochte schon immer dieses Restaurant.*'}
+2025-01-07 03:11:16,872 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:17,105 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Am%C3%B6gen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:17,107 - WARNING - No images found for '**mögen**'.
+2025-01-07 03:11:17,108 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:17,108 - DEBUG - Note added - Front: **mögen**, Back: <b>CONJUGATIONS:</b> mag, mochte, **hat gemocht**<br><b>MEANING:</b> to like<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich mochte schon immer dieses Restaurant.*, Image URL: None
+2025-01-07 03:11:17,108 - DEBUG - Processing row 67/141: {'WORD': '**müssen**', 'CONJUGATIONS': 'muss, musste, **hat gemusst** / **müssen** (Modalverb)', 'MEANING': 'must/to have to', 'EXAMPLE SENTENCE (GERMAN)': '*Wir müssen uns beeilen, sonst verpassen wir den Zug.*'}
+2025-01-07 03:11:17,110 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:17,485 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Am%C3%BCssen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:17,487 - WARNING - No images found for '**müssen**'.
+2025-01-07 03:11:17,487 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:17,487 - DEBUG - Note added - Front: **müssen**, Back: <b>CONJUGATIONS:</b> muss, musste, **hat gemusst** / **müssen** (Modalverb)<br><b>MEANING:</b> must/to have to<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wir müssen uns beeilen, sonst verpassen wir den Zug.*, Image URL: None
+2025-01-07 03:11:17,488 - DEBUG - Processing row 68/141: {'WORD': '**nehmen**', 'CONJUGATIONS': 'nimmt, nahm, **hat genommen**', 'MEANING': 'to take', 'EXAMPLE SENTENCE (GERMAN)': '*Ich nehme nur ein Stück Kuchen, danke.*'}
+2025-01-07 03:11:17,490 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:17,754 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Anehmen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:17,757 - WARNING - No images found for '**nehmen**'.
+2025-01-07 03:11:17,758 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:17,758 - DEBUG - Note added - Front: **nehmen**, Back: <b>CONJUGATIONS:</b> nimmt, nahm, **hat genommen**<br><b>MEANING:</b> to take<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich nehme nur ein Stück Kuchen, danke.*, Image URL: None
+2025-01-07 03:11:17,758 - DEBUG - Processing row 69/141: {'WORD': '**nennen**', 'CONJUGATIONS': 'nennt, nannte, **hat genannt**', 'MEANING': 'to name/call', 'EXAMPLE SENTENCE (GERMAN)': '*Wir nennen unser neues Produkt „SmartX“.*'}
+2025-01-07 03:11:17,761 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:18,012 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Anennen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:18,014 - WARNING - No images found for '**nennen**'.
+2025-01-07 03:11:18,015 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:18,015 - DEBUG - Note added - Front: **nennen**, Back: <b>CONJUGATIONS:</b> nennt, nannte, **hat genannt**<br><b>MEANING:</b> to name/call<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wir nennen unser neues Produkt „SmartX“.*, Image URL: None
+2025-01-07 03:11:18,015 - DEBUG - Processing row 70/141: {'WORD': '**pfeifen**', 'CONJUGATIONS': 'pfeift, pfiff, **hat gepfiffen**', 'MEANING': 'to whistle', 'EXAMPLE SENTENCE (GERMAN)': '*Der Schiedsrichter pfiff das Spiel ab.*'}
+2025-01-07 03:11:18,017 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:18,229 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Apfeifen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:18,232 - WARNING - No images found for '**pfeifen**'.
+2025-01-07 03:11:18,232 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:18,233 - DEBUG - Note added - Front: **pfeifen**, Back: <b>CONJUGATIONS:</b> pfeift, pfiff, **hat gepfiffen**<br><b>MEANING:</b> to whistle<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Schiedsrichter pfiff das Spiel ab.*, Image URL: None
+2025-01-07 03:11:18,233 - DEBUG - Processing row 71/141: {'WORD': '**quellen**', 'CONJUGATIONS': 'quillt, quoll, **ist gequollen**', 'MEANING': 'to swell up (liquid)', 'EXAMPLE SENTENCE (GERMAN)': '*Der Teig quillt langsam auf.*'}
+2025-01-07 03:11:18,236 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:18,508 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aquellen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:18,511 - WARNING - No images found for '**quellen**'.
+2025-01-07 03:11:18,511 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:18,511 - DEBUG - Note added - Front: **quellen**, Back: <b>CONJUGATIONS:</b> quillt, quoll, **ist gequollen**<br><b>MEANING:</b> to swell up (liquid)<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Teig quillt langsam auf.*, Image URL: None
+2025-01-07 03:11:18,512 - DEBUG - Processing row 72/141: {'WORD': '**raten**', 'CONJUGATIONS': 'rät, riet, **hat geraten**', 'MEANING': 'to advise/guess', 'EXAMPLE SENTENCE (GERMAN)': '*Der Arzt riet mir zu mehr Bewegung.*'}
+2025-01-07 03:11:18,514 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:18,737 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Araten%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:18,739 - WARNING - No images found for '**raten**'.
+2025-01-07 03:11:18,740 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:18,740 - DEBUG - Note added - Front: **raten**, Back: <b>CONJUGATIONS:</b> rät, riet, **hat geraten**<br><b>MEANING:</b> to advise/guess<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Arzt riet mir zu mehr Bewegung.*, Image URL: None
+2025-01-07 03:11:18,740 - DEBUG - Processing row 73/141: {'WORD': '**reiben**', 'CONJUGATIONS': 'reibt, rieb, **hat gerieben**', 'MEANING': 'to rub', 'EXAMPLE SENTENCE (GERMAN)': '*Sie rieb sich die Augen, weil sie müde war.*'}
+2025-01-07 03:11:18,742 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:18,989 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Areiben%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:18,992 - WARNING - No images found for '**reiben**'.
+2025-01-07 03:11:18,992 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:18,993 - DEBUG - Note added - Front: **reiben**, Back: <b>CONJUGATIONS:</b> reibt, rieb, **hat gerieben**<br><b>MEANING:</b> to rub<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie rieb sich die Augen, weil sie müde war.*, Image URL: None
+2025-01-07 03:11:18,993 - DEBUG - Processing row 74/141: {'WORD': '**reiten**', 'CONJUGATIONS': 'reitet, ritt, **ist/hat geritten**', 'MEANING': 'to ride (horse)', 'EXAMPLE SENTENCE (GERMAN)': '*Sie ist im Urlaub am Strand geritten.* / *Er hat sein Pferd über das Feld geritten.*'}
+2025-01-07 03:11:18,995 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:19,215 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Areiten%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:19,217 - WARNING - No images found for '**reiten**'.
+2025-01-07 03:11:19,218 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:19,218 - DEBUG - Note added - Front: **reiten**, Back: <b>CONJUGATIONS:</b> reitet, ritt, **ist/hat geritten**<br><b>MEANING:</b> to ride (horse)<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie ist im Urlaub am Strand geritten.* / *Er hat sein Pferd über das Feld geritten.*, Image URL: None
+2025-01-07 03:11:19,218 - DEBUG - Processing row 75/141: {'WORD': '**rennen**', 'CONJUGATIONS': 'rennt, rannte, **ist gerannt**', 'MEANING': 'to run/race', 'EXAMPLE SENTENCE (GERMAN)': '*Er rannte so schnell er konnte zum Bus.*'}
+2025-01-07 03:11:19,221 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:19,435 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Arennen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:19,437 - WARNING - No images found for '**rennen**'.
+2025-01-07 03:11:19,437 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:19,437 - DEBUG - Note added - Front: **rennen**, Back: <b>CONJUGATIONS:</b> rennt, rannte, **ist gerannt**<br><b>MEANING:</b> to run/race<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er rannte so schnell er konnte zum Bus.*, Image URL: None
+2025-01-07 03:11:19,438 - DEBUG - Processing row 76/141: {'WORD': '**riechen**', 'CONJUGATIONS': 'riecht, roch, **hat gerochen**', 'MEANING': 'to smell', 'EXAMPLE SENTENCE (GERMAN)': '*Die Rosen rochen wunderbar.*'}
+2025-01-07 03:11:19,440 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:19,670 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ariechen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:19,673 - WARNING - No images found for '**riechen**'.
+2025-01-07 03:11:19,674 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:19,674 - DEBUG - Note added - Front: **riechen**, Back: <b>CONJUGATIONS:</b> riecht, roch, **hat gerochen**<br><b>MEANING:</b> to smell<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Rosen rochen wunderbar.*, Image URL: None
+2025-01-07 03:11:19,674 - DEBUG - Processing row 77/141: {'WORD': '**rufen**', 'CONJUGATIONS': 'ruft, rief, **hat gerufen**', 'MEANING': 'to call', 'EXAMPLE SENTENCE (GERMAN)': '*Sie rief laut nach Hilfe.*'}
+2025-01-07 03:11:19,678 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:20,014 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Arufen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:20,016 - WARNING - No images found for '**rufen**'.
+2025-01-07 03:11:20,016 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:20,017 - DEBUG - Note added - Front: **rufen**, Back: <b>CONJUGATIONS:</b> ruft, rief, **hat gerufen**<br><b>MEANING:</b> to call<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie rief laut nach Hilfe.*, Image URL: None
+2025-01-07 03:11:20,017 - DEBUG - Processing row 78/141: {'WORD': '**saufen**', 'CONJUGATIONS': 'säuft, soff, **hat gesoffen**', 'MEANING': 'to booze/drink (animals)', 'EXAMPLE SENTENCE (GERMAN)': '*Die Pferde saufen Wasser am Fluss.*'}
+2025-01-07 03:11:20,019 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:20,284 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Asaufen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:20,287 - WARNING - No images found for '**saufen**'.
+2025-01-07 03:11:20,287 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:20,287 - DEBUG - Note added - Front: **saufen**, Back: <b>CONJUGATIONS:</b> säuft, soff, **hat gesoffen**<br><b>MEANING:</b> to booze/drink (animals)<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Pferde saufen Wasser am Fluss.*, Image URL: None
+2025-01-07 03:11:20,287 - DEBUG - Processing row 79/141: {'WORD': '**schaffen**', 'CONJUGATIONS': 'schafft, schuf, **hat geschaffen**', 'MEANING': 'to create', 'EXAMPLE SENTENCE (GERMAN)': '*Michelangelo schuf herausragende Werke.* (Regelmäßig: *Er schaffte seine Arbeit nicht.*)'}
+2025-01-07 03:11:20,289 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:20,598 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschaffen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:20,600 - WARNING - No images found for '**schaffen**'.
+2025-01-07 03:11:20,601 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:20,601 - DEBUG - Note added - Front: **schaffen**, Back: <b>CONJUGATIONS:</b> schafft, schuf, **hat geschaffen**<br><b>MEANING:</b> to create<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Michelangelo schuf herausragende Werke.* (Regelmäßig: *Er schaffte seine Arbeit nicht.*), Image URL: None
+2025-01-07 03:11:20,601 - DEBUG - Processing row 80/141: {'WORD': '**scheiden**', 'CONJUGATIONS': 'scheidet, schied, **hat geschieden**', 'MEANING': 'to separate/divorce', 'EXAMPLE SENTENCE (GERMAN)': '*Sie hat sich von ihrem Mann scheiden lassen.*'}
+2025-01-07 03:11:20,603 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:20,826 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ascheiden%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:20,828 - WARNING - No images found for '**scheiden**'.
+2025-01-07 03:11:20,829 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:20,829 - DEBUG - Note added - Front: **scheiden**, Back: <b>CONJUGATIONS:</b> scheidet, schied, **hat geschieden**<br><b>MEANING:</b> to separate/divorce<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie hat sich von ihrem Mann scheiden lassen.*, Image URL: None
+2025-01-07 03:11:20,829 - DEBUG - Processing row 81/141: {'WORD': '**scheinen**', 'CONJUGATIONS': 'scheint, schien, **hat geschienen**', 'MEANING': 'to shine/seem', 'EXAMPLE SENTENCE (GERMAN)': '*Die Sonne schien den ganzen Tag.* / *Es scheint, als ob alles klappt.*'}
+2025-01-07 03:11:20,831 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:21,071 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Ascheinen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:21,073 - WARNING - No images found for '**scheinen**'.
+2025-01-07 03:11:21,074 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:21,074 - DEBUG - Note added - Front: **scheinen**, Back: <b>CONJUGATIONS:</b> scheint, schien, **hat geschienen**<br><b>MEANING:</b> to shine/seem<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Sonne schien den ganzen Tag.* / *Es scheint, als ob alles klappt.*, Image URL: None
+2025-01-07 03:11:21,074 - DEBUG - Processing row 82/141: {'WORD': '**schieben**', 'CONJUGATIONS': 'schiebt, schob, **hat geschoben**', 'MEANING': 'to push', 'EXAMPLE SENTENCE (GERMAN)': '*Er schob den Karton in die Ecke.*'}
+2025-01-07 03:11:21,076 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:21,288 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschieben%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:21,290 - WARNING - No images found for '**schieben**'.
+2025-01-07 03:11:21,290 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:21,290 - DEBUG - Note added - Front: **schieben**, Back: <b>CONJUGATIONS:</b> schiebt, schob, **hat geschoben**<br><b>MEANING:</b> to push<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er schob den Karton in die Ecke.*, Image URL: None
+2025-01-07 03:11:21,291 - DEBUG - Processing row 83/141: {'WORD': '**schießen**', 'CONJUGATIONS': 'schießt, schoss, **hat geschossen**', 'MEANING': 'to shoot', 'EXAMPLE SENTENCE (GERMAN)': '*Er schoss den Ball ins Tor.*'}
+2025-01-07 03:11:21,293 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:21,527 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschie%C3%9Fen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:21,530 - WARNING - No images found for '**schießen**'.
+2025-01-07 03:11:21,530 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:21,530 - DEBUG - Note added - Front: **schießen**, Back: <b>CONJUGATIONS:</b> schießt, schoss, **hat geschossen**<br><b>MEANING:</b> to shoot<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er schoss den Ball ins Tor.*, Image URL: None
+2025-01-07 03:11:21,530 - DEBUG - Processing row 84/141: {'WORD': '**schlafen**', 'CONJUGATIONS': 'schläft, schlief, **hat geschlafen**', 'MEANING': 'to sleep', 'EXAMPLE SENTENCE (GERMAN)': '*Ich habe letzte Nacht tief und fest geschlafen.*'}
+2025-01-07 03:11:21,533 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:21,758 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschlafen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:21,761 - WARNING - No images found for '**schlafen**'.
+2025-01-07 03:11:21,761 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:21,762 - DEBUG - Note added - Front: **schlafen**, Back: <b>CONJUGATIONS:</b> schläft, schlief, **hat geschlafen**<br><b>MEANING:</b> to sleep<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich habe letzte Nacht tief und fest geschlafen.*, Image URL: None
+2025-01-07 03:11:21,762 - DEBUG - Processing row 85/141: {'WORD': '**schlagen**', 'CONJUGATIONS': 'schlägt, schlug, **hat geschlagen**', 'MEANING': 'to hit/beat', 'EXAMPLE SENTENCE (GERMAN)': '*Sie schlug mit der Faust auf den Tisch.*'}
+2025-01-07 03:11:21,765 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:21,982 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschlagen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:21,985 - WARNING - No images found for '**schlagen**'.
+2025-01-07 03:11:21,985 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:21,985 - DEBUG - Note added - Front: **schlagen**, Back: <b>CONJUGATIONS:</b> schlägt, schlug, **hat geschlagen**<br><b>MEANING:</b> to hit/beat<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie schlug mit der Faust auf den Tisch.*, Image URL: None
+2025-01-07 03:11:21,986 - DEBUG - Processing row 86/141: {'WORD': '**schleichen**', 'CONJUGATIONS': 'schleicht, schlich, **ist geschlichen**', 'MEANING': 'to creep/sneak', 'EXAMPLE SENTENCE (GERMAN)': '*Die Katze schlich lautlos durch den Garten.*'}
+2025-01-07 03:11:21,988 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:22,232 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschleichen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:22,235 - WARNING - No images found for '**schleichen**'.
+2025-01-07 03:11:22,236 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:22,236 - DEBUG - Note added - Front: **schleichen**, Back: <b>CONJUGATIONS:</b> schleicht, schlich, **ist geschlichen**<br><b>MEANING:</b> to creep/sneak<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Katze schlich lautlos durch den Garten.*, Image URL: None
+2025-01-07 03:11:22,236 - DEBUG - Processing row 87/141: {'WORD': '**schleifen**', 'CONJUGATIONS': 'schleift, schliff, **hat geschliffen**', 'MEANING': 'to grind/sharpen', 'EXAMPLE SENTENCE (GERMAN)': '*Der Handwerker schliff das Werkzeug neu.*'}
+2025-01-07 03:11:22,238 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:22,465 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschleifen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:22,467 - WARNING - No images found for '**schleifen**'.
+2025-01-07 03:11:22,468 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:22,468 - DEBUG - Note added - Front: **schleifen**, Back: <b>CONJUGATIONS:</b> schleift, schliff, **hat geschliffen**<br><b>MEANING:</b> to grind/sharpen<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Handwerker schliff das Werkzeug neu.*, Image URL: None
+2025-01-07 03:11:22,468 - DEBUG - Processing row 88/141: {'WORD': '**schließen**', 'CONJUGATIONS': 'schließt, schloss, **hat geschlossen**', 'MEANING': 'to close', 'EXAMPLE SENTENCE (GERMAN)': '*Sie schloss die Tür und ging nach Hause.*'}
+2025-01-07 03:11:22,470 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:22,680 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschlie%C3%9Fen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:22,684 - WARNING - No images found for '**schließen**'.
+2025-01-07 03:11:22,684 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:22,684 - DEBUG - Note added - Front: **schließen**, Back: <b>CONJUGATIONS:</b> schließt, schloss, **hat geschlossen**<br><b>MEANING:</b> to close<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie schloss die Tür und ging nach Hause.*, Image URL: None
+2025-01-07 03:11:22,685 - DEBUG - Processing row 89/141: {'WORD': '**schmeißen**', 'CONJUGATIONS': 'schmeißt, schmiss, **hat geschmissen**', 'MEANING': 'to throw (colloquial)', 'EXAMPLE SENTENCE (GERMAN)': '*Er schmiss die alten Unterlagen in den Papierkorb.*'}
+2025-01-07 03:11:22,687 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:22,945 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschmei%C3%9Fen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:22,948 - WARNING - No images found for '**schmeißen**'.
+2025-01-07 03:11:22,949 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:22,949 - DEBUG - Note added - Front: **schmeißen**, Back: <b>CONJUGATIONS:</b> schmeißt, schmiss, **hat geschmissen**<br><b>MEANING:</b> to throw (colloquial)<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er schmiss die alten Unterlagen in den Papierkorb.*, Image URL: None
+2025-01-07 03:11:22,949 - DEBUG - Processing row 90/141: {'WORD': '**schmelzen**', 'CONJUGATIONS': 'schmilzt, schmolz, **ist/hat geschmolzen**', 'MEANING': 'to melt', 'EXAMPLE SENTENCE (GERMAN)': '*Die Butter ist in der Sonne geschmolzen.*'}
+2025-01-07 03:11:22,951 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:23,196 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschmelzen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:23,198 - WARNING - No images found for '**schmelzen**'.
+2025-01-07 03:11:23,199 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:23,199 - DEBUG - Note added - Front: **schmelzen**, Back: <b>CONJUGATIONS:</b> schmilzt, schmolz, **ist/hat geschmolzen**<br><b>MEANING:</b> to melt<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Butter ist in der Sonne geschmolzen.*, Image URL: None
+2025-01-07 03:11:23,199 - DEBUG - Processing row 91/141: {'WORD': '**schneiden**', 'CONJUGATIONS': 'schneidet, schnitt, **hat geschnitten**', 'MEANING': 'to cut', 'EXAMPLE SENTENCE (GERMAN)': '*Bitte schneide das Gemüse in kleine Stücke.*'}
+2025-01-07 03:11:23,202 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:23,777 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschneiden%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:23,779 - WARNING - No images found for '**schneiden**'.
+2025-01-07 03:11:23,779 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:23,780 - DEBUG - Note added - Front: **schneiden**, Back: <b>CONJUGATIONS:</b> schneidet, schnitt, **hat geschnitten**<br><b>MEANING:</b> to cut<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Bitte schneide das Gemüse in kleine Stücke.*, Image URL: None
+2025-01-07 03:11:23,780 - DEBUG - Processing row 92/141: {'WORD': '**schreiben**', 'CONJUGATIONS': 'schreibt, schrieb, **hat geschrieben**', 'MEANING': 'to write', 'EXAMPLE SENTENCE (GERMAN)': '*Sie schrieb einen Bericht über das Projekt.*'}
+2025-01-07 03:11:23,783 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:24,123 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschreiben%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:24,125 - WARNING - No images found for '**schreiben**'.
+2025-01-07 03:11:24,125 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:24,126 - DEBUG - Note added - Front: **schreiben**, Back: <b>CONJUGATIONS:</b> schreibt, schrieb, **hat geschrieben**<br><b>MEANING:</b> to write<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie schrieb einen Bericht über das Projekt.*, Image URL: None
+2025-01-07 03:11:24,126 - DEBUG - Processing row 93/141: {'WORD': '**schreien**', 'CONJUGATIONS': 'schreit, schrie, **hat geschrien**', 'MEANING': 'to scream/shout', 'EXAMPLE SENTENCE (GERMAN)': '*Das Kind schrie laut nach seiner Mutter.*'}
+2025-01-07 03:11:24,128 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:24,366 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschreien%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:24,369 - WARNING - No images found for '**schreien**'.
+2025-01-07 03:11:24,369 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:24,369 - DEBUG - Note added - Front: **schreien**, Back: <b>CONJUGATIONS:</b> schreit, schrie, **hat geschrien**<br><b>MEANING:</b> to scream/shout<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Das Kind schrie laut nach seiner Mutter.*, Image URL: None
+2025-01-07 03:11:24,369 - DEBUG - Processing row 94/141: {'WORD': '**schreiten**', 'CONJUGATIONS': 'schreitet, schritt, **ist geschritten**', 'MEANING': 'to stride', 'EXAMPLE SENTENCE (GERMAN)': '*Er schritt würdevoll durch den Festsaal.*'}
+2025-01-07 03:11:24,371 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:24,641 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschreiten%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:24,643 - WARNING - No images found for '**schreiten**'.
+2025-01-07 03:11:24,644 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:24,644 - DEBUG - Note added - Front: **schreiten**, Back: <b>CONJUGATIONS:</b> schreitet, schritt, **ist geschritten**<br><b>MEANING:</b> to stride<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er schritt würdevoll durch den Festsaal.*, Image URL: None
+2025-01-07 03:11:24,644 - DEBUG - Processing row 95/141: {'WORD': '**schweigen**', 'CONJUGATIONS': 'schweigt, schwieg, **hat geschwiegen**', 'MEANING': 'to be silent', 'EXAMPLE SENTENCE (GERMAN)': '*Sie schwieg, weil sie nichts Falsches sagen wollte.*'}
+2025-01-07 03:11:24,646 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:24,879 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschweigen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:24,881 - WARNING - No images found for '**schweigen**'.
+2025-01-07 03:11:24,882 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:24,882 - DEBUG - Note added - Front: **schweigen**, Back: <b>CONJUGATIONS:</b> schweigt, schwieg, **hat geschwiegen**<br><b>MEANING:</b> to be silent<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie schwieg, weil sie nichts Falsches sagen wollte.*, Image URL: None
+2025-01-07 03:11:24,882 - DEBUG - Processing row 96/141: {'WORD': '**schwellen**', 'CONJUGATIONS': 'schwillt, schwoll, **ist geschwollen**', 'MEANING': 'to swell', 'EXAMPLE SENTENCE (GERMAN)': '*Ihr Knöchel ist nach dem Sturz stark geschwollen.*'}
+2025-01-07 03:11:24,885 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:25,113 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschwellen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:25,116 - WARNING - No images found for '**schwellen**'.
+2025-01-07 03:11:25,116 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:25,116 - DEBUG - Note added - Front: **schwellen**, Back: <b>CONJUGATIONS:</b> schwillt, schwoll, **ist geschwollen**<br><b>MEANING:</b> to swell<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ihr Knöchel ist nach dem Sturz stark geschwollen.*, Image URL: None
+2025-01-07 03:11:25,116 - DEBUG - Processing row 97/141: {'WORD': '**schwimmen**', 'CONJUGATIONS': 'schwimmt, schwamm, **ist/hat geschwommen**', 'MEANING': 'to swim', 'EXAMPLE SENTENCE (GERMAN)': '*Sie ist im See geschwommen.* / *Er hat 20 Bahnen geschwommen.*'}
+2025-01-07 03:11:25,119 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:25,355 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschwimmen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:25,358 - WARNING - No images found for '**schwimmen**'.
+2025-01-07 03:11:25,358 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:25,358 - DEBUG - Note added - Front: **schwimmen**, Back: <b>CONJUGATIONS:</b> schwimmt, schwamm, **ist/hat geschwommen**<br><b>MEANING:</b> to swim<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie ist im See geschwommen.* / *Er hat 20 Bahnen geschwommen.*, Image URL: None
+2025-01-07 03:11:25,358 - DEBUG - Processing row 98/141: {'WORD': '**schwinden**', 'CONJUGATIONS': 'schwindet, schwand, **ist geschwunden**', 'MEANING': 'to dwindle/fade', 'EXAMPLE SENTENCE (GERMAN)': '*Die Hoffnung schwand mit jeder weiteren schlechten Nachricht.*'}
+2025-01-07 03:11:25,360 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:25,612 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschwinden%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:25,615 - WARNING - No images found for '**schwinden**'.
+2025-01-07 03:11:25,615 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:25,615 - DEBUG - Note added - Front: **schwinden**, Back: <b>CONJUGATIONS:</b> schwindet, schwand, **ist geschwunden**<br><b>MEANING:</b> to dwindle/fade<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Hoffnung schwand mit jeder weiteren schlechten Nachricht.*, Image URL: None
+2025-01-07 03:11:25,616 - DEBUG - Processing row 99/141: {'WORD': '**schwingen**', 'CONJUGATIONS': 'schwingt, schwang, **hat geschwungen**', 'MEANING': 'to swing', 'EXAMPLE SENTENCE (GERMAN)': '*Er schwang den Hammer, um den Nagel einzuschlagen.*'}
+2025-01-07 03:11:25,618 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:25,830 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschwingen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:25,833 - WARNING - No images found for '**schwingen**'.
+2025-01-07 03:11:25,833 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:25,834 - DEBUG - Note added - Front: **schwingen**, Back: <b>CONJUGATIONS:</b> schwingt, schwang, **hat geschwungen**<br><b>MEANING:</b> to swing<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er schwang den Hammer, um den Nagel einzuschlagen.*, Image URL: None
+2025-01-07 03:11:25,834 - DEBUG - Processing row 100/141: {'WORD': '**schwören**', 'CONJUGATIONS': 'schwört, schwor, **hat geschworen**', 'MEANING': 'to swear', 'EXAMPLE SENTENCE (GERMAN)': '*Er schwor, immer die Wahrheit zu sagen.*'}
+2025-01-07 03:11:25,836 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:26,062 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aschw%C3%B6ren%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:11:26,065 - WARNING - No images found for '**schwören**'.
+2025-01-07 03:11:26,065 - DEBUG - Fetched image URL: None
+2025-01-07 03:11:26,065 - DEBUG - Note added - Front: **schwören**, Back: <b>CONJUGATIONS:</b> schwört, schwor, **hat geschworen**<br><b>MEANING:</b> to swear<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er schwor, immer die Wahrheit zu sagen.*, Image URL: None
+2025-01-07 03:11:26,065 - DEBUG - Processing row 101/141: {'WORD': '**sehen**', 'CONJUGATIONS': 'sieht, sah, **hat gesehen**', 'MEANING': 'to see', 'EXAMPLE SENTENCE (GERMAN)': '*Ich habe dich gestern im Büro gesehen.*'}
+2025-01-07 03:11:26,068 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:11:26,224 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Asehen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 429 35
+2025-01-07 03:11:26,226 - WARNING - Rate limit exceeded. Retrying after 60 seconds...
+2025-01-07 03:12:26,232 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:26,470 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Asehen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:26,472 - WARNING - No images found for '**sehen**'.
+2025-01-07 03:12:26,473 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:26,473 - DEBUG - Note added - Front: **sehen**, Back: <b>CONJUGATIONS:</b> sieht, sah, **hat gesehen**<br><b>MEANING:</b> to see<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich habe dich gestern im Büro gesehen.*, Image URL: None
+2025-01-07 03:12:26,473 - DEBUG - Processing row 102/141: {'WORD': '**sein**', 'CONJUGATIONS': 'ist, war, **ist gewesen**', 'MEANING': 'to be', 'EXAMPLE SENTENCE (GERMAN)': '*Wir sind gestern in der Stadt gewesen.*'}
+2025-01-07 03:12:26,475 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:26,707 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Asein%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:26,709 - WARNING - No images found for '**sein**'.
+2025-01-07 03:12:26,710 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:26,710 - DEBUG - Note added - Front: **sein**, Back: <b>CONJUGATIONS:</b> ist, war, **ist gewesen**<br><b>MEANING:</b> to be<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wir sind gestern in der Stadt gewesen.*, Image URL: None
+2025-01-07 03:12:26,710 - DEBUG - Processing row 103/141: {'WORD': '**senden**', 'CONJUGATIONS': 'sendet, sendete (sandte), **hat gesendet/gesandt**', 'MEANING': 'to send', 'EXAMPLE SENTENCE (GERMAN)': '*Sie sandte/schickte mir eine E-Mail mit den Unterlagen.*'}
+2025-01-07 03:12:26,712 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:26,944 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Asenden%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:26,947 - WARNING - No images found for '**senden**'.
+2025-01-07 03:12:26,947 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:26,947 - DEBUG - Note added - Front: **senden**, Back: <b>CONJUGATIONS:</b> sendet, sendete (sandte), **hat gesendet/gesandt**<br><b>MEANING:</b> to send<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie sandte/schickte mir eine E-Mail mit den Unterlagen.*, Image URL: None
+2025-01-07 03:12:26,947 - DEBUG - Processing row 104/141: {'WORD': '**singen**', 'CONJUGATIONS': 'singt, sang, **hat gesungen**', 'MEANING': 'to sing', 'EXAMPLE SENTENCE (GERMAN)': '*Der Chor sang ein wunderschönes Lied.*'}
+2025-01-07 03:12:26,949 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:27,194 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Asingen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:27,196 - WARNING - No images found for '**singen**'.
+2025-01-07 03:12:27,197 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:27,197 - DEBUG - Note added - Front: **singen**, Back: <b>CONJUGATIONS:</b> singt, sang, **hat gesungen**<br><b>MEANING:</b> to sing<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Chor sang ein wunderschönes Lied.*, Image URL: None
+2025-01-07 03:12:27,197 - DEBUG - Processing row 105/141: {'WORD': '**sinken**', 'CONJUGATIONS': 'sinkt, sank, **ist gesunken**', 'MEANING': 'to sink', 'EXAMPLE SENTENCE (GERMAN)': '*Der Wasserpegel sank nach einigen Tagen wieder.*'}
+2025-01-07 03:12:27,199 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:27,411 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Asinken%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:27,414 - WARNING - No images found for '**sinken**'.
+2025-01-07 03:12:27,414 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:27,415 - DEBUG - Note added - Front: **sinken**, Back: <b>CONJUGATIONS:</b> sinkt, sank, **ist gesunken**<br><b>MEANING:</b> to sink<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Wasserpegel sank nach einigen Tagen wieder.*, Image URL: None
+2025-01-07 03:12:27,415 - DEBUG - Processing row 106/141: {'WORD': '**sitzen**', 'CONJUGATIONS': 'sitzt, saß, **hat gesessen**', 'MEANING': 'to sit', 'EXAMPLE SENTENCE (GERMAN)': '*Ich habe den ganzen Tag am Schreibtisch gesessen.*'}
+2025-01-07 03:12:27,417 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:27,642 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Asitzen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:27,644 - WARNING - No images found for '**sitzen**'.
+2025-01-07 03:12:27,645 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:27,645 - DEBUG - Note added - Front: **sitzen**, Back: <b>CONJUGATIONS:</b> sitzt, saß, **hat gesessen**<br><b>MEANING:</b> to sit<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich habe den ganzen Tag am Schreibtisch gesessen.*, Image URL: None
+2025-01-07 03:12:27,645 - DEBUG - Processing row 107/141: {'WORD': '**sollen**', 'CONJUGATIONS': 'soll, sollte, **hat gesollt** / **sollen** (Modalverb)', 'MEANING': 'should', 'EXAMPLE SENTENCE (GERMAN)': '*Wir sollen die Präsentation bis Freitag fertig haben.*'}
+2025-01-07 03:12:27,647 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:27,848 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Asollen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:27,850 - WARNING - No images found for '**sollen**'.
+2025-01-07 03:12:27,850 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:27,850 - DEBUG - Note added - Front: **sollen**, Back: <b>CONJUGATIONS:</b> soll, sollte, **hat gesollt** / **sollen** (Modalverb)<br><b>MEANING:</b> should<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wir sollen die Präsentation bis Freitag fertig haben.*, Image URL: None
+2025-01-07 03:12:27,851 - DEBUG - Processing row 108/141: {'WORD': '**spinnen**', 'CONJUGATIONS': 'spinnt, spann, **hat gesponnen**', 'MEANING': 'to spin / talk nonsense', 'EXAMPLE SENTENCE (GERMAN)': '*Die Spinne spinnt ein Netz.* / *Er spinnt wohl, wenn er so etwas behauptet.*'}
+2025-01-07 03:12:27,853 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:28,077 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aspinnen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:28,079 - WARNING - No images found for '**spinnen**'.
+2025-01-07 03:12:28,080 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:28,080 - DEBUG - Note added - Front: **spinnen**, Back: <b>CONJUGATIONS:</b> spinnt, spann, **hat gesponnen**<br><b>MEANING:</b> to spin / talk nonsense<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Spinne spinnt ein Netz.* / *Er spinnt wohl, wenn er so etwas behauptet.*, Image URL: None
+2025-01-07 03:12:28,080 - DEBUG - Processing row 109/141: {'WORD': '**sprechen**', 'CONJUGATIONS': 'spricht, sprach, **hat gesprochen**', 'MEANING': 'to speak', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben lange über das Problem gesprochen.*'}
+2025-01-07 03:12:28,082 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:28,361 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Asprechen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:28,364 - WARNING - No images found for '**sprechen**'.
+2025-01-07 03:12:28,364 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:28,364 - DEBUG - Note added - Front: **sprechen**, Back: <b>CONJUGATIONS:</b> spricht, sprach, **hat gesprochen**<br><b>MEANING:</b> to speak<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wir haben lange über das Problem gesprochen.*, Image URL: None
+2025-01-07 03:12:28,364 - DEBUG - Processing row 110/141: {'WORD': '**springen**', 'CONJUGATIONS': 'springt, sprang, **ist gesprungen**', 'MEANING': 'to jump', 'EXAMPLE SENTENCE (GERMAN)': '*Der Hund sprang über den Zaun.*'}
+2025-01-07 03:12:28,367 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:28,646 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aspringen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:28,649 - WARNING - No images found for '**springen**'.
+2025-01-07 03:12:28,649 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:28,649 - DEBUG - Note added - Front: **springen**, Back: <b>CONJUGATIONS:</b> springt, sprang, **ist gesprungen**<br><b>MEANING:</b> to jump<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Hund sprang über den Zaun.*, Image URL: None
+2025-01-07 03:12:28,649 - DEBUG - Processing row 111/141: {'WORD': '**stechen**', 'CONJUGATIONS': 'sticht, stach, **hat gestochen**', 'MEANING': 'to sting/prick', 'EXAMPLE SENTENCE (GERMAN)': '*Die Biene stach ihn in den Arm.*'}
+2025-01-07 03:12:28,651 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:28,897 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Astechen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:28,900 - WARNING - No images found for '**stechen**'.
+2025-01-07 03:12:28,901 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:28,901 - DEBUG - Note added - Front: **stechen**, Back: <b>CONJUGATIONS:</b> sticht, stach, **hat gestochen**<br><b>MEANING:</b> to sting/prick<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Biene stach ihn in den Arm.*, Image URL: None
+2025-01-07 03:12:28,901 - DEBUG - Processing row 112/141: {'WORD': '**stehen**', 'CONJUGATIONS': 'steht, stand, **hat gestanden**', 'MEANING': 'to stand', 'EXAMPLE SENTENCE (GERMAN)': '*Der Schrank steht schon seit Jahren in der Ecke.*'}
+2025-01-07 03:12:28,903 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:29,145 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Astehen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:29,147 - WARNING - No images found for '**stehen**'.
+2025-01-07 03:12:29,148 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:29,148 - DEBUG - Note added - Front: **stehen**, Back: <b>CONJUGATIONS:</b> steht, stand, **hat gestanden**<br><b>MEANING:</b> to stand<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Schrank steht schon seit Jahren in der Ecke.*, Image URL: None
+2025-01-07 03:12:29,148 - DEBUG - Processing row 113/141: {'WORD': '**stehlen**', 'CONJUGATIONS': 'stiehlt, stahl, **hat gestohlen**', 'MEANING': 'to steal', 'EXAMPLE SENTENCE (GERMAN)': '*Jemand hat mein Fahrrad gestohlen.*'}
+2025-01-07 03:12:29,150 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:29,367 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Astehlen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:29,370 - WARNING - No images found for '**stehlen**'.
+2025-01-07 03:12:29,370 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:29,370 - DEBUG - Note added - Front: **stehlen**, Back: <b>CONJUGATIONS:</b> stiehlt, stahl, **hat gestohlen**<br><b>MEANING:</b> to steal<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Jemand hat mein Fahrrad gestohlen.*, Image URL: None
+2025-01-07 03:12:29,370 - DEBUG - Processing row 114/141: {'WORD': '**steigen**', 'CONJUGATIONS': 'steigt, stieg, **ist gestiegen**', 'MEANING': 'to climb/rise', 'EXAMPLE SENTENCE (GERMAN)': '*Die Preise sind stark gestiegen.*'}
+2025-01-07 03:12:29,372 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:29,607 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Asteigen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:29,609 - WARNING - No images found for '**steigen**'.
+2025-01-07 03:12:29,610 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:29,610 - DEBUG - Note added - Front: **steigen**, Back: <b>CONJUGATIONS:</b> steigt, stieg, **ist gestiegen**<br><b>MEANING:</b> to climb/rise<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Preise sind stark gestiegen.*, Image URL: None
+2025-01-07 03:12:29,610 - DEBUG - Processing row 115/141: {'WORD': '**sterben**', 'CONJUGATIONS': 'stirbt, starb, **ist gestorben**', 'MEANING': 'to die', 'EXAMPLE SENTENCE (GERMAN)': '*Leider ist seine Großmutter vergangene Woche gestorben.*'}
+2025-01-07 03:12:29,613 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:29,813 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Asterben%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:29,815 - WARNING - No images found for '**sterben**'.
+2025-01-07 03:12:29,816 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:29,816 - DEBUG - Note added - Front: **sterben**, Back: <b>CONJUGATIONS:</b> stirbt, starb, **ist gestorben**<br><b>MEANING:</b> to die<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Leider ist seine Großmutter vergangene Woche gestorben.*, Image URL: None
+2025-01-07 03:12:29,816 - DEBUG - Processing row 116/141: {'WORD': '**stinken**', 'CONJUGATIONS': 'stinkt, stank, **hat gestunken**', 'MEANING': 'to stink', 'EXAMPLE SENTENCE (GERMAN)': '*Der Müll stank fürchterlich.*'}
+2025-01-07 03:12:29,818 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:30,059 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Astinken%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:30,062 - WARNING - No images found for '**stinken**'.
+2025-01-07 03:12:30,062 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:30,063 - DEBUG - Note added - Front: **stinken**, Back: <b>CONJUGATIONS:</b> stinkt, stank, **hat gestunken**<br><b>MEANING:</b> to stink<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Müll stank fürchterlich.*, Image URL: None
+2025-01-07 03:12:30,063 - DEBUG - Processing row 117/141: {'WORD': '**stoßen**', 'CONJUGATIONS': 'stößt, stieß, **hat/ist gestoßen**', 'MEANING': 'to push/bump', 'EXAMPLE SENTENCE (GERMAN)': '*Sie ist mit dem Fuß gegen den Tisch gestoßen.* / *Er hat die Tür mit Kraft aufgestoßen.*'}
+2025-01-07 03:12:30,065 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:30,313 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Asto%C3%9Fen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:30,315 - WARNING - No images found for '**stoßen**'.
+2025-01-07 03:12:30,315 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:30,316 - DEBUG - Note added - Front: **stoßen**, Back: <b>CONJUGATIONS:</b> stößt, stieß, **hat/ist gestoßen**<br><b>MEANING:</b> to push/bump<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie ist mit dem Fuß gegen den Tisch gestoßen.* / *Er hat die Tür mit Kraft aufgestoßen.*, Image URL: None
+2025-01-07 03:12:30,316 - DEBUG - Processing row 118/141: {'WORD': '**streichen**', 'CONJUGATIONS': 'streicht, strich, **hat gestrichen**', 'MEANING': 'to paint/strike out', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben das Wohnzimmer weiß gestrichen.*'}
+2025-01-07 03:12:30,318 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:30,526 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Astreichen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:30,529 - WARNING - No images found for '**streichen**'.
+2025-01-07 03:12:30,529 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:30,529 - DEBUG - Note added - Front: **streichen**, Back: <b>CONJUGATIONS:</b> streicht, strich, **hat gestrichen**<br><b>MEANING:</b> to paint/strike out<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wir haben das Wohnzimmer weiß gestrichen.*, Image URL: None
+2025-01-07 03:12:30,529 - DEBUG - Processing row 119/141: {'WORD': '**streiten**', 'CONJUGATIONS': 'streitet, stritt, **hat gestritten**', 'MEANING': 'to argue/quarrel', 'EXAMPLE SENTENCE (GERMAN)': '*Die Geschwister stritten oft über Kleinigkeiten.*'}
+2025-01-07 03:12:30,532 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:30,760 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Astreiten%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:30,763 - WARNING - No images found for '**streiten**'.
+2025-01-07 03:12:30,763 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:30,763 - DEBUG - Note added - Front: **streiten**, Back: <b>CONJUGATIONS:</b> streitet, stritt, **hat gestritten**<br><b>MEANING:</b> to argue/quarrel<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Geschwister stritten oft über Kleinigkeiten.*, Image URL: None
+2025-01-07 03:12:30,763 - DEBUG - Processing row 120/141: {'WORD': '**tragen**', 'CONJUGATIONS': 'trägt, trug, **hat getragen**', 'MEANING': 'to carry/wear', 'EXAMPLE SENTENCE (GERMAN)': '*Sie trägt gern bequeme Schuhe im Büro.*'}
+2025-01-07 03:12:30,765 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:30,985 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Atragen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:30,987 - WARNING - No images found for '**tragen**'.
+2025-01-07 03:12:30,988 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:30,988 - DEBUG - Note added - Front: **tragen**, Back: <b>CONJUGATIONS:</b> trägt, trug, **hat getragen**<br><b>MEANING:</b> to carry/wear<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie trägt gern bequeme Schuhe im Büro.*, Image URL: None
+2025-01-07 03:12:30,988 - DEBUG - Processing row 121/141: {'WORD': '**treffen**', 'CONJUGATIONS': 'trifft, traf, **hat getroffen**', 'MEANING': 'to meet/strike', 'EXAMPLE SENTENCE (GERMAN)': '*Gestern traf ich mich mit alten Schulfreunden.*'}
+2025-01-07 03:12:30,990 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:31,205 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Atreffen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:31,207 - WARNING - No images found for '**treffen**'.
+2025-01-07 03:12:31,207 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:31,207 - DEBUG - Note added - Front: **treffen**, Back: <b>CONJUGATIONS:</b> trifft, traf, **hat getroffen**<br><b>MEANING:</b> to meet/strike<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Gestern traf ich mich mit alten Schulfreunden.*, Image URL: None
+2025-01-07 03:12:31,208 - DEBUG - Processing row 122/141: {'WORD': '**treiben**', 'CONJUGATIONS': 'treibt, trieb, **hat/ist getrieben**', 'MEANING': 'to drive/propel', 'EXAMPLE SENTENCE (GERMAN)': '*Der Wind hat das Boot ans Ufer getrieben.* / *Sie treibt gern Sport.*'}
+2025-01-07 03:12:31,210 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:31,450 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Atreiben%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:31,452 - WARNING - No images found for '**treiben**'.
+2025-01-07 03:12:31,453 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:31,453 - DEBUG - Note added - Front: **treiben**, Back: <b>CONJUGATIONS:</b> treibt, trieb, **hat/ist getrieben**<br><b>MEANING:</b> to drive/propel<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Wind hat das Boot ans Ufer getrieben.* / *Sie treibt gern Sport.*, Image URL: None
+2025-01-07 03:12:31,453 - DEBUG - Processing row 123/141: {'WORD': '**treten**', 'CONJUGATIONS': 'tritt, trat, **ist/hat getreten**', 'MEANING': 'to step/kick', 'EXAMPLE SENTENCE (GERMAN)': '*Er trat versehentlich auf meinen Fuß.* / *Sie hat den Ball getreten.*'}
+2025-01-07 03:12:31,455 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:31,685 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Atreten%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:31,687 - WARNING - No images found for '**treten**'.
+2025-01-07 03:12:31,687 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:31,688 - DEBUG - Note added - Front: **treten**, Back: <b>CONJUGATIONS:</b> tritt, trat, **ist/hat getreten**<br><b>MEANING:</b> to step/kick<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er trat versehentlich auf meinen Fuß.* / *Sie hat den Ball getreten.*, Image URL: None
+2025-01-07 03:12:31,688 - DEBUG - Processing row 124/141: {'WORD': '**trinken**', 'CONJUGATIONS': 'trinkt, trank, **hat getrunken**', 'MEANING': 'to drink', 'EXAMPLE SENTENCE (GERMAN)': '*Wir haben zur Feier Sekt getrunken.*'}
+2025-01-07 03:12:31,690 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:31,987 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Atrinken%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:31,990 - WARNING - No images found for '**trinken**'.
+2025-01-07 03:12:31,990 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:31,990 - DEBUG - Note added - Front: **trinken**, Back: <b>CONJUGATIONS:</b> trinkt, trank, **hat getrunken**<br><b>MEANING:</b> to drink<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wir haben zur Feier Sekt getrunken.*, Image URL: None
+2025-01-07 03:12:31,990 - DEBUG - Processing row 125/141: {'WORD': '**tun**', 'CONJUGATIONS': 'tut, tat, **hat getan**', 'MEANING': 'to do', 'EXAMPLE SENTENCE (GERMAN)': '*Was kann ich für Sie tun?*'}
+2025-01-07 03:12:31,992 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:32,249 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Atun%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:32,251 - WARNING - No images found for '**tun**'.
+2025-01-07 03:12:32,252 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:32,252 - DEBUG - Note added - Front: **tun**, Back: <b>CONJUGATIONS:</b> tut, tat, **hat getan**<br><b>MEANING:</b> to do<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Was kann ich für Sie tun?*, Image URL: None
+2025-01-07 03:12:32,252 - DEBUG - Processing row 126/141: {'WORD': '**vergessen**', 'CONJUGATIONS': 'vergisst, vergaß, **hat vergessen**', 'MEANING': 'to forget', 'EXAMPLE SENTENCE (GERMAN)': '*Ich habe völlig vergessen, den Termin einzutragen.*'}
+2025-01-07 03:12:32,254 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:32,492 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Avergessen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:32,494 - WARNING - No images found for '**vergessen**'.
+2025-01-07 03:12:32,495 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:32,495 - DEBUG - Note added - Front: **vergessen**, Back: <b>CONJUGATIONS:</b> vergisst, vergaß, **hat vergessen**<br><b>MEANING:</b> to forget<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich habe völlig vergessen, den Termin einzutragen.*, Image URL: None
+2025-01-07 03:12:32,495 - DEBUG - Processing row 127/141: {'WORD': '**verlieren**', 'CONJUGATIONS': 'verliert, verlor, **hat verloren**', 'MEANING': 'to lose', 'EXAMPLE SENTENCE (GERMAN)': '*Sie hat ihren Schlüssel verloren.*'}
+2025-01-07 03:12:32,497 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:32,734 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Averlieren%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:32,737 - WARNING - No images found for '**verlieren**'.
+2025-01-07 03:12:32,737 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:32,737 - DEBUG - Note added - Front: **verlieren**, Back: <b>CONJUGATIONS:</b> verliert, verlor, **hat verloren**<br><b>MEANING:</b> to lose<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie hat ihren Schlüssel verloren.*, Image URL: None
+2025-01-07 03:12:32,738 - DEBUG - Processing row 128/141: {'WORD': '**verschleißen**', 'CONJUGATIONS': 'verschleißt, verschliss, **hat/ist verschlissen**', 'MEANING': 'to wear out', 'EXAMPLE SENTENCE (GERMAN)': '*Die Reifen sind im Winter schnell verschlissen.*'}
+2025-01-07 03:12:32,740 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:32,981 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Averschlei%C3%9Fen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:32,983 - WARNING - No images found for '**verschleißen**'.
+2025-01-07 03:12:32,984 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:32,984 - DEBUG - Note added - Front: **verschleißen**, Back: <b>CONJUGATIONS:</b> verschleißt, verschliss, **hat/ist verschlissen**<br><b>MEANING:</b> to wear out<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Reifen sind im Winter schnell verschlissen.*, Image URL: None
+2025-01-07 03:12:32,984 - DEBUG - Processing row 129/141: {'WORD': '**verzeihen**', 'CONJUGATIONS': 'verzeiht, verzieh, **hat verziehen**', 'MEANING': 'to forgive', 'EXAMPLE SENTENCE (GERMAN)': '*Bitte verzeih mir den Fehler.*'}
+2025-01-07 03:12:32,986 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:33,200 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Averzeihen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:33,203 - WARNING - No images found for '**verzeihen**'.
+2025-01-07 03:12:33,204 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:33,204 - DEBUG - Note added - Front: **verzeihen**, Back: <b>CONJUGATIONS:</b> verzeiht, verzieh, **hat verziehen**<br><b>MEANING:</b> to forgive<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Bitte verzeih mir den Fehler.*, Image URL: None
+2025-01-07 03:12:33,204 - DEBUG - Processing row 130/141: {'WORD': '**wachsen**', 'CONJUGATIONS': 'wächst, wuchs, **ist gewachsen**', 'MEANING': 'to grow', 'EXAMPLE SENTENCE (GERMAN)': '*Die Pflanzen sind im Frühling stark gewachsen.*'}
+2025-01-07 03:12:33,206 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:33,472 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Awachsen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:33,475 - WARNING - No images found for '**wachsen**'.
+2025-01-07 03:12:33,475 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:33,475 - DEBUG - Note added - Front: **wachsen**, Back: <b>CONJUGATIONS:</b> wächst, wuchs, **ist gewachsen**<br><b>MEANING:</b> to grow<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Pflanzen sind im Frühling stark gewachsen.*, Image URL: None
+2025-01-07 03:12:33,475 - DEBUG - Processing row 131/141: {'WORD': '**waschen**', 'CONJUGATIONS': 'wäscht, wusch, **hat gewaschen**', 'MEANING': 'to wash', 'EXAMPLE SENTENCE (GERMAN)': '*Er hat sein Auto am Wochenende gewaschen.*'}
+2025-01-07 03:12:33,478 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:33,697 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Awaschen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:33,700 - WARNING - No images found for '**waschen**'.
+2025-01-07 03:12:33,700 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:33,700 - DEBUG - Note added - Front: **waschen**, Back: <b>CONJUGATIONS:</b> wäscht, wusch, **hat gewaschen**<br><b>MEANING:</b> to wash<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er hat sein Auto am Wochenende gewaschen.*, Image URL: None
+2025-01-07 03:12:33,701 - DEBUG - Processing row 132/141: {'WORD': '**weisen**', 'CONJUGATIONS': 'weist, wies, **hat gewiesen**', 'MEANING': 'to point/show', 'EXAMPLE SENTENCE (GERMAN)': '*Der Wegweiser weist nach Norden.*'}
+2025-01-07 03:12:33,703 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:33,938 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aweisen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:33,941 - WARNING - No images found for '**weisen**'.
+2025-01-07 03:12:33,942 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:33,942 - DEBUG - Note added - Front: **weisen**, Back: <b>CONJUGATIONS:</b> weist, wies, **hat gewiesen**<br><b>MEANING:</b> to point/show<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Wegweiser weist nach Norden.*, Image URL: None
+2025-01-07 03:12:33,943 - DEBUG - Processing row 133/141: {'WORD': '**wenden**', 'CONJUGATIONS': 'wendet, wandte, **hat gewandt** (Regelm. Variante: *wendete*)', 'MEANING': 'to turn (around)', 'EXAMPLE SENTENCE (GERMAN)': '*Er wandte das Auto auf der engen Straße.*'}
+2025-01-07 03:12:33,946 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:34,262 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Awenden%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:34,264 - WARNING - No images found for '**wenden**'.
+2025-01-07 03:12:34,266 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:34,266 - DEBUG - Note added - Front: **wenden**, Back: <b>CONJUGATIONS:</b> wendet, wandte, **hat gewandt** (Regelm. Variante: *wendete*)<br><b>MEANING:</b> to turn (around)<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Er wandte das Auto auf der engen Straße.*, Image URL: None
+2025-01-07 03:12:34,266 - DEBUG - Processing row 134/141: {'WORD': '**werben**', 'CONJUGATIONS': 'wirbt, warb, **hat geworben**', 'MEANING': 'to advertise/recruit', 'EXAMPLE SENTENCE (GERMAN)': '*Die Firma wirbt verstärkt um neue Fachkräfte.*'}
+2025-01-07 03:12:34,269 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:34,502 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Awerben%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:34,505 - WARNING - No images found for '**werben**'.
+2025-01-07 03:12:34,505 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:34,506 - DEBUG - Note added - Front: **werben**, Back: <b>CONJUGATIONS:</b> wirbt, warb, **hat geworben**<br><b>MEANING:</b> to advertise/recruit<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Firma wirbt verstärkt um neue Fachkräfte.*, Image URL: None
+2025-01-07 03:12:34,506 - DEBUG - Processing row 135/141: {'WORD': '**werden**', 'CONJUGATIONS': 'wird, wurde, **ist geworden**', 'MEANING': 'to become', 'EXAMPLE SENTENCE (GERMAN)': '*Sie ist leider krank geworden.*'}
+2025-01-07 03:12:34,508 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:34,717 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Awerden%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:34,720 - WARNING - No images found for '**werden**'.
+2025-01-07 03:12:34,721 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:34,721 - DEBUG - Note added - Front: **werden**, Back: <b>CONJUGATIONS:</b> wird, wurde, **ist geworden**<br><b>MEANING:</b> to become<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Sie ist leider krank geworden.*, Image URL: None
+2025-01-07 03:12:34,721 - DEBUG - Processing row 136/141: {'WORD': '**werfen**', 'CONJUGATIONS': 'wirft, warf, **hat geworfen**', 'MEANING': 'to throw', 'EXAMPLE SENTENCE (GERMAN)': '*Bitte wirf den Müll in die Tonne.*'}
+2025-01-07 03:12:34,724 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:34,966 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Awerfen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:34,970 - WARNING - No images found for '**werfen**'.
+2025-01-07 03:12:34,970 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:34,970 - DEBUG - Note added - Front: **werfen**, Back: <b>CONJUGATIONS:</b> wirft, warf, **hat geworfen**<br><b>MEANING:</b> to throw<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Bitte wirf den Müll in die Tonne.*, Image URL: None
+2025-01-07 03:12:34,971 - DEBUG - Processing row 137/141: {'WORD': '**wiegen**', 'CONJUGATIONS': 'wiegt, wog, **hat gewogen**', 'MEANING': 'to weigh', 'EXAMPLE SENTENCE (GERMAN)': '*Der Koffer wiegt fast 20 Kilo.*'}
+2025-01-07 03:12:34,973 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:35,205 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Awiegen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:35,207 - WARNING - No images found for '**wiegen**'.
+2025-01-07 03:12:35,207 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:35,208 - DEBUG - Note added - Front: **wiegen**, Back: <b>CONJUGATIONS:</b> wiegt, wog, **hat gewogen**<br><b>MEANING:</b> to weigh<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Der Koffer wiegt fast 20 Kilo.*, Image URL: None
+2025-01-07 03:12:35,208 - DEBUG - Processing row 138/141: {'WORD': '**wissen**', 'CONJUGATIONS': 'weiß, wusste, **hat gewusst**', 'MEANING': 'to know', 'EXAMPLE SENTENCE (GERMAN)': '*Ich wusste nicht, dass du heute frei hast.*'}
+2025-01-07 03:12:35,210 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:35,472 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Awissen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:35,474 - WARNING - No images found for '**wissen**'.
+2025-01-07 03:12:35,475 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:35,475 - DEBUG - Note added - Front: **wissen**, Back: <b>CONJUGATIONS:</b> weiß, wusste, **hat gewusst**<br><b>MEANING:</b> to know<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich wusste nicht, dass du heute frei hast.*, Image URL: None
+2025-01-07 03:12:35,475 - DEBUG - Processing row 139/141: {'WORD': '**wollen**', 'CONJUGATIONS': 'will, wollte, **hat gewollt** (auch: **wollen**)', 'MEANING': 'to want', 'EXAMPLE SENTENCE (GERMAN)': '*Ich wollte dir noch etwas Wichtiges sagen.*'}
+2025-01-07 03:12:35,477 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:35,743 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Awollen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:35,747 - WARNING - No images found for '**wollen**'.
+2025-01-07 03:12:35,747 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:35,747 - DEBUG - Note added - Front: **wollen**, Back: <b>CONJUGATIONS:</b> will, wollte, **hat gewollt** (auch: **wollen**)<br><b>MEANING:</b> to want<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Ich wollte dir noch etwas Wichtiges sagen.*, Image URL: None
+2025-01-07 03:12:35,748 - DEBUG - Processing row 140/141: {'WORD': '**ziehen**', 'CONJUGATIONS': 'zieht, zog, **ist/hat gezogen**', 'MEANING': 'to pull/move', 'EXAMPLE SENTENCE (GERMAN)': '*Wir sind umgezogen.* / *Er hat den Schrank allein gezogen.*'}
+2025-01-07 03:12:35,750 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:36,078 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Aziehen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:36,080 - WARNING - No images found for '**ziehen**'.
+2025-01-07 03:12:36,081 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:36,081 - DEBUG - Note added - Front: **ziehen**, Back: <b>CONJUGATIONS:</b> zieht, zog, **ist/hat gezogen**<br><b>MEANING:</b> to pull/move<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Wir sind umgezogen.* / *Er hat den Schrank allein gezogen.*, Image URL: None
+2025-01-07 03:12:36,081 - DEBUG - Processing row 141/141: {'WORD': '**zwingen**', 'CONJUGATIONS': 'zwingt, zwang, **hat gezwungen**', 'MEANING': 'to force', 'EXAMPLE SENTENCE (GERMAN)': '*Die Situation zwang uns zu schnellen Entscheidungen.*'}
+2025-01-07 03:12:36,083 - DEBUG - Starting new HTTPS connection (1): pixabay.com:443
+2025-01-07 03:12:36,295 - DEBUG - https://pixabay.com:443 "GET /api/?key=48075518-5c8e3f88d3639f87f2db325c6&q=%2A%2Azwingen%2A%2A&image_type=photo&orientation=horizontal&safesearch=true&per_page=3 HTTP/1.1" 200 35
+2025-01-07 03:12:36,297 - WARNING - No images found for '**zwingen**'.
+2025-01-07 03:12:36,298 - DEBUG - Fetched image URL: None
+2025-01-07 03:12:36,298 - DEBUG - Note added - Front: **zwingen**, Back: <b>CONJUGATIONS:</b> zwingt, zwang, **hat gezwungen**<br><b>MEANING:</b> to force<br><b>EXAMPLE SENTENCE (GERMAN):</b> *Die Situation zwang uns zu schnellen Entscheidungen.*, Image URL: None
+2025-01-07 03:12:36,298 - INFO - Total notes added to deck: 141
