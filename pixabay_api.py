@@ -43,8 +43,8 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
     config = config or {
         "use_synonyms": True,
         "rank_by_metadata": True,
-        "strict_filters": False,
-        "apply_nlp": False,
+        "strict_filters": True,
+        "apply_nlp": True,
         "tags": [],  # Allow filtering by tags
     }
 

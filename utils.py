@@ -3,6 +3,12 @@ import os
 import re
 import json
 import logging
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 # Configure logger for the utils module
 logger = logging.getLogger(__name__)
@@ -88,6 +94,7 @@ def load_synonym_dict(file_path="synonyms.json"):
     except json.JSONDecodeError as e:
         logger.error(f"Error parsing {file_path}: {e}")
         return {}
+
 def fetch_synonyms_online(word, max_results=5):
     """
     Fetch synonyms for a given word using python-datamuse.
@@ -156,3 +163,26 @@ def expand_with_synonyms(query, synonym_dict):
                 expanded_queries.append(" ".join(new_query))
 
     return expanded_queries
+
+def apply_nlp_refinement(query):
+    """
+    Refine the input query using NLP techniques such as lemmatization and stop word removal.
+
+    Args:
+        query (str): The search query to be refined.
+
+    Returns:
+        str: The refined query.
+    """
+    lemmatizer = WordNetLemmatizer()
+    stop_words = set(stopwords.words('english'))
+
+    # Tokenize and process words
+    tokens = query.split()
+    refined_tokens = [
+        lemmatizer.lemmatize(word.lower())
+        for word in tokens if word.lower() not in stop_words
+    ]
+
+    # Reconstruct the query
+    return " ".join(refined_tokens)
