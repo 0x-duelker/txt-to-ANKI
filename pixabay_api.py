@@ -148,3 +148,4 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
             return None, None
 
 
+
