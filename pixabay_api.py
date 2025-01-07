@@ -117,6 +117,14 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
 
                     response.raise_for_status()
                     data = response.json()
+                    logger.debug(f"Query '{params['q']}' returned {len(data.get('hits', []))} results.")
+
+                    if len(data.get("hits", [])) < 3 and config["strict_filters"]:
+                        logger.warning("Few results found. Relaxing strict filters...")
+                        params.pop("editors_choice", None)  # Remove the strict filter
+                        response = requests.get(url, params=params, timeout=5)
+                        response.raise_for_status()
+                        data = response.json()
 
                     if data.get("hits"):
                         logger.debug(f"Found {len(data['hits'])} results for query '{expanded_query}'.")
@@ -146,6 +154,14 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
 
                 except requests.RequestException as e:
                     logger.error(f"Error fetching image for query '{expanded_query}': {e}")
+
+            if not data.get("hits"):
+                logger.warning(f"No results for query '{params['q']}' with current filters.")
+                logger.warning(f"No results for refined queries. Retrying with the original query: {query}")
+                params["q"] = query
+                response = requests.get(url, params=params, timeout=5)
+                response.raise_for_status()
+                data = response.json()
 
             logger.warning(f"No images found for query '{query}' after trying synonyms.")
             return None, None

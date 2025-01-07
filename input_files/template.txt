@@ -1,0 +1,24 @@
+# Input Template for ANKI Card Creation
+
+## Vocabulary Section
+- Word: wissen
+  - Conjugations: weiß, wusste, **hat gewusst**
+  - Meaning: to know
+  - Example (German): *Ich wusste nicht, dass du heute frei hast.*
+
+- Word: wollen
+  - Conjugations: will, wollte, **hat gewollt**
+  - Meaning: to want
+  - Example (German): *Ich wollte dir noch etwas Wichtiges sagen.*
+
+## Settings and Configuration (Optional)
+- Pixabay API Key: [Insert Your API Key]
+- Enable Synonyms: True
+- Use NLP Refinement: True
+- Apply Strict Filters: True
+- Tags: [Optional tags to filter searches]
+
+## Notes
+- Ensure all vocabulary entries have a German example sentence.
+- Tags are optional and used only when filtering is needed.
+- Vocabulary section is prioritized in processing.

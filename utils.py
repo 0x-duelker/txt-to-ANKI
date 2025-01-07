@@ -128,6 +128,11 @@ def update_synonyms_file(word, new_synonyms):
     except Exception as e:
         logger.error(f"Error updating synonyms file: {e}")
 
+def validate_synonyms(word, synonyms):
+    valid_synonyms = [syn for syn in synonyms if len(syn.split()) == 1]  # Example: Exclude multi-word synonyms
+    logger.debug(f"Validated synonyms for '{word}': {valid_synonyms}")
+    return valid_synonyms
+
 def get_synonyms(word):
     """
     Get synonyms for a word, combining online lookups and local storage.
@@ -136,7 +141,7 @@ def get_synonyms(word):
     if word in synonyms:
         return synonyms[word]
 
-    online_synonyms = fetch_synonyms_online(word)
+    online_synonyms = validate_synonyms(word, fetch_synonyms_online(word))
     if online_synonyms:
         update_synonyms_file(word, online_synonyms)
         return online_synonyms
