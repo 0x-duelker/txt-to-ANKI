@@ -45,6 +45,7 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
         "rank_by_metadata": True,
         "strict_filters": False,
         "apply_nlp": False,
+        "tags": [],  # Allow filtering by tags
     }
 
     logger.debug(f"Configuration: {config}")
@@ -62,6 +63,10 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
     if config["strict_filters"]:
         params.update({"editors_choice": "true"})  # Example of stricter filter
         logger.debug("Strict filters applied to query.")
+
+    if config["tags"]:
+        params.update({"q": " ".join(config["tags"])});
+        logger.debug(f"Tags filter applied: {config['tags']}")
 
     # Expand query with synonyms if enabled
     queries_to_try = (expand_with_synonyms(query, synonym_dict)
@@ -146,6 +151,7 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
         except Exception as e:
             logger.error(f"Unexpected error during Pixabay fetch: {e}")
             return None, None
+
 
 
 
