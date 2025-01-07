@@ -47,6 +47,8 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
         "apply_nlp": False,
     }
 
+    logger.debug(f"Configuration: {config}")
+
     url = "https://pixabay.com/api/"
     params = {
         "key": api_key,
@@ -59,14 +61,17 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
 
     if config["strict_filters"]:
         params.update({"editors_choice": "true"})  # Example of stricter filter
+        logger.debug("Strict filters applied to query.")
 
     # Expand query with synonyms if enabled
     queries_to_try = (expand_with_synonyms(query, synonym_dict)
                       if synonym_dict and config["use_synonyms"]
                       else [query])
+    logger.debug(f"Queries to try: {queries_to_try}")
 
     if config["apply_nlp"]:
         queries_to_try = [apply_nlp_refinement(q) for q in queries_to_try]
+        logger.debug(f"NLP-refined queries: {queries_to_try}")
 
     cache_key_base = generate_cache_key(query, params)
 
@@ -79,6 +84,8 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
             ]
             for key in keys_to_delete:
                 del cache[key]
+
+            logger.debug(f"Cache cleaned. Removed {len(keys_to_delete)} expired entries.")
 
             # Iterate through expanded queries
             for expanded_query in queries_to_try:
@@ -105,6 +112,8 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
                     data = response.json()
 
                     if data.get("hits"):
+                        logger.debug(f"Found {len(data['hits'])} results for query '{expanded_query}'.")
+
                         # Rank images by likes, downloads, and views if enabled
                         ranked_images = (
                             sorted(
@@ -137,4 +146,5 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
         except Exception as e:
             logger.error(f"Unexpected error during Pixabay fetch: {e}")
             return None, None
+
 
