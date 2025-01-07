@@ -262,8 +262,10 @@ def main():
                 skipped_rows.append(row)
                 raw_query = ""
 
-            # Strip special characters from the query
-            query = re.sub(r"[^\w\s]", "", raw_query).strip()  # Keep only alphanumeric characters and spaces
+            # Strip special characters and replace them with a single space
+            query = re.sub(r"[^\w\s]", " ", raw_query).strip()  # Replace non-alphanumeric characters with spaces
+            query = re.sub(r"\s+", " ", query)  # Normalize multiple spaces to a single space
+
             if not query:
                 logger.warning(f"Cleaned query is empty. Skipping image search for: {front_text}")
                 skipped_rows.append(row)
