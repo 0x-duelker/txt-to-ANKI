@@ -8,6 +8,7 @@ import tkinter as tk
 from tkinter import filedialog
 from utils import ensure_directories_exist, save_config, load_config
 from utils import load_synonym_dict, get_synonyms
+from utils import save_api_key, load_api_key
 
 from file_utils import ensure_directories_exist, get_default_input_files, parse_input_file, validate_input_file
 from pixabay_api import fetch_pixabay_image
@@ -37,14 +38,12 @@ CONFIG_FILE_PATH = os.path.join(os.getcwd(), "config.json")
 # Load the configuration
 config = load_config(CONFIG_FILE_PATH)
 
-# Retrieve Pixabay API Key from config or prompt for it
-PIXABAY_API_KEY = config.get("PIXABAY_API_KEY")
+# Load or prompt for the API key
+PIXABAY_API_KEY = load_api_key()
 if not PIXABAY_API_KEY:
     PIXABAY_API_KEY = input("Enter your Pixabay API Key: ").strip()
     if PIXABAY_API_KEY:
-        config["PIXABAY_API_KEY"] = PIXABAY_API_KEY
-        save_config(config)
-        print("API key saved in config.json for future use.")
+        save_api_key(PIXABAY_API_KEY)
     else:
         logger.error("Pixabay API Key is required. Exiting.")
         exit(1)

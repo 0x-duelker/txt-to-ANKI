@@ -7,6 +7,22 @@ CONFIG_FILE = "config.json"
 datamuse_api = Datamuse()
 SYNONYMS_FILE = "synonyms.json"
 
+def save_api_key(api_key):
+    """Save the API key to a config file."""
+    config = load_config() if os.path.exists(CONFIG_FILE) else {}
+    config["pixabay_api_key"] = api_key
+    with open(CONFIG_FILE, "w") as f:
+        json.dump(config, f)
+    logger.debug("Pixabay API Key saved successfully.")
+
+def load_api_key():
+    """Load the API key from the config file."""
+    if os.path.exists(CONFIG_FILE):
+        with open(CONFIG_FILE, "r") as f:
+            config = json.load(f)
+        return config.get("pixabay_api_key")
+    return None
+
 def clean_string(input_string):
     """
     Removes special characters and normalizes spaces in a string.
