@@ -10,7 +10,7 @@ from utils import load_synonym_dict, get_synonyms
 from utils import save_api_key, load_api_key
 from utils import apply_nlp_refinement
 from file_utils import ensure_directories_exist, get_default_input_files, parse_input_file, validate_input_file
-from pixabay_api import fetch_pixabay_image
+from pixabay_api import fetch_pixabay_image, load_api_key
 from anki_utils import create_deck, add_note_to_deck, export_deck
 
 # Configure Logging
@@ -19,12 +19,11 @@ os.makedirs(log_dir, exist_ok=True)
 log_filename = os.path.join(log_dir, f"anki_processing_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log")
 
 logging.basicConfig(
-    filename='logs/script.log',  # Path to log file
-    level=logging.DEBUG,# Log all levels
+    level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("txt-to-anki.log"), # Logs to a file
-        logging.StreamHandler() #Logs to console
+        logging.FileHandler(log_filename),  # Logs to a file with a timestamped name
+        logging.StreamHandler()            # Logs to the console
     ]
 )
 logger = logging.getLogger(__name__)
@@ -40,14 +39,19 @@ CONFIG_FILE_PATH = os.path.join(os.getcwd(), "config.json")
 config = load_config(CONFIG_FILE_PATH)
 
 # Load or prompt for the API key
-PIXABAY_API_KEY = load_api_key()
+PIXABAY_API_KEY = config.get("pixabay_api_key")
 if not PIXABAY_API_KEY:
     PIXABAY_API_KEY = input("Enter your Pixabay API Key: ").strip()
     if PIXABAY_API_KEY:
-        save_api_key(PIXABAY_API_KEY)
+        # Save the API key to the config file
+        config["pixabay_api_key"] = PIXABAY_API_KEY
+        save_config(CONFIG_FILE_PATH, config)
+        logger.info("API Key saved successfully.")
     else:
         logger.error("Pixabay API Key is required. Exiting.")
         exit(1)
+else:
+    logger.info("Pixabay API Key loaded successfully.")
 
 # Load synonym dictionary
 synonym_dict = load_synonym_dict("synonyms.json")  # Replace with your synonym dictionary path

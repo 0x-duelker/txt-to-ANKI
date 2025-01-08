@@ -59,6 +59,11 @@ This project automates the creation of Anki flashcards enriched with images sour
 - Obtain a Pixabay API key from [Pixabay](https://pixabay.com/api/docs/).
 
 ### Setting Up
+0. ## Configuration
+    Copy `config.example.json` to `config.json`:
+   ```bash
+   cp config.example.json config.json
+
 1. Save the Pixabay API key:
    ```bash
    python main.py --save-key YOUR_API_KEY

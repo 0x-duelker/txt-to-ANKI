@@ -33,12 +33,15 @@ def load_api_key(config_file=CONFIG_FILE):
         return config.get("pixabay_api_key", None)
     return None
 
-def load_config(config_file=CONFIG_FILE):
-    """Load the configuration from the config file."""
-    if os.path.exists(config_file):
-        with open(config_file, "r") as f:
-            return json.load(f)
-    return {}
+def load_config(config_file):
+    """Load the configuration from a JSON file."""
+    import json
+    import os
+    if not os.path.exists(config_file):
+        return {}
+    with open(config_file, "r") as file:
+        return json.load(file)
+
 
 def clean_string(input_string):
     """
@@ -62,13 +65,12 @@ def ensure_directories_exist():
     os.makedirs("ANKI", exist_ok=True)
     os.makedirs("input_files", exist_ok=True)
 
-def save_config(config_file, data):
-    """
-    Saves configuration data to a JSON file.
-    """
+def save_config(config_file, config_data):
+    """Save the configuration to a JSON file."""
     import json
-    with open(config_file, 'w') as file:
-        json.dump(data, file, indent=4)
+    with open(config_file, "w") as file:
+        json.dump(config_data, file, indent=4)
+
 
 def load_synonym_dict(file_path="synonyms.json"):
     """

@@ -10,6 +10,7 @@ from utils import apply_nlp_refinement
 from hashlib import sha256
 from utils import expand_with_synonyms
 
+CONFIG_FILE = "config.json"
 CACHE_FILE = "pixabay_cache.db"
 CACHE_EXPIRATION = 24 * 60 * 60  # 24 hours in seconds
 logger = logging.getLogger(__name__)
@@ -21,6 +22,17 @@ def generate_cache_key(query, params):
     """
     serialized = f"{query}-{json.dumps(params, sort_keys=True)}"
     return sha256(serialized.encode()).hexdigest()
+
+def load_api_key():
+    """
+    Loads the Pixabay API key from the configuration file.
+    """
+    if os.path.exists(CONFIG_FILE):
+        with open(CONFIG_FILE, "r") as f:
+            config = json.load(f)
+            return config.get("pixabay_api_key")
+    logger.error("Config file not found or API key is missing.")
+    return None
 
 # Function to fetch an image from Pixabay
 def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
@@ -40,6 +52,8 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
         logger.error("Pixabay API Key is missing.")
         return None, None
 
+    logger.debug("Configuration: {}".format(config))
+
     # Default configuration
     config = config or {
         "use_synonyms": True,
@@ -50,9 +64,8 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
         "metadata_filter": {
             "min_likes": 50,  # Minimum likes to include an image
             "min_downloads": 100,  # Minimum downloads to include an image
-    }
+    }}
 
-    logger.debug(f"Configuration: {config}")
 
     url = "https://pixabay.com/api/"
     params = {
