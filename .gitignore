@@ -1,0 +1,18 @@
+# Configuration
+config.json
+
+# Logs
+logs/
+*.log
+
+# Anki Deck Files
+ANKI/*.apkg
+
+# Cache
+pixabay_cache.db
+
+# Python Compiled Files
+__pycache__/
+
+# IDE Specific Files
+.idea/
