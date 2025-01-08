@@ -70,17 +70,6 @@ def save_config(config_file, data):
     with open(config_file, 'w') as file:
         json.dump(data, file, indent=4)
 
-def load_config(config_file):
-    """
-    Loads configuration data from a JSON file.
-    """
-    import json
-    import os
-    if not os.path.exists(config_file):
-        return {}
-    with open(config_file, 'r') as file:
-        return json.load(file)
-
 def load_synonym_dict(file_path="synonyms.json"):
     """
     Load the synonym dictionary from a JSON file.

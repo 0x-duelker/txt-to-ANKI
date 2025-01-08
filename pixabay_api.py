@@ -47,6 +47,9 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
         "strict_filters": True,
         "apply_nlp": True,
         "tags": [],  # Allow filtering by tags
+        "metadata_filter": {
+            "min_likes": 50,  # Minimum likes to include an image
+            "min_downloads": 100,  # Minimum downloads to include an image
     }
 
     logger.debug(f"Configuration: {config}")
@@ -54,12 +57,17 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
     url = "https://pixabay.com/api/"
     params = {
         "key": api_key,
+        "q": query,
+        "editors_choice": "true",
         "image_type": "photo",
         "orientation": "horizontal",
         "safesearch": "true",
         "per_page": 10,  # Increased to get more results for ranking
         "order": "popular",  # Prioritize popular images
     }
+    logger.debug(f"Sending query to Pixabay with params: {params}")
+    logging.info("Fetching images for query: %s", query)
+    logging.info("Received %d results for query: %s", len(results), query)
 
     if config["strict_filters"]:
         params.update({"editors_choice": "true"})  # Example of stricter filter
@@ -106,6 +114,7 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
                     logger.debug(f"Cache hit for '{expanded_query}'.")
                     return cached_entry["image_url"], cached_entry["image_credit"]
 
+                logger.debug(f"Sending query to Pixabay with params: {params}") #Query log
                 # Fetch from Pixabay API
                 try:
                     response = requests.get(url, params=params, timeout=5)
@@ -129,6 +138,15 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
                     if data.get("hits"):
                         logger.debug(f"Found {len(data['hits'])} results for query '{expanded_query}'.")
 
+                        # Extract tags from the top result or iterate over hits
+                        all_tags = [hit.get("tags", "").split(", ") for hit in data["hits"]]
+                        flattened_tags = set(tag.strip() for tags in all_tags for tag in tags)
+                        logger.debug(f"Extracted tags from results: {flattened_tags}")
+
+                        # Optionally use the most common tags to refine the query
+                        config["tags"] = list(flattened_tags)[:5]  # Example: Limit to top 5 tags
+                        logger.debug(f"Refined tags for next queries: {config['tags']}")
+
                         # Rank images by likes, downloads, and views if enabled
                         ranked_images = (
                             sorted(
@@ -137,6 +155,24 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
                                 reverse=True
                             ) if config["rank_by_metadata"] else data["hits"]
                         )
+
+                        # Apply stricter metadata filtering
+                        filtered_images = [
+                            img for img in ranked_images
+                            if img.get("likes", 0) >= config["metadata_filter"]["min_likes"]
+                            and img.get("downloads", 0) >= config["metadata_filter"]["min_downloads"]
+                        ]
+
+                        if not filtered_images:
+                            logger.warning("No images passed the metadata filtering criteria.")
+                            return None, None
+
+                        # Log the filtering results
+                        logger.debug(f"Filtered images: {len(filtered_images)} passed the criteria.")
+
+                        if not filtered_images:
+                            logger.warning("No images passed the metadata filtering criteria.")
+                            return None, None
 
                         # Select the top-ranked image
                         image_info = ranked_images[0]

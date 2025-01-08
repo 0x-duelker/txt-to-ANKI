@@ -1,6 +1,5 @@
 import os
 import re
-import time
 import logging
 from datetime import datetime
 from tqdm import tqdm
@@ -20,14 +19,16 @@ os.makedirs(log_dir, exist_ok=True)
 log_filename = os.path.join(log_dir, f"anki_processing_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log")
 
 logging.basicConfig(
-    level=logging.DEBUG,
+    filename='logs/script.log',  # Path to log file
+    level=logging.DEBUG,# Log all levels
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler(log_filename),
-        logging.StreamHandler()
+        logging.FileHandler("txt-to-anki.log"), # Logs to a file
+        logging.StreamHandler() #Logs to console
     ]
 )
 logger = logging.getLogger(__name__)
+logging.info("Script started.")
 
 # Ensure necessary directories exist
 ensure_directories_exist()
@@ -139,11 +140,19 @@ if __name__ == "__main__":
                 synonyms = get_synonyms(query)
                 expanded_queries = [query] + synonyms  # Include original query
 
+                # Initialize the variables to avoid unbound variable issues
+                image_url = None
+                image_credit = None
+
                 # Use the expanded queries for image fetching
                 for expanded_query in expanded_queries:
                     image_url, image_credit = fetch_pixabay_image(expanded_query, PIXABAY_API_KEY)
                     if image_url:
                         break  # Stop if an image is found
+
+                # Add fallback logic if no image is found
+                if not image_url:
+                    logging.warning("No suitable image found for any query.")
 
                 back_parts = []
                 for k, v in row.items():
