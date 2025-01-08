@@ -4,6 +4,7 @@
 import requests
 import shelve
 import time
+import os
 import json
 import logging
 from utils import apply_nlp_refinement
@@ -48,6 +49,8 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
     Returns:
         tuple: Image URL and image credit string if found, otherwise (None, None).
     """
+    data = {"hits": []}  # Default to an empty hits list
+
     if not api_key:
         logger.error("Pixabay API Key is missing.")
         return None, None
@@ -78,7 +81,6 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
     }
     logger.debug(f"Sending query to Pixabay with params: {params}")
     logging.info("Fetching images for query: %s", query)
-    logging.info("Received %d results for query: %s", len(data.get("hits", [])), query)
 
     if config["strict_filters"]:
         params.update({"editors_choice": "true"})  # Example of stricter filter
@@ -125,15 +127,6 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
                     logger.debug(f"Cache hit for '{expanded_query}'.")
                     return cached_entry["image_url"], cached_entry["image_credit"]
 
-                # Add to cache if not found
-                cache[cache_key] = {
-                    "image_url": image_url,
-                    "image_credit": image_credit,
-                    "timestamp": time.time(),
-                }
-                logger.info(f"Cached result for query '{expanded_query}': {image_url}")
-                logger.debug(f"Cache entry created for '{expanded_query}' with key '{cache_key}'")
-
                 logger.debug(f"Sending query to Pixabay with params: {params}") #Query log
                 # Fetch from Pixabay API
                 try:
@@ -154,18 +147,22 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
                         response = requests.get(url, params=params, timeout=5)
                         response.raise_for_status()
                         data = response.json()
+                        hits = data.get("hits", [])  # Safely fetch hits from data
 
                     if data.get("hits"):
+                        logging.info("Received %d results for query: %s", len(data.get("hits", [])), query)
                         logger.debug(f"Found {len(data['hits'])} results for query '{expanded_query}'.")
 
-                        # Extract tags from the top result or iterate over hits
+                        # Extract and filter tags
+                        hits = data.get("hits", [])  # Explicitly define hits from the response
+                        all_tags = {tag.strip() for hit in hits for tag in hit.get("tags", "").split(", ")}
                         BLACKLIST_TAGS = {"photo", "image", "stock", "pictures"}
-                        filtered_tags = [tag for tag in flattened_tags if tag.lower() not in BLACKLIST_TAGS]
+                        filtered_tags = [tag for tag in all_tags if tag.lower() not in BLACKLIST_TAGS]
                         config["tags"] = filtered_tags[:5]  # Limit to top 5 tags
-                        logger.debug(f"Filtered and refined tags: {config['tags']}")
+                        logger.debug(f"Filtered tags for refinement: {config['tags']}")
 
                         # Optionally use the most common tags to refine the query
-                        config["tags"] = list(flattened_tags)[:5]  # Example: Limit to top 5 tags
+                        config["tags"] = list(filtered_tags)[:5]  # Example: Limit to top 5 tags
                         logger.debug(f"Refined tags for next queries: {config['tags']}")
 
                         # Rank images by likes, downloads, and views if enabled
@@ -204,6 +201,8 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
                         }
                         logger.debug(f"Fetched and cached result for '{expanded_query}'.")
                         return image_url, image_credit
+                    else:
+                        logger.warning(f"No results for query '{query}' after trying synonyms.")
 
                 except requests.RequestException as e:
                     logger.error(f"Error fetching image for query '{expanded_query}': {e}")
@@ -211,10 +210,12 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
             if not data.get("hits"):
                 logger.warning(f"No results for query '{params['q']}' with current filters.")
                 logger.warning(f"No results for refined queries. Retrying with the original query: {query}")
+                logger.warning(f"No results for query '{query}' after trying synonyms.")
                 params["q"] = query
                 response = requests.get(url, params=params, timeout=5)
                 response.raise_for_status()
                 data = response.json()
+                hits = data.get("hits", [])  # Safely fetch hits, even if it doesn't exist
 
             logger.warning(f"No images found for query '{query}' after trying synonyms.")
             return None, None
