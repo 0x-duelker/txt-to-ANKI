@@ -1,9 +1,9 @@
 # anki_utils.py
 # This module focuses on Anki deck creation and note management.
-import genanki
 import logging
-import os
 import random
+
+import genanki
 
 logger = logging.getLogger(__name__)
 

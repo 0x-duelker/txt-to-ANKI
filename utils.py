@@ -1,8 +1,8 @@
 from datamuse import Datamuse
 import os
-import re
 import json
 import logging
+
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
@@ -18,13 +18,18 @@ CONFIG_FILE = "config.json"
 datamuse_api = Datamuse()
 SYNONYMS_FILE = "synonyms.json"
 
-def save_api_key(api_key, config_file=CONFIG_FILE):
-    """Save the API key to a config file."""
-    config = load_config(config_file) if os.path.exists(config_file) else {}
+def save_api_key(api_key):
+    """
+    Save the Pixabay API key to the configuration file.
+    """
+    config = {}
+    if os.path.exists(CONFIG_FILE):
+        with open(CONFIG_FILE, "r") as f:
+            config = json.load(f)
     config["pixabay_api_key"] = api_key
-    with open(config_file, "w") as f:
-        json.dump(config, f)
-    logger.debug("Pixabay API Key saved successfully.")
+    with open(CONFIG_FILE, "w") as f:
+        json.dump(config, f, indent=4)
+    logger.info("API key saved to config file.")
 
 def load_api_key(config_file=CONFIG_FILE):
     """Load the API key from the config file."""
@@ -33,14 +38,18 @@ def load_api_key(config_file=CONFIG_FILE):
         return config.get("pixabay_api_key", None)
     return None
 
-def load_config(config_file):
-    """Load the configuration from a JSON file."""
-    import json
-    import os
-    if not os.path.exists(config_file):
+def load_config(file_path):
+    """Load configuration from a JSON file."""
+    if not os.path.exists(file_path):
         return {}
-    with open(config_file, "r") as file:
-        return json.load(file)
+    with open(file_path, 'r') as f:
+        try:
+            config = json.load(f)
+        except json.JSONDecodeError:
+            raise ValueError("Invalid config type: Expected dict, got invalid JSON.")
+    if not isinstance(config, dict):
+        raise ValueError("Invalid config type: Expected dict, got {}".format(type(config).__name__))
+    return config
 
 
 def clean_string(input_string):
@@ -56,21 +65,6 @@ def normalize_query(query):
     Normalizes a query string for use in API requests.
     """
     return clean_string(query).lower()
-
-def ensure_directories_exist():
-    """
-    Ensures necessary directories for the application exist.
-    """
-    os.makedirs("logs", exist_ok=True)
-    os.makedirs("ANKI", exist_ok=True)
-    os.makedirs("input_files", exist_ok=True)
-
-def save_config(config_file, config_data):
-    """Save the configuration to a JSON file."""
-    import json
-    with open(config_file, "w") as file:
-        json.dump(config_data, file, indent=4)
-
 
 def load_synonym_dict(file_path="synonyms.json"):
     """
@@ -88,14 +82,23 @@ def load_synonym_dict(file_path="synonyms.json"):
 
 def fetch_synonyms_online(word, max_results=5):
     """
-    Fetch synonyms for a given word using python-datamuse.
+    Fetch synonyms for a given word using python-datamuse with a timeout.f
     """
+    import requests
     try:
-        results = datamuse_api.words(rel_syn=word, max=max_results)
+        # Set a timeout for the request to prevent hanging indefinitely
+        results = datamuse_api.words(rel_syn=word, max=max_results, timeout=5)  # Timeout set to 5 seconds
         return [entry['word'] for entry in results]
-    except Exception as e:
+    except requests.exceptions.Timeout:
+        logger.warning(f"Request to Datamuse API timed out for word: '{word}'.")
+        return []
+    except requests.exceptions.RequestException as e:
         logger.warning(f"Error fetching synonyms for '{word}': {e}")
         return []
+    except Exception as e:
+        logger.error(f"Unexpected error fetching synonyms for '{word}': {e}")
+        return []
+
 
 def update_synonyms_file(word, new_synonyms):
     """
@@ -160,7 +163,6 @@ def expand_with_synonyms(query, synonym_dict):
 
     return expanded_queries
 
-
 def apply_nlp_refinement(query):
     """
     Refines the query using NLP techniques such as lemmatization or stemming.
@@ -169,11 +171,9 @@ def apply_nlp_refinement(query):
     Returns:
         str: Refined query.
     """
-    import nltk
     from nltk.stem import WordNetLemmatizer
-
-    nltk.download('wordnet')
     lemmatizer = WordNetLemmatizer()
-    refined_query = " ".join(lemmatizer.lemmatize(word) for word in query.split())
+    stop_words = set(stopwords.words('english'))
+    refined_query = " ".join(lemmatizer.lemmatize(word) for word in query.split() if word.lower() not in stop_words)
     logger.debug(f"Refined query: {refined_query}")
     return refined_query

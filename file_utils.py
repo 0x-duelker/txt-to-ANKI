@@ -1,18 +1,33 @@
 # file_utils.py
 import csv
+import json
 import os
 import logging
 
 logger = logging.getLogger(__name__)
 
+def save_config(config_file, config_data):
+    """
+    Save the configuration data to a JSON file.
+
+    Args:
+        config_file (str): Path to the configuration file.
+        config_data (dict): Dictionary containing configuration data.
+    """
+    try:
+        with open(config_file, "w") as f:
+            json.dump(config_data, f, indent=4)
+        logger.info(f"Configuration saved to {config_file}.")
+    except Exception as e:
+        logger.error(f"Failed to save configuration: {e}")
+
 def ensure_directories_exist():
     """
-    Ensure necessary directories exist for the project.
+    Ensures necessary directories for the application exist.
     """
-    directories = ["logs", "ANKI", "input_files"]
-    for directory in directories:
-        os.makedirs(directory, exist_ok=True)
-        logger.debug(f"Ensured directory exists: {directory}")
+    os.makedirs("logs", exist_ok=True)
+    os.makedirs("ANKI", exist_ok=True)
+    os.makedirs("input_files", exist_ok=True)
 
 def get_default_input_files():
     """
@@ -56,7 +71,6 @@ def parse_input_file(input_file):
     except Exception as e:
         logger.error(f"Error parsing input file: {e}")
     return rows
-
 
 def validate_input_file(input_file):
     """

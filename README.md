@@ -6,8 +6,11 @@ Welcome to the Anki Flashcard Automation Tool! This project is designed to simpl
 With advanced features like synonym-based query expansion, natural language processing (NLP) enhancements, and metadata-driven image ranking, this tool ensures that every flashcard is both accurate and visually appealing. By leveraging the Pixabay API and intelligent search techniques, we bring together functionality and creativity to take your learning experience to the next level.
 
 ## Project Overview
-This project automates the creation of Anki flashcards enriched with images sourced from Pixabay. Key functionalities include:
+This project automates the creation of Anki flashcards enriched with images sourced from Pixabay. 
 
+The project creates Anki decks from input files containing words and their meanings, fetching images from Pixabay to include in the cards. The main.py script orchestrates the process, including directory setup, logging, input file selection, and deck creation. The anki_utils.py module provides functions to create decks, add notes, and export decks using the genanki library. The pixabay_api.py module handles interactions with the Pixabay API to fetch images based on queries. The file_utils.py and utils.py modules contain various utility functions for file operations, configuration management, and synonym handling.
+
+Key functionalities include:
 1. **Dynamic Query Expansion**: Incorporates synonyms for richer search results.
 2. **API Configuration**: Easily manage and update API keys.
 3. **Advanced Query Features**:

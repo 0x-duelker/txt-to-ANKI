@@ -11,10 +11,15 @@ packaging==24.2
 pytz==2024.2
 PyYAML==6.0.2
 regex==2024.11.6
-setuptools>=41.0,<75
+setuptools>=70.0.0,<75
 six==1.17.0
 tqdm==4.67.1
 wheel @ file:///usr/local/Cellar/python%403.13/3.13.1/libexec/wheel-0.45.1-py3-none-any.whl#sha256=da46333d5dcbde6e20cf7e2f8fff9e9ce76e8c94dc4afd6fb95fc4bc2745fb5e
 zope.interface==7.2
 pillow==10.4.0
 git+https://github.com/gmarmstrong/python-datamuse.git
+
+requests~=2.32.3
+python-dotenv~=1.0.1
+aiohttp~=3.11.11
+urllib3~=2.3.0

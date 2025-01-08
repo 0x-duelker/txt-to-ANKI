@@ -16,3 +16,9 @@ __pycache__/
 
 # IDE Specific Files
 .idea/
+
+#checks for shadowing of built-in names
+shadowing.py
+
+#archive
+archive/

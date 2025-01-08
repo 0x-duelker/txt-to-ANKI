@@ -1,22 +1,40 @@
+import logging
 import os
 import re
-import logging
 from datetime import datetime
-from tqdm import tqdm
-import tkinter as tk
 from tkinter import filedialog
-from utils import ensure_directories_exist, save_config, load_config
-from utils import load_synonym_dict, get_synonyms
-from utils import save_api_key, load_api_key
-from utils import apply_nlp_refinement
-from file_utils import ensure_directories_exist, get_default_input_files, parse_input_file, validate_input_file
-from pixabay_api import fetch_pixabay_image, load_api_key
+import asyncio
+import json
+import pixabay_api
+
+from tqdm import tqdm
+
 from anki_utils import create_deck, add_note_to_deck, export_deck
+from file_utils import get_default_input_files, parse_input_file, validate_input_file, save_config
+from pixabay_api import fetch_pixabay_image
+from utils import load_synonym_dict, get_synonyms, load_config
+
+if hasattr(pixabay_api, "requests"):
+    print("Requests module is available in pixabay_api.")
+else:
+    print("Requests module is NOT available in pixabay_api.")
+
+# Constants
+LOG_DIR = os.path.join(os.getcwd(), "logs")
+CONFIG_FILE_PATH = os.path.join(os.getcwd(), "config.json")
+SYNONYM_DICT_PATH = "synonyms.json"
+INPUT_FILES_DIR = os.path.join(os.getcwd(), "input_files")
+OUTPUT_DIR = os.path.join(os.getcwd(), "ANKI")
 
 # Configure Logging
-log_dir = os.path.join(os.getcwd(), "logs")
-os.makedirs(log_dir, exist_ok=True)
-log_filename = os.path.join(log_dir, f"anki_processing_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log")
+def ensure_directories():
+    """Ensure necessary directories exist."""
+    os.makedirs(LOG_DIR, exist_ok=True)
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+ensure_directories()
+
+log_filename = os.path.join(LOG_DIR, f"anki_processing_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log")
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -29,108 +47,99 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 logging.info("Script started.")
 
-# Ensure necessary directories exist
-ensure_directories_exist()
+def save_config(file_path, config):
+    with open(file_path, 'w') as f:
+        json.dump(config, f, indent=4)
 
-# Define the path to the config file
-CONFIG_FILE_PATH = os.path.join(os.getcwd(), "config.json")
-
-# Load the configuration
-config = load_config(CONFIG_FILE_PATH)
-
-# Load or prompt for the API key
-PIXABAY_API_KEY = config.get("pixabay_api_key")
-if not PIXABAY_API_KEY:
-    PIXABAY_API_KEY = input("Enter your Pixabay API Key: ").strip()
-    if PIXABAY_API_KEY:
-        # Save the API key to the config file
-        config["pixabay_api_key"] = PIXABAY_API_KEY
-        save_config(CONFIG_FILE_PATH, config)
-        logger.info("API Key saved successfully.")
+def get_pixabay_api_key(config):
+    """Load or prompt for the Pixabay API key."""
+    api_key = config.get("pixabay_api_key")
+    if not api_key:
+        api_key = input("Enter your Pixabay API Key: ").strip()
+        if api_key:
+            config["pixabay_api_key"] = api_key
+            save_config(CONFIG_FILE_PATH, config)
+            logger.info("Pixabay API Key saved successfully to config.json.")
+        else:
+            logger.error("Pixabay API Key is required. Exiting.")
+            exit(1)
     else:
-        logger.error("Pixabay API Key is required. Exiting.")
+        logger.info("Pixabay API Key loaded successfully from config.json.")
+    return api_key
+
+def select_input_file():
+    """Select the input file."""
+    input_files = get_default_input_files()
+    if input_files:
+        print("Available input files in 'input_files/':")
+        for idx, file in enumerate(input_files, start=1):
+            print(f"{idx}. {file}")
+        file_choice = input("Enter the number of the file to process (or press Enter to choose manually): ").strip()
+        if file_choice.isdigit() and 1 <= int(file_choice) <= len(input_files):
+            return os.path.join(INPUT_FILES_DIR, input_files[int(file_choice) - 1])
+    selected_file = filedialog.askopenfilename(
+        title="Select your Markdown/CSV input file",
+        initialdir=INPUT_FILES_DIR,
+        filetypes=[("Text Files", "*.md *.markdown *.csv *.tsv *.txt"), ("All Files", "*.*")]
+    )
+    if not selected_file:
+        logger.error("No file selected. Exiting.")
         exit(1)
-else:
-    logger.info("Pixabay API Key loaded successfully.")
+    return selected_file
 
-# Load synonym dictionary
-synonym_dict = load_synonym_dict("synonyms.json")  # Replace with your synonym dictionary path
+def get_deck_name():
+    """Prompt for and validate the deck name."""
+    deck_name = input("Enter the name for your Anki deck: ").strip()
+    if not deck_name:
+        logger.error("Deck name is required. Exiting.")
+        exit(1)
+    deck_name = re.sub(r"[^\w\s]", "", deck_name).strip()
+    if not deck_name:
+        logger.error("Invalid deck name. Exiting.")
+        exit(1)
+    return deck_name
 
-# Main script
-if __name__ == "__main__":
+async def main():
+    """Main script function."""
     try:
         logger.info("Starting Anki deck creation process.")
+        ensure_directories()
 
-        # Ensure necessary directories exist
-        ensure_directories_exist()
+        config = load_config(CONFIG_FILE_PATH)
+        if not isinstance(config, dict):
+            logger.error(f"Invalid config type: Expected dict, got {type(config).__name__}. Exiting.")
+            exit(1)
+        pixabay_api_key = get_pixabay_api_key(config)
 
-        # Prompt for Pixabay API Key if not provided
-        PIXABAY_API_KEY = os.getenv("PIXABAY_API_KEY")
-        if not PIXABAY_API_KEY:
-            PIXABAY_API_KEY = input("Enter your Pixabay API Key: ").strip()
-            if not PIXABAY_API_KEY:
-                logger.error("Pixabay API Key is required. Exiting.")
-                exit(1)
-
-        # Check for files in the input_files/ directory
-        input_files = get_default_input_files()
-        if input_files:
-            print("Available input files in 'input_files/':")
-            for idx, file in enumerate(input_files, start=1):
-                print(f"{idx}. {file}")
-            file_choice = input("Enter the number of the file to process (or press Enter to choose manually): ").strip()
-
-            if file_choice.isdigit() and 1 <= int(file_choice) <= len(input_files):
-                input_file = os.path.join("input_files", input_files[int(file_choice) - 1])
-                print(f"Selected file: {input_file}")
-            else:
-                input_file = filedialog.askopenfilename(
-                    title="Select your Markdown/CSV input file",
-                    initialdir=os.path.join(os.getcwd(), "input_files"),
-                    filetypes=[("Text Files", "*.md *.markdown *.csv *.tsv *.txt"), ("All Files", "*.*")]
-                )
-        else:
-            print("No files found in 'input_files/'. Please select a file manually.")
-            input_file = filedialog.askopenfilename(
-                title="Select your Markdown/CSV input file",
-                initialdir=os.path.join(os.getcwd(), "input_files"),
-                filetypes=[("Text Files", "*.md *.markdown *.csv *.tsv *.txt"), ("All Files", "*.*")]
-            )
-
+        input_file = select_input_file()
         if not input_file:
             logger.error("No file selected. Exiting.")
             exit(1)
 
-        # Validate input file
         if not validate_input_file(input_file):
             logger.error("Invalid input file format. Exiting.")
             exit(1)
 
-        # Prompt for Anki deck name
-        deck_name = input("Enter the name for your Anki deck: ").strip()
-        if not deck_name:
-            logger.error("Deck name is required. Exiting.")
-            exit(1)
-        deck_name = re.sub(r"[^\w\s]", "", deck_name).strip()
-        if not deck_name:
-            logger.error("Invalid deck name. Exiting.")
-            exit(1)
+        deck_name = get_deck_name()
 
-        # Create Anki deck
         logger.info("Creating Anki deck...")
         my_deck = create_deck(deck_name)
 
-        # Parse input file
         logger.info("Parsing input file...")
         rows = parse_input_file(input_file)
         if not rows:
             logger.error("No valid rows found in the input file. Exiting.")
             exit(1)
 
-        # Process rows and add notes
+        synonym_dict = load_synonym_dict(SYNONYM_DICT_PATH)
         skipped_rows = []
         for idx, row in enumerate(tqdm(rows, desc="Processing rows")):
             try:
+                if not isinstance(row, dict):
+                    logger.error(f"Invalid row format at index {idx + 1}: {row}")
+                    skipped_rows.append(row)
+                    continue
+
                 front_text = row.get("WORD") or row.get("Front")
                 if not front_text:
                     skipped_rows.append(row)
@@ -140,28 +149,20 @@ if __name__ == "__main__":
                 raw_query = row.get("MEANING", "").strip()
                 query = re.sub(r"[^\w\s]", " ", raw_query).strip()
                 query = re.sub(r"\s+", " ", query)  # Normalize spaces
-                # Get synonyms dynamically
                 synonyms = get_synonyms(query)
-                expanded_queries = [query] + synonyms  # Include original query
+                expanded_queries = [query] + synonyms
 
-                # Initialize the variables to avoid unbound variable issues
-                image_url = None
-                image_credit = None
-
-                # Use the expanded queries for image fetching
+                image_url, image_credit = None, None
                 for expanded_query in expanded_queries:
-                    image_url, image_credit = fetch_pixabay_image(expanded_query, PIXABAY_API_KEY)
+                    logger.debug(f"Config before calling fetch_pixabay_image: {config}")
+                    image_url, image_credit = await fetch_pixabay_image(expanded_query, synonym_dict=synonym_dict, config=config)
                     if image_url:
-                        break  # Stop if an image is found
+                        break
 
-                # Add fallback logic if no image is found
                 if not image_url:
                     logging.warning("No suitable image found for any query.")
 
-                back_parts = []
-                for k, v in row.items():
-                    if k.lower() not in ["word", "front"] and v:
-                        back_parts.append(f"<b>{k}:</b> {v.strip()}")
+                back_parts = [f"<b>{k}:</b> {v.strip()}" for k, v in row.items() if k.lower() not in ["word", "front"] and v]
                 if image_credit:
                     back_parts.append(f"<b>Image Credit:</b> {image_credit}")
 
@@ -172,10 +173,7 @@ if __name__ == "__main__":
                 logger.error(f"Error processing row {idx + 1}: {e}")
                 skipped_rows.append(row)
 
-        # Export deck
-        output_dir = os.path.join(os.getcwd(), "ANKI")
-        os.makedirs(output_dir, exist_ok=True)
-        output_path = os.path.join(output_dir, f"{deck_name}.apkg")
+        output_path = os.path.join(OUTPUT_DIR, f"{deck_name}.apkg")
         logger.info("Exporting Anki deck...")
         export_deck(my_deck, output_path)
 
@@ -186,3 +184,6 @@ if __name__ == "__main__":
     except Exception as e:
         logger.critical(f"Unexpected error: {e}", exc_info=True)
         exit(1)
+
+if __name__ == "__main__":
+    asyncio.run(main())
