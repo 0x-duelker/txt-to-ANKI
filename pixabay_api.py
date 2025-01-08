@@ -52,8 +52,6 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
         logger.error("Pixabay API Key is missing.")
         return None, None
 
-    logger.debug("Configuration: {}".format(config))
-
     # Default configuration
     config = config or {
         "use_synonyms": True,
@@ -65,7 +63,7 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
             "min_likes": 50,  # Minimum likes to include an image
             "min_downloads": 100,  # Minimum downloads to include an image
     }}
-
+    logger.debug(f"Configuration: {config}")
 
     url = "https://pixabay.com/api/"
     params = {
@@ -80,7 +78,7 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
     }
     logger.debug(f"Sending query to Pixabay with params: {params}")
     logging.info("Fetching images for query: %s", query)
-    logging.info("Received %d results for query: %s", len(results), query)
+    logging.info("Received %d results for query: %s", len(data.get("hits", [])), query)
 
     if config["strict_filters"]:
         params.update({"editors_choice": "true"})  # Example of stricter filter
@@ -127,6 +125,15 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
                     logger.debug(f"Cache hit for '{expanded_query}'.")
                     return cached_entry["image_url"], cached_entry["image_credit"]
 
+                # Add to cache if not found
+                cache[cache_key] = {
+                    "image_url": image_url,
+                    "image_credit": image_credit,
+                    "timestamp": time.time(),
+                }
+                logger.info(f"Cached result for query '{expanded_query}': {image_url}")
+                logger.debug(f"Cache entry created for '{expanded_query}' with key '{cache_key}'")
+
                 logger.debug(f"Sending query to Pixabay with params: {params}") #Query log
                 # Fetch from Pixabay API
                 try:
@@ -152,9 +159,10 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
                         logger.debug(f"Found {len(data['hits'])} results for query '{expanded_query}'.")
 
                         # Extract tags from the top result or iterate over hits
-                        all_tags = [hit.get("tags", "").split(", ") for hit in data["hits"]]
-                        flattened_tags = set(tag.strip() for tags in all_tags for tag in tags)
-                        logger.debug(f"Extracted tags from results: {flattened_tags}")
+                        BLACKLIST_TAGS = {"photo", "image", "stock", "pictures"}
+                        filtered_tags = [tag for tag in flattened_tags if tag.lower() not in BLACKLIST_TAGS]
+                        config["tags"] = filtered_tags[:5]  # Limit to top 5 tags
+                        logger.debug(f"Filtered and refined tags: {config['tags']}")
 
                         # Optionally use the most common tags to refine the query
                         config["tags"] = list(flattened_tags)[:5]  # Example: Limit to top 5 tags
@@ -175,10 +183,6 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
                             if img.get("likes", 0) >= config["metadata_filter"]["min_likes"]
                             and img.get("downloads", 0) >= config["metadata_filter"]["min_downloads"]
                         ]
-
-                        if not filtered_images:
-                            logger.warning("No images passed the metadata filtering criteria.")
-                            return None, None
 
                         # Log the filtering results
                         logger.debug(f"Filtered images: {len(filtered_images)} passed the criteria.")
@@ -218,7 +222,3 @@ def fetch_pixabay_image(query, api_key, synonym_dict=None, config=None):
         except Exception as e:
             logger.error(f"Unexpected error during Pixabay fetch: {e}")
             return None, None
-
-
-
-
