@@ -2,6 +2,7 @@ from datamuse import Datamuse
 import os
 import json
 import logging
+from typing import Dict, Any
 
 import nltk
 from nltk.corpus import stopwords
@@ -38,18 +39,20 @@ def load_api_key(config_file=CONFIG_FILE):
         return config.get("pixabay_api_key", None)
     return None
 
-def load_config(file_path):
-    """Load configuration from a JSON file."""
-    if not os.path.exists(file_path):
-        return {}
-    with open(file_path, 'r') as f:
-        try:
+def load_config(file_path: str) -> Dict[str, Any]:
+    try:
+        with open(file_path, 'r') as f:
             config = json.load(f)
-        except json.JSONDecodeError:
-            raise ValueError("Invalid config type: Expected dict, got invalid JSON.")
-    if not isinstance(config, dict):
-        raise ValueError("Invalid config type: Expected dict, got {}".format(type(config).__name__))
-    return config
+            if not isinstance(config, dict):
+                raise ValueError(f"Invalid config type: Expected dict, got {type(config).__name__}.")
+            return config
+    except json.JSONDecodeError as e:
+        logger.error(f"JSON decode error in config file {file_path}: {e}")
+    except FileNotFoundError:
+        logger.error(f"Config file {file_path} not found.")
+    except Exception as e:
+        logger.error(f"Error loading config file {file_path}: {e}")
+    return {}
 
 
 def clean_string(input_string):

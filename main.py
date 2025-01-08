@@ -6,6 +6,7 @@ from tkinter import filedialog
 import asyncio
 import json
 import pixabay_api
+import pexels_api
 
 from tqdm import tqdm
 
@@ -50,6 +51,26 @@ logging.info("Script started.")
 def save_config(file_path, config):
     with open(file_path, 'w') as f:
         json.dump(config, f, indent=4)
+
+def fetch_image(query, config):
+    """
+    Attempt to fetch an image using Pixabay, then fallback to Pexels.
+    """
+    cache_key = f"image-{query}"
+
+    # Try Pixabay first
+    image_url, image_credit = pixabay_api.fetch_pixabay_images(query, cache_key, pixabay_api.cache, config)
+    if image_url:
+        return image_url, image_credit
+
+    # Fallback to Pexels
+    logger.info(f"Falling back to Pexels for query '{query}'.")
+    image_url, image_credit = pexels_api.fetch_pexels_images(query, cache_key, pexels_api.cache)
+    if image_url:
+        return image_url, image_credit
+
+    logger.warning(f"No image found for query '{query}' using both APIs.")
+    return None, None
 
 def get_pixabay_api_key(config):
     """Load or prompt for the Pixabay API key."""
